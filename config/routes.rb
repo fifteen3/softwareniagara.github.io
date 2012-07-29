@@ -1,16 +1,20 @@
 Softwareniagara::Application.routes.draw do
   authenticated :user do
-    root :to => 'home#index'
+    root :to => 'frontend/home#index'
   end
   root :to => "home#index"
   devise_for :users
-  resources :users, :only => [:show, :index]
+  resources :users, only: [:show, :index]
 
   namespace :admin do
     resources :posts
     resources :events
-    resources :users, :except => [:new, :create]
+    resources :users, except: [:new, :create]
     resources :emails
     resources :applicants
+  end
+
+  scope module: 'frontend' do
+    resources :home, only: [:index]
   end
 end

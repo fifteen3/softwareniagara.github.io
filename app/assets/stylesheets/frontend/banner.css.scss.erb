@@ -1,0 +1,20 @@
+#banner {
+    width: 100%;
+    padding: 60px 0;
+    background: transparent url(<%= asset_path 'frontend/banner.jpg' %>) center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-bottom: 18px solid #f5f5f5;
+
+    .well {
+        background-color: rgba(220, 113, 78, 0.75);
+
+        h1, h2, h3, h4, h5, h6, p.lead {
+            color: rgba(255, 255, 255, 0.75);
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+        }
+    }
+}

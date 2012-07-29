@@ -19,6 +19,7 @@ gem "devise", ">= 2.1.2"
 gem "cancan", ">= 1.6.8"
 gem "rolify", ">= 3.1.0"
 gem "bootstrap-sass", ">= 2.0.4.0"
+gem "font-awesome-rails"
 gem 'gravatar_image_tag'
 gem 'heroku'
 gem 'geocoder', git: 'https://github.com/alexreisner/geocoder.git', branch: 'master'

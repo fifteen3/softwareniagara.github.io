@@ -1,0 +1,39 @@
+!!!
+%html
+  %head
+    %meta{charset: 'utf-8'}
+    %meta{'http-equiv' => 'X-UA-Compatible', content: 'IE=edge,chrome=1'}
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1'}
+
+    %title= content_for?(:title) ? yield(:title) : 'Software Niagara'
+
+    = yield(:meta)
+    %meta{content: 'Software Niagara', name: 'author'}
+
+    = stylesheet_link_tag    'frontend/application', media: 'all'
+    = javascript_include_tag 'frontend/application'
+
+    %link{href: 'http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic', rel: 'stylesheet'}
+
+    = csrf_meta_tags
+    = yield(:head)
+
+  %body
+    .container
+      = render 'layouts/frontend/navigation'
+      = render 'layouts/frontend/header'
+    = render 'layouts/frontend/navigation_primary'
+    #banner
+      .container
+        .row
+          .span8
+            .well
+              %h2 Bringing the Niagara Software Community Together
+              %p.lead
+                We are a group of coders that have started a grassroots movement to foster a stronger software
+                community in Niagara.
+              %p.lead
+                We aim to accomplish this by holding events that will bring people with an interest in technology
+                closer together.
+    .container
+      = yield
