@@ -1,4 +1,4 @@
-h1. Software Niagara
+# Software Niagara
 
 Software Niagara is an organization dedicated to fostering a stronger software community in the Niagara Region of
 Ontario, Canada.
@@ -6,42 +6,42 @@ Ontario, Canada.
 This project contains the software used to power the Software Niagara website. IT IS A WORK IN PROGRESS AND IS
 CURRENTLY UNDER ACTIVE DEVELOPMENT.
 
-h2. More Information
+### More Information
 
 More information on Software Niagara can be had at [http://softwareniagara.com](http://softwareniagara.com).
 
-h2. Required Gems
+### Required Gems
 
 This application requires this gem:
 
 * "rails":http://rubygems.org/gems/rails
 
-h2. Dependencies
+### Dependencies
 
 To use this application, you will need:
 
 * The Ruby language (1.9.3)
 * Rails (version 3.0.4 or newer)
 
-h2. Installing the Application
+### Installing the Application
 
 * Clone the project to your hard drive
 * Run `bundle install`
 * Run `rake db:seed`
 
-h2. Getting Started
+### Getting Started
 
 * Run `rails server` to start the application.
 
-h2. Documentation and Support
+### Documentation and Support
 
 This is the only documentation.
 
-h4. Issues
+##### Issues
 
 THIS PROJECT IS A WORK IN PROGRESS AND IS CURRENTLY UNDER ACTIVE DEVELOPMENT. There are probably many issues.
 
-h2. Contributing
+### Contributing
 
 You may contribute to the Software Niagara platform or your may fork this project to build a similar website for
 another group.
@@ -56,12 +56,12 @@ If you do make improvements to this application, please share with others.
 If you add functionality to this application, create an alternative implementation, or build an application that is similar,
 please contact me and I'll add a note to the README so that others can find your work.
 
-h2. Credits
+### Credits
 
 Developed and maintained by [http://knicklabs.github.com](http://knicklabs.github.com) and
 [controlz](https://github.com/controlz) for Software Niagara.
 
-h2. License
+### License
 
 Copyright (c) 2012 Software Niagara.
 
