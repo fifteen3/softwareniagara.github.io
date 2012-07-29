@@ -58,7 +58,7 @@ please contact me and I'll add a note to the README so that others can find your
 
 ### Credits
 
-Developed and maintained by [http://knicklabs.github.com](http://knicklabs.github.com) and
+Developed and maintained by [knicklabs](http://knicklabs.github.com) and
 [controlz](https://github.com/controlz) for Software Niagara.
 
 ### License
