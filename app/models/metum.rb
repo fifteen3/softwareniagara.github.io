@@ -1,0 +1,9 @@
+class Metum
+  include Mongoid::Document
+
+  embedded_in :post
+
+  field :title,       type: String
+  field :keywords,    type: String
+  field :description, type: String
+end

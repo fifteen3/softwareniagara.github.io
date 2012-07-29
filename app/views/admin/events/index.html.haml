@@ -1,0 +1,27 @@
+- content_for :breadcrumbs do
+  %li
+    = link_to 'Events', admin_events_path
+    .point
+
+- if @events.blank?
+  %div.alert.alert-box.alert-info
+    %a.close{data: {dismiss: 'alert'}, href: '#'} x
+    %h4 No Events
+    %p
+      It looks like you haven't added any events.
+      = link_to 'Create one', new_admin_event_path
+      now.
+
+- else
+  %table.table.table-bordered.table-striped
+    %tr
+      %th Title
+      %th Author
+      %th Created
+      %th Updated
+      %th Actions
+    - @events.each do |event|
+      = render event
+
+%p
+  = link_to 'Create', new_admin_event_path, class: 'btn btn-success btn-large pull-right'

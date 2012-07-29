@@ -1,0 +1,9 @@
+- content_for :breadcrumbs do
+  %li
+    = link_to 'Posts', admin_posts_path
+    .point
+  %li
+    = link_to 'Edit', '#'
+    .point
+
+= render 'form'

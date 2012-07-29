@@ -1,0 +1,9 @@
+- content_for :breadcrumbs do
+  %li
+    = link_to 'Applicants', admin_applicants_path
+    .point
+  %li
+    = link_to 'New', '#'
+    .point
+
+= render 'form'

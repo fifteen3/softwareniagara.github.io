@@ -1,0 +1,9 @@
+- content_for :breadcrumbs do
+  %li
+    = link_to 'Email Recipients', admin_emails_path
+    .point
+  %li
+    = link_to 'Edit', '#'
+    .point
+
+= render 'form'

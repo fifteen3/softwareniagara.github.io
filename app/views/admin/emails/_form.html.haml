@@ -1,0 +1,57 @@
+= form_for [:admin, @email] do |f|
+  .row-fluid
+    .span8
+      %fieldset
+        .control-group
+          = f.label :name, class: 'control-label'
+          .controls
+            = f.text_field :name, class: 'span12'
+
+        .control-group
+          = f.label :email, class: 'control-label'
+          .controls
+            = f.text_field :email, class: 'span12'
+
+        .control-group
+          = f.label :website, class: 'control-label'
+          .controls
+            = f.text_field :website, class: 'span12'
+
+        .control-group
+          = f.label :twitter_handle, class: 'control-label'
+          .controls
+            = f.text_field :twitter_handle, class: 'span12'
+
+        .control-group
+          = f.label :location, class: 'control-label'
+          .controls
+            = f.select :location, niagara_cities, class: 'span12'
+
+        .control-group
+          = f.label :interests, class: 'control-label'
+          .controls
+            = f.text_area :interests, class: 'span12'
+
+      .form-actions
+        %button.btn.btn-success.btn-large
+          %i.icon-ok.icon-white
+          Save
+        or
+        = link_to 'Cancel', admin_emails_path
+
+    .span4
+      .well
+        %fieldset
+          %legend Subscription Options
+
+          .control-group
+            = f.label :format, class: 'control-label'
+            .controls
+              = f.select :format, email_formats, class: 'span12'
+
+          .control-group
+            = f.label :subscribed, class: 'control-label hidden'
+            .controls
+              %label.checkbox
+                = f.check_box :subscribed
+                Subscribe?

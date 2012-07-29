@@ -1,0 +1,55 @@
+= form_for [:admin, @applicant] do |f|
+  .row-fluid
+    .span8
+      %fieldset
+        .control-group
+          = f.label :name, class: 'control-label'
+          .controls
+            = f.text_field :name, class: 'span12'
+
+        .control-group
+          = f.label :company, class: 'control-label'
+          .controls
+            = f.text_field :company, class: 'span12'
+
+        .control-group
+          = f.label :email, class: 'control-label'
+          .controls
+            = f.text_field :email, class: 'span12'
+
+        .control-group
+          = f.label :website, class: 'control-label'
+          .controls
+            = f.text_field :website, class: 'span12'
+
+        .control-group
+          = f.label :twitter_handle, class: 'control-label'
+          .controls
+            = f.text_field :twitter_handle, class: 'span12'
+
+        .control-group
+          = f.label :location, class: 'control-label'
+          .controls
+            = f.select :location, niagara_cities, class: 'span12'
+
+        .control-group
+          = f.label :pitch, class: 'control-label'
+          .controls
+            = f.text_area :pitch, class: 'span12'
+
+      .form-actions
+        %button.btn.btn-success.btn-large
+          %i.icon-ok.icon-white
+          Save
+        or
+        = link_to 'Cancel', admin_applicants_path
+
+    .span4
+      .well
+        %fieldset
+          %legend Application Options
+
+          .control-group
+            = f.label :type, class: 'control-label'
+            .controls
+              = f.select :type, application_types, class: 'span12'

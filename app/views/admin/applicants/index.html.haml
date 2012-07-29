@@ -1,0 +1,27 @@
+- content_for :breadcrumbs do
+  %li
+    = link_to 'Applicants', admin_applicants_path
+    .point
+
+- if @applicants.blank?
+  %div.alert.alert-box.alert-info
+    %a.close{data: {dismiss: 'alert'}, href: '#'} x
+    %h4 No Applicants
+    %p
+      No one has applied to present at Demo Camp Niagara.
+      = link_to 'Add someone', new_admin_applicant_path
+      now.
+
+- else
+  %table.table.table-bordered.table-striped
+    %tr
+      %th Name
+      %th Email
+      %th Created
+      %th Updated
+      %th Actions
+    - @applicants.each do |applicant|
+      = render applicant
+
+%p
+  = link_to 'Add Applicant', new_admin_applicant_path, class: 'btn btn-success btn-large pull-right'
