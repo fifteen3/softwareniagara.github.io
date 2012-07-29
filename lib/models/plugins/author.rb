@@ -1,4 +1,12 @@
 module Models::Plugins::Author
+  def author
+    if self.respond_to? :author and self.attributes['author'].blank?
+      return 'Anonymous'
+    end
+
+    self.attributes['author']
+  end
+
   private
 
   def create_author
