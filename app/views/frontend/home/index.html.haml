@@ -1,0 +1,37 @@
+- content_for :banner do
+  #banner
+    .container
+      .row
+        .span8
+          .well
+            %h2 Bringing the Niagara Software Community Together
+            %p.lead
+              We are a group of coders that have started a grassroots movement to foster a stronger software
+              community in Niagara.
+            %p.lead
+              We aim to accomplish this by holding events that will bring together people that share an interest
+              in technology.
+            %p
+              = link_to 'Learn more', '#', class: 'btn btn-large btn-success'
+
+#promotions
+  .row-fluid
+    .span4
+      %h3 Mailing List
+      %p.lead
+        Sign up for our mailing list to stay up to date on what Software Niagara
+        is doing.
+      %p
+        = link_to 'Sign up', '#', class: 'btn btn-large btn-inverse'
+    .span4
+      %h3 Coming Up
+      %p.lead
+        DemoCamp is tentatively scheduled for September 12th. Stayed tuned...
+      %p
+        = link_to 'Learn more', '#', class: 'btn btn-large btn-inverse'
+    .span4
+      %h3 Applications
+      %p.lead
+        Apply to speak at an upcoming event. Our events are open to all.
+      %p
+        = link_to 'Apply now', '#', class: 'btn btn-large btn-inverse'

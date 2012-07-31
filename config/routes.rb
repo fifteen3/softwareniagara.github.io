@@ -2,7 +2,7 @@ Softwareniagara::Application.routes.draw do
   authenticated :user do
     root :to => 'frontend/home#index'
   end
-  root :to => "home#index"
+  root to: 'frontend/home#index'
   devise_for :users
   resources :users, only: [:show, :index]
 

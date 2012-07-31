@@ -1,26 +1,47 @@
-body > .container > header {
-    h1 {
-        font: {
-            size: 96px;
-            weight: 700;
-            style: bold;
-        }
-        line-height: 1em;
-        text: {
-            transform: uppercase;
-        }
-        color: #181818;
-        vertical-align: middle;
+$primaryColor: rgba(231, 231, 231, 0.75);
+$brandColor: #3A92E6;
 
-        small {
-            display: block;
-            font: {
-                size: 29px;
-                weight: 300;
-                style: normal;
+@import 'bootstrap/mixins';
+
+.navbar {
+    .navbar-inner {
+
+        @include gradient-vertical(lighten($primaryColor, 10%), $primaryColor);
+
+        a.brand {
+            color: $brandColor;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+            padding: {
+                top: 18px;
+                bottom: 18px;
             }
-            line-height: 1em;
-            color: #3B93E9;
         }
+
+        ul.nav {
+            > li {
+                a {
+                    color: darken($primaryColor, 35%);
+                    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+                    padding-top: 18px;
+                    padding-bottom: 18px;
+                }
+
+                &.divider-vertical {
+                    background-color: darken($primaryColor, 5%);
+                    border-color: lighten($primaryColor, 10%);
+                    height: 55px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 979px) {
+    .container.flush {
+        width: 100%;
+    }
+
+    .navbar {
+        margin-bottom: 0;
     }
 }
