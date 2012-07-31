@@ -15,6 +15,9 @@ Softwareniagara::Application.routes.draw do
   end
 
   scope module: 'frontend' do
-    resources :home, only: [:index]
+    resources :home
   end
+
+  match 'about', to: 'frontend/home#about', as: 'about'
+  match 'democamp', to: 'frontend/home#democamp', as: 'democamp'
 end
