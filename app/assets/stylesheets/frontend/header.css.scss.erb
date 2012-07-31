@@ -4,8 +4,9 @@ $brandColor: #3A92E6;
 @import 'bootstrap/mixins';
 
 .navbar {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.15);
     .navbar-inner {
-        border-bottom: 3px solid rgba(0, 0, 0, 0.15);
+
         @include gradient-vertical(lighten($primaryColor, 10%), $primaryColor);
 
         a.brand {
@@ -20,10 +21,14 @@ $brandColor: #3A92E6;
         ul.nav {
             > li {
                 a {
-                    color: darken($primaryColor, 35%);
+                    color: darken($primaryColor, 55%);
                     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
                     padding-top: 18px;
                     padding-bottom: 18px;
+
+                    &:hover {
+                        color: $brandColor;
+                    }
                 }
 
                 &.divider-vertical {
