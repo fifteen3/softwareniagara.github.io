@@ -1,4 +1,8 @@
 %footer
+  %h3
+    != "-== Pick a footer ==-"
+
+%footer
   .row-fluid
     .span8
       %p
@@ -11,3 +15,86 @@
       %p.pull-right
         != "Follow us on #{link_to 'Twitter', 'http://www.twitter.com/#/softwareniagara'}"
         != "or #{link_to 'Facebook', 'http://www.facebook.com'}."
+
+
+%footer
+  .row-fluid
+    .span2
+      %img(src="/assets/frontend/logo_full.png" alt="Software Niagara")
+
+    .span4
+      %h6
+        About
+      %p
+        The Software Niagara website is actively developed by a group of volunteers.
+        %a(href="/about/")
+          Learn More
+      %p
+        The code is open source and available at
+        != "#{link_to 'Github', 'https://github.com/softwareniagara/software-niagara'}."
+        Send us a pull request if you want to help out with the site.
+
+    .span4
+      %h6
+        Credits
+      %ul
+        %li
+          Banner image photographed by
+          %a(href="#")
+            _____________
+        %li
+          Logo donated by
+          %a(href="")
+            LeighAnn Frommann
+        %li
+          %a(href="#")
+            Learn More
+
+      %p
+        != "&copy; #{Time.now.strftime('%Y')} Software Niagara. All rights reserved."
+
+
+    .span1
+      %a(href="")
+        %img(src="http://placehold.it/400/3a92e6/ffffff&text=Facebook")
+
+    .span1
+      %a(href="")
+        %img(src="http://placehold.it/400/3a92e6/ffffff&text=Twitter")
+
+
+%footer
+  .row-fluid
+    .span2
+      %img(src="/assets/frontend/logo_full.png" alt="Software Niagara")
+
+    .span3
+      %h6
+        About
+      %p
+        The Software Niagara website is actively developed by a group of volunteers.
+
+      %p
+        %a(href="/about/")
+          Learn More                                                                
+          
+    .span3
+      %h6 Credits
+      %p
+        Cheers to those who made this happen and give credit where it is due.
+      %p
+        %a(href="/credits/")
+          Show Me
+
+    .span2
+      %p
+        %a(href="")
+          %img(src="http://placehold.it/150x150/3a92e6/ffffff&text=Facebook" style="height: 80px !important; width: 80px; ")
+
+        %a(href="")
+          %img(src="http://placehold.it/150x150/3a92e6/ffffff&text=Twitter" style="height: 80px !important; width: 80px;")
+
+    .span2
+      != "&copy; #{Time.now.strftime('%Y')} Software Niagara."
+      %br
+      All rights reserved.
