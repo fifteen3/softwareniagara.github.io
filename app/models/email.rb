@@ -12,4 +12,7 @@ class Email
   field :subscribed,      type: String, default: true
 
   attr_accessible :name, :email, :website, :twitter_handle, :interests, :location, :format, :subscribed
+
+  validates :email, presence: true, uniqueness: { case_sensitive: false }, email: true
+  validates :twitter_handle, allow_blank: true, format: { with: /^([a-zA-Z](_?[a-zA-Z0-9]+)*_?|_([a-zA-Z0-9]+_?)*)$/i, message: 'not a valid twitter handle' }
 end

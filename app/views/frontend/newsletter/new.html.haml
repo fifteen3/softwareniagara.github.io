@@ -1,0 +1,65 @@
+.row-fluid
+  .span12
+    .page-header
+      %h1 Join our Mailing List
+.row-fluid
+  .span12
+    %p.lead
+      Are you interested in software being developed in Niagara? Interested in the people that are making it? Or maybe
+      you want to learn a bit more about what we do. If so, sign up for our email list and we will keep you informed.
+      .row-fluid
+        .span8
+          = form_for @email, url: newsletter_index_path, method: :post, html: { class: 'form-horizontal'} do |f|
+            - if @email.errors.any?
+              .alert.alert-box.alert-error
+                %h3= "#{pluralize(@email.errors.count, 'error')} prevented this form from being submitted:"
+                %ul
+                  - @email.errors.full_messages.each do |msg|
+                    %li= msg
+            %fieldset
+              .control-group
+                = f.label :name, class: 'control-label'
+                .controls
+                  = f.text_field :name, class: 'span8'
+
+              .control-group
+                = f.label :email, 'Email (required)', class: 'control-label'
+                .controls
+                  = f.email_field :email, class: 'span8'
+
+              .control-group
+                = f.label :twitter_handle, class: 'control-label'
+                .controls
+                  = f.text_field :twitter_handle, class: 'span8'
+
+              .control-group
+                = f.label :location, class: 'control-label'
+                .controls
+                  = f.select :location, niagara_cities
+
+            %fieldset
+              .control-group
+                = f.label :interests, class: 'control-label'
+                .controls
+                  = f.text_area :interests, class: 'span12'
+                  %p.help-block
+                    Tell us about your technology interests. We will use this information when planning future events.
+
+            .form-actions
+              = f.submit 'Subscribe', class: 'btn btn-success'
+
+        .span4
+          .well
+            %h5 Why are we asking so many questions?
+            %p
+              It's market research. We want to know where you are and what you are interested in to help us plan
+              better and more relevant events.
+            %p
+              It's okay if you are not interested in divulging such information. It's entirely
+              optional. All we need is your email address to sign you up to our mailing list.
+
+            %h5 Can I unsubscribe?
+            %p
+              Yes, you can unsubscribe at any time. But we will miss you.
+
+

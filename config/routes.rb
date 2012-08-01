@@ -14,10 +14,10 @@ Softwareniagara::Application.routes.draw do
     resources :applicants
   end
 
-  scope module: 'frontend' do
-    resources :home
-  end
-
   match 'about', to: 'frontend/home#about', as: 'about'
   match 'democamp', to: 'frontend/home#democamp', as: 'democamp'
+
+  scope :module => 'frontend' do
+    resources :newsletter, only: [:new, :create]
+  end
 end
