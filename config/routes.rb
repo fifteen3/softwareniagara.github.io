@@ -19,5 +19,6 @@ Softwareniagara::Application.routes.draw do
 
   scope :module => 'frontend' do
     resources :newsletter, only: [:new, :create]
+    resources :applicants, only: [:new, :create]
   end
 end

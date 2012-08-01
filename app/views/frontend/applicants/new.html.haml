@@ -1,0 +1,80 @@
+.row-fluid
+  .span12
+    .page-header
+      %h1 Apply to Speak or Present
+.row-fluid
+  .span12
+    %p.lead
+      Are you interested in speaking or presenting at an event? Just tell us about yourself and what you want to demo
+      or speak about, and we'll do our best to slot you in at our next event.
+
+      .row-fluid
+        .span8
+          = form_for @applicant, url: applicants_path, method: :post, html: {class: 'form-horizontal'} do |f|
+            - if @applicant.errors.any?
+              .alert.alert-box.alert-error
+                %h3= "#{pluralize(@applicant.errors.count, 'error')} prevented this form from being submitted:"
+                %ul
+                  - @applicant.errors.full_messages.each do |msg|
+                    %li= msg
+            %fieldset
+              .control-group
+                = f.label :name, 'Name (required)', class: 'control-label'
+                .controls
+                  = f.text_field :name, class: 'span8'
+
+              .control-group
+                = f.label :company, class: 'control-label'
+                .controls
+                  = f.text_field :company, class: 'span8'
+
+              .control-group
+                = f.label :email, 'Email (required)', class: 'control-label'
+                .controls
+                  = f.email_field :email, class: 'span8'
+
+              .control-group
+                = f.label :twitter_handle, class: 'control-label'
+                .controls
+                  = f.text_field :twitter_handle, class: 'span8'
+
+              .control-group
+                = f.label :website, class: 'control-label'
+                .controls
+                  = f.url_field :website, class: 'span8'
+
+              .control-group
+                = f.label :location, class: 'control-label'
+                .controls
+                  = f.select :location, niagara_cities
+
+              .control-group
+                = f.label :type, 'Event Type', class: 'control-label'
+                .controls
+                  = f.select :type, ['Demo Camp']
+
+            %fieldset
+              .control-group
+                = f.label :pitch, 'Pitch (required)', class: 'control-label'
+                .controls
+                  = f.text_area :pitch, class: 'span12'
+                  %p.help-block
+                    Tell us why you want to speak or present at our event and provide details on your topic. Including
+                    links is helpful.
+
+            .form-actions
+              = f.submit 'Subscribe', class: 'btn btn-success'
+
+        .span4
+          .well
+            %h5 Why are we asking so many questions?
+            %p
+              It's market research. We want to know where you are and what you are interested in to help us plan
+              better and more relevant events.
+            %p
+              It's okay if you are not interested in divulging such information. It's entirely
+              optional. All we need is your email address to sign you up to our mailing list.
+
+            %h5 Can I unsubscribe?
+            %p
+              Yes, you can unsubscribe at any time. But we will miss you.
