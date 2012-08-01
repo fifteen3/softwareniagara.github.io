@@ -10,7 +10,7 @@
     = yield(:meta)
     %meta{content: 'Software Niagara', name: 'author'}
 
-    = stylesheet_link_tag    'application', media: 'all'
+    = stylesheet_link_tag    'frontend/application', media: 'all'
     = javascript_include_tag 'frontend/application'
 
     %link{href: 'http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic', rel: 'stylesheet'}
@@ -23,6 +23,8 @@
       = render 'layouts/frontend/header'
     = yield :banner
     .container
+      = render 'layouts/frontend/messages'
+
       .content
         = yield
       = render 'layouts/frontend/footer'

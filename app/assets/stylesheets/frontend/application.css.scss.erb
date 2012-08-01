@@ -21,12 +21,48 @@ $iconWhiteSpritePath: asset-url('glyphicons-halflings-white.png', image);
 @import "bootstrap/mixins";
 
 body {
-    padding-top: 70px;
+    padding-top: 90px;
     background: #f5f5f5 url(<%= asset_path 'admin/bg.png' %>) top left repeat;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Ubuntu', 'Helvetica Neue', 'Arial', 'Helvetica', sans-serif;
+  color: #53A853;
+}
+
+.alert {
+    h1, h2, h3, h4, h5, h6 {
+        color: #262626;
+    }
+
+    &.alert-error {
+        h1, h2, h3, h4, h5, h6 {
+            color: #B94A5C;
+        }
+    }
+}
+
+.page-header {
+    h1 {
+        color: #53A853;
+        font-weight: 300;
+    }
+}
+
+form {
+    .field_with_errors {
+        label {
+            color: #B94A5C;
+        }
+
+        input {
+            border-color: #B94A5C;
+        }
+    }
+
+    .form-actions {
+        padding-top: 20px;
+    }
 }
 
 .content {
