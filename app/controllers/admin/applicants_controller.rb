@@ -27,11 +27,11 @@ class Admin::ApplicantsController < Admin::ApplicationController
   end
 
   def create
-    @applicant = Applicant.new(params[:applicant])
+    @applicant = Applicant.new(params[:applicants])
 
     respond_to do |format|
       if @applicant.save
-        format.html { redirect_to edit_admin_applicant_path(@applicant), notice: 'Added applicant.' }
+        format.html { redirect_to edit_admin_applicant_path(@applicant), notice: 'Added applicants.' }
         format.json { render json: @applicant, status: :created }
         format.xml { render xml: @applicant, status: :created }
       end
@@ -46,8 +46,8 @@ class Admin::ApplicantsController < Admin::ApplicationController
 
   def update
     respond_to do |format|
-      if @applicant.update_attributes(params[:applicant])
-        format.html { redirect_to edit_admin_email_path(@applicant), notice: 'Updated applicant.' }
+      if @applicant.update_attributes(params[:applicants])
+        format.html { redirect_to edit_admin_email_path(@applicant), notice: 'Updated applicants.' }
         format.json { render json: @applicant, status: :ok }
         format.xml { render xml: @applicant, status: :ok }
       else
