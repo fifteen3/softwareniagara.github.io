@@ -1,23 +1,4 @@
 %footer
-  %h3
-    != "-== Pick a footer ==-"
-
-%footer
-  .row-fluid
-    .span8
-      %p
-        != "&copy; #{Time.now.strftime('%Y')} Software Niagara. All rights reserved."
-        The Software Niagara website is actively developed by a group of volunteers. The code is open source and
-        available at
-        != "#{link_to 'Github', 'https://github.com/softwareniagara/software-niagara'}."
-        Send us a pull request if you want to help out with the site.
-    .span4
-      %p.pull-right
-        != "Follow us on #{link_to 'Twitter', 'http://www.twitter.com/#/softwareniagara'}"
-        != "or #{link_to 'Facebook', 'http://www.facebook.com'}."
-
-
-%footer
   .row-fluid
     .span2
       %img(src="/assets/frontend/logo_full.png" alt="Software Niagara")
@@ -61,40 +42,3 @@
     .span1
       %a(href="")
         %img(src="http://placehold.it/400/3a92e6/ffffff&text=Twitter")
-
-
-%footer
-  .row-fluid
-    .span2
-      %img(src="/assets/frontend/logo_full.png" alt="Software Niagara")
-
-    .span3
-      %h6
-        About
-      %p
-        The Software Niagara website is actively developed by a group of volunteers.
-
-      %p
-        %a(href="/about/")
-          Learn More                                                                
-          
-    .span3
-      %h6 Credits
-      %p
-        Cheers to those who made this happen and give credit where it is due.
-      %p
-        %a(href="/credits/")
-          Show Me
-
-    .span2
-      %p
-        %a(href="")
-          %img(src="http://placehold.it/150x150/3a92e6/ffffff&text=Facebook" style="height: 80px !important; width: 80px; ")
-
-        %a(href="")
-          %img(src="http://placehold.it/150x150/3a92e6/ffffff&text=Twitter" style="height: 80px !important; width: 80px;")
-
-    .span2
-      != "&copy; #{Time.now.strftime('%Y')} Software Niagara."
-      %br
-      All rights reserved.
