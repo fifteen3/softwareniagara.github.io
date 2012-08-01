@@ -1,6 +1,7 @@
 module ApplicationHelper
   def niagara_cities
      [
+      'Undisclosed',
       'Fort Erie',
       'Grimsby',
       'Lincoln',
