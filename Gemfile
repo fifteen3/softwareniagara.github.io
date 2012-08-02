@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '1.9.3'
 gem 'rails', '3.2.7'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -24,3 +25,4 @@ gem 'gravatar_image_tag'
 gem 'heroku'
 gem 'geocoder', git: 'https://github.com/alexreisner/geocoder.git', branch: 'master'
 gem 'omg_validator', '~> 0.0.8'
+gem 'newrelic_rpm'
