@@ -18,11 +18,12 @@
           = render 'layouts/admin/navigation'
     #main{:role => "main"}
       .container
-        .breadcrumbs
-          .row
-            .span12
-              %ul.unstyled
-                = yield(:breadcrumbs)
+        - if user_signed_in?
+          .breadcrumbs
+            .row
+              .span12
+                %ul.unstyled
+                  = yield(:breadcrumbs)
 
         .content
           .row
