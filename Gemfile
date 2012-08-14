@@ -26,3 +26,4 @@ gem 'heroku'
 gem 'geocoder', git: 'https://github.com/alexreisner/geocoder.git', branch: 'master'
 gem 'omg_validator', '~> 0.0.8'
 gem 'newrelic_rpm'
+gem 'quiet_assets', :group => :development

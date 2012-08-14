@@ -116,6 +116,8 @@ GEM
     origin (1.0.4)
     orm_adapter (0.4.0)
     polyglot (0.3.3)
+    quiet_assets (1.0.1)
+      railties (~> 3.1)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -204,6 +206,7 @@ DEPENDENCIES
   mongoid-rspec (= 1.4.6)
   newrelic_rpm
   omg_validator (~> 0.0.8)
+  quiet_assets
   rails (= 3.2.7)
   rolify (>= 3.1.0)
   rspec-rails (>= 2.11.0)
