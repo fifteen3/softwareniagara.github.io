@@ -6,7 +6,7 @@
     padding-top: 220px;
     margin-top: -90px;
     margin-bottom: 20px;
-    background: transparent url(<%= asset_path 'frontend/banner.jpg' %>) bottom center no-repeat;
+    background: transparent url(<%= asset_path 'frontend/banner_demo.jpg' %>) bottom center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
@@ -27,9 +27,13 @@
             @include box-shadow(0 1px 0 rgba(255, 255, 255, 0.15));
         }
     
-        p.lead {
+        p, p.lead {
             tex-shadow: 0 -1px rgba(0, 0, 0, 0.75);
             color: rgba(255, 255, 255, 0.75);
+        }
+    
+        p {
+            color: #aeaeae;
         }
     }
 }
