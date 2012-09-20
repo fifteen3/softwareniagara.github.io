@@ -1,0 +1,72 @@
+/* 
+* Custom Styles used in the presentation 
+*/
+.clear {
+	clear: both;
+}
+
+.slides  section {
+	padding-top: 0 !important;
+}
+.reveal .slides  h1, .reveal .slides  h2 {
+	margin-top: 20px;
+}
+.reveal .slides .header {
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top, rgb(255,255,255) 0%, rgb(231,231,231) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(255,255,255)), color-stop(100%,rgb(231,231,231)));
+	background: -webkit-linear-gradient(top, rgb(255,255,255) 0%,rgb(231,231,231) 100%);
+	background: linear-gradient(to bottom, rgb(255,255,255) 0%,rgb(231,231,231) 100%);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+	border-bottom: 3px solid rgba(0, 0, 0, 0.15)
+	height: 80px;
+	padding: 0 25px;
+}
+.reveal .slides .header h1 {
+	margin-top: 0;	
+	float: left;
+	width: 200px;
+	background-image: url('../img/sn-logo.png');
+	height: 80px;
+	text-indent: -99999px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-bottom: 0 !important;
+	padding: 0;
+}
+.reveal .slides .header .url {
+	float: right;
+	color: #00aac8;
+	line-height: 80px;
+	font-size: 0.7em;
+}
+.reveal .slides .sponsors-horizontal {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 55px;
+}
+.sponsors-horizontal img {
+	vertical-align: middle;
+	margin-left: 20px !important;
+	margin-right: 20px !important;	
+}
+.reveal .slides .sponsors-horizontal h4 {
+	
+}
+
+.sponsors-vertical {
+	float: left;
+	margin-top: 20px;
+}
+.sponsors-vertical div {
+	text-align: center;
+	width: 380px;
+} 
+.sponsors-vertical div img {
+	margin: 10px !important;
+}
+
+.twitter-feed {
+	float: right;
+	margin-right: 30px;
+}
