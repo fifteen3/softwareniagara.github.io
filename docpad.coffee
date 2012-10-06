@@ -80,6 +80,10 @@ docpadConfig = {
 		posts: (database) ->
 			database.findAllLive({relativeOutDirPath:'posts'},[date:-1])
 
+		# This one, will fetch in all documents that have the tag "event" specified in their meta data
+		events: (database) ->
+			database.findAllLive({relativeOutDirPath:'events'},[date:-1])
+
 
 	# =================================
 	# DocPad Events
