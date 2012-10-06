@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="row">
+	<div class="span8">
+		<article class="event" id="event">
+			<header>
+				<h1>
+					<%= @document.title %>
+				</h1>
+			</header>
+			<div class="content">
+				<%- @content %>
+			</div>
+		</article>
+	</div>
+	<div class="span4">
+		<article class="event-meta well" id="event-meta">
+			<section class="event-meta event-meta-datetime">
+				<h3>Date &amp; Time</h3>
+				<%= @document.date.toShortDateString() %><br>
+				<%= @document.time %>
+			</section>
+
+			<section class="event-meta event-meta-address">
+				<h3>Address</h3>
+				<%= @document.venue %>
+				<br>
+				<%- @document.address %>
+			</section>
+
+			<section class="event-meta event-meta-register">
+				<h3>Registration</h3>
+				<a href="<%= @document.register %>" title="Register Online">
+					Register for <%= @document.cost %>
+				</a>
+			</section>
+		</article>
+	</div>
+</div>
