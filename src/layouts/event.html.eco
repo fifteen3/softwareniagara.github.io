@@ -3,37 +3,47 @@ layout: default
 ---
 
 <div class="row">
-	<div class="span8">
+	<div class="twelve columns">
+		<ul class="breadcrumbs">
+			<li><a href="/">Home</a></li>
+			<li><a href="/pages/events">Events</a></li>
+			<li class="current"><a href="#"><%= @document.title %></a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="row">
+	<div class="eight columns">
 		<article class="event" id="event">
 			<header>
-				<h1>
+				<h2>
 					<%= @document.title %>
-				</h1>
+				</h2>
 			</header>
 			<div class="content">
 				<%- @content %>
 			</div>
 		</article>
 	</div>
-	<div class="span4">
-		<article class="event-meta well" id="event-meta">
+	<div class="four columns">
+		<article class="event-meta panel" id="event-meta">
 			<section class="event-meta event-meta-datetime">
-				<h3>Date &amp; Time</h3>
-				<%= @document.date.toShortDateString() %><br>
+				<h3><i class="foundicon-calendar"></i>Date &amp; Time</h3>
+				<strong><%= @document.date.toShortDateString() %></strong><br>
 				<%= @document.time %>
 			</section>
 
 			<section class="event-meta event-meta-address">
-				<h3>Address</h3>
-				<%= @document.venue %>
+				<h3><i class="foundicon-location"></i>Address</h3>
+				<strong><%= @document.venue %></strong>
 				<br>
 				<%- @document.address %>
 			</section>
 
 			<section class="event-meta event-meta-register">
-				<h3>Registration</h3>
-				<a href="<%= @document.register %>" title="Register Online">
-					Register for <%= @document.cost %>
+				<h3><i class="foundicon-edit"></i>Registration</h3>
+				<a href="<%= @document.register %>" title="Register Online" class="large button">
+					Sign-up for <%= @document.cost %>
 				</a>
 			</section>
 		</article>
