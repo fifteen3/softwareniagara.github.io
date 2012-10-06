@@ -1,10 +1,85 @@
+body
+	background-color #F2F2F2
+
+h1, h2, h3, h4, h5, h6
+	font-family 'Open Sans Condensed', sans-serif
+	font-weight 400
+
 a, a:link
 	cursor pointer
 
-body
-	padding-top 60px
+.top-bar
+	background-color #00aac8
 
-table
-	tfoot, tbody
-		th
-			border-top 1px solid #DDD
+	li.name h1 a
+		font-family 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif
+		font-weight normal
+		color white
+		text-shadow 0 -1px #318FA8
+
+	li.name h1 a:hover
+		background-color #308DA6
+
+	ul > li.has-dropdown:hover
+		background-color #308DA6
+
+	ul > li.has-dropdown a
+		padding-right 15px
+
+	ul > li.has-dropdown a:hover
+		background-color #308DA6	
+
+	ul > li.has-dropdown a::after
+		display none
+
+	ul > li.has-dropdown ul.dropdown,
+	ul > li.has-dropdown ul.dropdown li,
+	ul > li.has-dropdown ul.dropdown li a
+		background-color #308DA6
+
+	ul > li.has-dropdown ul.dropdown li a:hover 
+		background-color #3AAAC8
+		color white
+
+.main.container
+	background-color white
+	padding-top 60px
+	border-bottom 1px solid #E9E9E9
+
+.panel h3
+	margin-top 30px
+	margin-bottom 10px
+
+.panel i
+	color #A6A6A6
+
+ul.breadcrumbs
+	padding-left 0
+	padding-right 0
+	border-top none
+	border-left none
+	border-right none
+	background-color transparent
+	border-radius 0
+
+.colophon
+	padding-top 29px 
+	padding-bottom 30px
+
+	.logo
+		height 80px
+		width 138px
+
+	.credits
+		font-size 13px
+		text-align right
+		margin-bottom 0
+
+	.social
+		margin-bottom 0
+
+	.social li i
+		font-size 48px
+
+	.social li a 
+		color #414142
