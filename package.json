@@ -1,8 +1,8 @@
 {
-	"name": "Software Niagara",
-	"version": "1.0",
-	"description": "The Software Niagara website.",
-	"homepage": "http://softwareniagara.com",
+	"name": "twitter-bootstrap.docpad",
+	"version": "0.9.0",
+	"description": "Twitter Bootstrap skeleton for DocPad. Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.",
+	"homepage": "https://github.com/bevry/twitter-bootstrap.docpad",
 	"keywords": [
 		"docpad-skeleton",
 		"docpad",
@@ -10,21 +10,19 @@
 		"bootstrap",
 		"twitter bootstrap"
 	],
-	"author": "Software Niagara <info@softwareniagara.com> (http://softwareniagara.com)",
+	"author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
 	"maintainers": [
-		"Nickolas Kenyeres <nickolas@softwareniagara.com> (http://softwareniagara.com)",
-        "Michael Mottola <michael@softwareniagara.com> (http://softwareniagara.com)"
+		"Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
 	],
 	"contributors": [
-		"Nickolas Kenyeres <nickolas@softwareniagara.com> (http://softwareniagara.com)",
-        "Michael Mottola <michael@softwareniagara.com> (http://softwareniagara.com)"
+		"Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
 	],
 	"bugs": {
-		"url": "https://github.com/softwareniagara/software-niagara/issues"
+		"url": "https://github.com/docpad/twitter-bootstrap.docpad/issues"
 	},
 	"repository" : {
 		"type" : "git",
-		"url" : "https://github.com/softwareniagara/software-niagara.git"
+		"url" : "http://github.com/docpad/twitter-bootstrap.docpad.git"
 	},
 	"engines" : {
 		"node": "0.8.x",
