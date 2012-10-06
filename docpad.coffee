@@ -12,32 +12,33 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://website.com"
+			url: "http://softwareniagara.com"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
-				'www.website.com',
-				'website.herokuapp.com'
+				'www.softwareniagara.com',
 			]
 
 			# The default title of our website
-			title: "Your Website"
+			title: "Software Niagara"
 
 			# The website description (for SEO)
 			description: """
-				When your website appears in search results in say Google, the text here will be shown underneath your website's title.
-				"""
+				Software Niagara is a group of designers, developers, and entrepreneurs with a belief that Niagara is a great
+		    place to create. And we have the will to make it even better.
+      	"""
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
-				"""
+				software, apps, application, development, design, programming, niagara, st catharines, welland, fort erie,
+		    port colborne, thorold, beamsville, lincoln
+      	"""
 
 			# The website author's name
-			author: "Your Name"
+			author: "Software Niagara"
 
 			# The website author's email
-			email: "your@email.com"
+			email: "info@softwareniagara.com"
 
 
 
