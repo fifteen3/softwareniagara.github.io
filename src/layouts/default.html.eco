@@ -74,37 +74,36 @@
 		</section>
 	</div><!-- /container -->
 
-	<footer>
-			<div class="twelve columns">
-				<section class="colophon">
-						<div class="three columns">
-							<img src="/graphics/logo.png" class="logo">
-						</div>
-						<div class="nine columns">
-							<p class="credits">
-								&copy; Software Niagara 2012. All rights reserved. This website was last updated at <%= @site.date.toISOString() %>.
-							</p>
-
-							<ul class="link-list social right">
-								<li>
-									<a href="http://www.twitter.com/softwareniagara" title="Software Niagara on Twitter">
-										<i class="social-foundicon-twitter"></i>
-									</a>
-								</li>
-								<li>
-									<a href="http://www.facebook.com/softwareniagara" title="Software Niagara on Facebook">
-										<i class="social-foundicon-facebook"></i>
-									</a>
-								</li>
-								<li>
-									<a href="http://www.github.com/softwareniagara" title="Software Niagara on Github">
-										<i class="social-foundicon-github"></i>
-									</a>
-								</li>
-							</ul>
-					</div>
-				</section>
+	<footer class="footer container">
+		<div class="row">
+			<div class="three columns">
+				<img src="/graphics/logo.png" lass="logo">
 			</div>
+			<div class="nine columns">
+				<p class="credits">
+					&copy; Software Niagara 2012. All rights reserved. This website was last updated on 
+					<%= @site.date.toShortDateString() %>.
+				</p>
+
+				<ul class="link-list social right">
+					<li>
+						<a href="http://www.twitter.com/softwareniagara" title="Software Niagara on Twitter">
+							<i class="social-foundicon-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.facebook.com/softwareniagara" title="Software Niagara on Facebook">
+							<i class="social-foundicon-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.github.com/softwareniagara" title="Software Niagara on Github">
+							<i class="social-foundicon-github"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</footer>
 
 	<!-- Scripts -->

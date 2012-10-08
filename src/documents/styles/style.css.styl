@@ -1,88 +1,98 @@
+brandColor = #00AAC8
+accentColor = #D5219D
+logoFont = 'Charcoal CY', 'Helvetica Neueu', 'Arial', 'Helvetica', san-serif
+headFont = 'Open Sans Condensed', sans-serif
+
 body
-	background-color #F2F2F2
+	background white url('/graphics/bg.png') top left repeat
+	padding-top 60px
 
 h1, h2, h3, h4, h5, h6
-	font-family 'Open Sans Condensed', sans-serif
+	font-family headFont
 	font-weight 400
+
+h2
+	border-bottom 1px dotted #262626
+	padding-bottom 10px
 
 a, a:link
 	cursor pointer
 
+/* --------------------------------------------
+ * Components
+ * -------------------------------------------- */
+
 .button
-	background-color #3AAAC8
-	border-color #3396B0
-	text-shadow 0 -1px #3396B0
+	background-color accentColor
+	border-color darken(accentColor, 5%)
+	text-shadow 0 -1px darken(accentColor, 5%)
+	&:hover
+		background-color lighten(accentColor, 5%)
 
-.button:hover
-	background-color #3FB9DA
-
-.top-bar
-	background linear-gradient(top, white, black)
-	border-bottom 1px solid #000
+.top-bar,
+.top-bar ul > li.name h1 a,
+.top-bar ul > li.has-dropdown a
 	height 60px
+	line-height 60px
 
-	li.name h1 a
+.top-bar ul > li.name h1 a
 		background transparent url('/graphics/symbol.png') 15px center no-repeat
-		font-family 'Charcoal CY', 'Helvetica Neueue', Arial, Helvetica, sans-serif
+		font-family logoFont
 		color white
 		padding-left 105px
-		height 60px
-		line-height 60px
-		text-shadow 0 -1px #000
+		text-shadow 0 -1px black
 
-	li.name h1 a span.location
-		color #00AAC8
+		span.location
+			color brandColor
 
-	ul > li.has-dropdown a
+.top-bar ul > li.has-dropdown a
 		padding-right 15px
-		height 60px
-		line-height 60px
 
-	ul > li.has-dropdown a::after
-		display none
+		&::after
+			display none
 
-.main
-	background white url('/graphics/bg.png') top left repeat
-	padding-top 60px
-	border-bottom 1px solid #E9E9E9
+
+ul.breadcrumbs
+	padding 15px 25px
+	border none
+	background brandColor
+	border-radius 0
+	margin 0 -25px
+	margin-bottom 20px		
+
+	li:before
+		color darken(brandColor, 10%)
+
+	li a
+		color white	
+
+/* --------------------------------------------
+ * Layout
+ * -------------------------------------------- */
 
 .main .container
 	background white
 	width 960px
 	margin 30px auto
-	margin-bottom 50px
 	box-shadow 0 0 6px rgba(0, 0, 0, 0.15)
 
-.panel h3
-	margin-top 30px
+.panel h5
+	margin-top 0
 	margin-bottom 10px
 
 .panel i
 	color #CDCDCD
 
-ul.breadcrumbs
-	padding-left 0
-	padding-right 0
-	border-top none
-	border-left none
-	border-right none
-	background-color #00AAC8
-	border-radius 0
-	margin 0 -25px
-	margin-bottom 20px
-	padding-left 25px
-	padding-right 25px
+section.event-meta
+	margin-bottom 30px
 
-	li:before
-		color #2F8AA3
-
-	li a
-		color white
-
-
-.colophon
-	padding-top 29px 
-	padding-bottom 30px
+.footer.container
+	background white
+	width 960px
+	margin 30px auto
+	margin-top 0
+	padding 20px 0
+	box-shadow 0 0 6px rgba(0, 0, 0, 0.15)
 
 	.logo
 		height 80px
@@ -90,14 +100,17 @@ ul.breadcrumbs
 
 	.credits
 		font-size 13px
-		text-align right
+		text-align right 
 		margin-bottom 0
 
-	.social
+	.social.link-list
 		margin-bottom 0
 
-	.social li i
-		font-size 48px
+		li i
+			font-size 48px
 
-	.social li a 
-		color #414142
+		li a
+			color accentColor
+
+			&:hover
+				color lighten(accentColor, 5%)
