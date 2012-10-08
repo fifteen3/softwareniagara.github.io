@@ -4,10 +4,28 @@ layout: page
 pageOrder: 3
 ---
 
-<nav class="linklist">
-	<% for document in @getCollection('events').toJSON(): %>
-		<li><span><%= document.date.toShortDateString() %></span>
-		&raquo;
-		<a href="<%= document.url %>"><%= document.title %></a></li>
-	<% end %>
+<nav>
+	<ul>
+		<% for document in @getCollection('events').toJSON(): %>
+			<li>
+				<a href="<%= document.url %>" title="<%= document.title %>">
+					<div class="row">
+						<div class="three columns event-listing type-<%= document.type %>">
+							<span class="event-listing-type"><%= document.type %></span>
+						</div>
+						<div class="six columns">
+							<hgroup>
+								<h3><%= document.title %></h3>
+								<h5><%= document.location %></h5>
+						</div>
+						<div class="three columns">
+							<span class="event-listing-date">
+								<%= document.date.toShortDateString() %>
+							</span>
+						</div>
+					</div>
+				</a>
+			</li>
+		<% end %>
+	</ul>
 </nav>
