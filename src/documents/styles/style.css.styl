@@ -17,43 +17,41 @@ a, a:link
 	background-color #3FB9DA
 
 .top-bar
-	background-color #00aac8
-	border-bottom 1px solid #3396B0
+	background linear-gradient(top, white, black)
+	border-bottom 1px solid #000
+	height 60px
 
 	li.name h1 a
-		font-family 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif
-		font-weight normal
+		background transparent url('/graphics/symbol.png') 15px center no-repeat
+		font-family 'Charcoal CY', 'Helvetica Neueue', Arial, Helvetica, sans-serif
 		color white
-		text-shadow 0 -1px #318FA8
+		padding-left 105px
+		height 60px
+		line-height 60px
+		text-shadow 0 -1px #000
 
-	li.name h1 a:hover
-		background-color #308DA6
-
-	ul > li.has-dropdown:hover
-		background-color #308DA6
+	li.name h1 a span.location
+		color #00AAC8
 
 	ul > li.has-dropdown a
 		padding-right 15px
-
-	ul > li.has-dropdown a:hover
-		background-color #308DA6	
+		height 60px
+		line-height 60px
 
 	ul > li.has-dropdown a::after
 		display none
 
-	ul > li.has-dropdown ul.dropdown,
-	ul > li.has-dropdown ul.dropdown li,
-	ul > li.has-dropdown ul.dropdown li a
-		background-color #308DA6
-
-	ul > li.has-dropdown ul.dropdown li a:hover 
-		background-color #3FB9DA
-		color white
-
-.main.container
-	background-color white
+.main
+	background white url('/graphics/bg.png') top left repeat
 	padding-top 60px
 	border-bottom 1px solid #E9E9E9
+
+.main .container
+	background white
+	width 960px
+	margin 30px auto
+	margin-bottom 50px
+	box-shadow 0 0 6px rgba(0, 0, 0, 0.15)
 
 .panel h3
 	margin-top 30px
@@ -68,8 +66,19 @@ ul.breadcrumbs
 	border-top none
 	border-left none
 	border-right none
-	background-color transparent
+	background-color #00AAC8
 	border-radius 0
+	margin 0 -25px
+	margin-bottom 20px
+	padding-left 25px
+	padding-right 25px
+
+	li:before
+		color #2F8AA3
+
+	li a
+		color white
+
 
 .colophon
 	padding-top 29px 
