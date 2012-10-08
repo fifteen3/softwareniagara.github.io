@@ -44,7 +44,13 @@
 <body>
 	<nav class="top-bar fixed">
 		<ul>
-			<li class="name"><h1><a href="/" title="Software Niagara">Software Niagara</a></h1></li>
+			<li class="name">
+				<h1>
+					<a href="/" title="Software Niagara">
+						Software <span class="location">Niagara</span>
+					</a>
+				</h1>
+			</li>
 		</ul>
 		<section>
 			<ul class="right">
@@ -62,8 +68,8 @@
 		</section>
 	</nav>
 
-	<div class="main container">
-		<section id="content" class="content">
+	<div class="main">
+		<section id="content" class="content container">
 			<%- @content %>
 		</section>
 	</div><!-- /container -->

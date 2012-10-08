@@ -28,20 +28,20 @@ layout: default
 	<div class="four columns">
 		<article class="event-meta panel" id="event-meta">
 			<section class="event-meta event-meta-datetime">
-				<h3><i class="foundicon-calendar"></i>Date &amp; Time</h3>
+				<h5><i class="foundicon-calendar"></i>Date &amp; Time</h5>
 				<strong><%= @document.date.toShortDateString() %></strong><br>
 				<%= @document.time %>
 			</section>
 
 			<section class="event-meta event-meta-address">
-				<h3><i class="foundicon-location"></i>Address</h3>
+				<h5><i class="foundicon-location"></i>Address</h5>
 				<strong><%= @document.venue %></strong>
 				<br>
 				<%- @document.address %>
 			</section>
 
 			<section class="event-meta event-meta-register">
-				<h3><i class="foundicon-edit"></i>Registration</h3>
+				<h5><i class="foundicon-edit"></i>Registration</h5>
 				<a href="<%= @document.register %>" title="Register Online" class="large button">
 					Sign-up for <%= @document.cost %>
 				</a>
