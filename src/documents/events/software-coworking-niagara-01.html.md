@@ -1,9 +1,11 @@
 ---
 title: Software Coworking One
+type: cw
 layout: event
 tags: ['coworking','event']
 venue: Starbucks Coffee Company
 address: "306 Lake Street<br>St. Catharines, ON L2N 4H2<br>Canada"
+location: Starbucks, Lake Street, St. Catharines
 date: "10-22-2012"
 time: "6:00PM - Late"
 cost: Free

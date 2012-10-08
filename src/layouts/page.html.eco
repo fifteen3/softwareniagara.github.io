@@ -2,7 +2,21 @@
 layout: default
 ---
 
-<article id="page" class="page">
-	<h1><%= @document.title %></h1>
-	<div class="page-content"><%- @content %></div>
-</article>
+<div class="row">
+	<div class="twelve columns">
+		<ul class="breadcrumbs">
+			<li><a href="/">Home</a></li>
+			<li class="current"><a href="#"><%= @document.title %></a></li>
+		</ul>
+	</div>
+</div>
+<div class="row">
+	<div class="twelve columns">
+		<article id="page" class="page">
+			<h2><%= @document.title %></h2>
+			<div class="page-content">
+				<%- @content %>
+			</div>
+		</article>
+	</div>
+</div>
