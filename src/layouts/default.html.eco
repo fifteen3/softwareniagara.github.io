@@ -39,6 +39,7 @@
 
 	<!-- Styles -->
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Yanone+Kaffeesatz:200,400,700" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 	<%- @getBlock('styles').add(["/vendor/zurb-foundation/stylesheets/foundation.css","/styles/style.css"]).toHTML() %>
 </head>
 <body>
