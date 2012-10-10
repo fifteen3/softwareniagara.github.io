@@ -10,8 +10,9 @@ headFont = 'Open Sans Condensed', sans-serif
  * -------------------------------------------- */
 
 body
-	background white url('/graphics/bg.png') top left repeat
+	background #efefef url('/graphics/bg.png') top left repeat
 	padding-top 60px
+	font-family 'Droid Sans', sans-serif
 
 h1, h2, h3, h4, h5, h6
 	font-family headFont
@@ -20,6 +21,9 @@ h1, h2, h3, h4, h5, h6
 h2
 	border-bottom 1px dotted #262626
 	padding-bottom 10px
+
+p, li, dd, dt 
+	font-family 'Droid Sans', sans-serif
 
 a, a:link
 	cursor pointer
@@ -63,6 +67,10 @@ a.button,
 
 		&::after
 			display none
+
+.top-bar ul > li.has-dropdown ul.dropdown,
+.top-bar ul > li.has-dropdown ul.dropdown li
+	background #000
 
 
 ul.breadcrumbs
