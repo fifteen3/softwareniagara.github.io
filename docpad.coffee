@@ -84,6 +84,10 @@ docpadConfig = {
 		events: (database) ->
 			database.findAllLive({relativeOutDirPath:'events'},[date:-1])
 
+		# This one, will fetch in all documents that have the tag "bio" specified in their meta data
+		bios: (database) ->
+			database.findAllLive({relativeOutDirPath:'bios'},[name:-1])
+
 
 	# =================================
 	# DocPad Events
