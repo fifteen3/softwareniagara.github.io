@@ -1,5 +1,6 @@
 brandColor = #00AAC8
 accentColor = #D5219D
+blandColor = #A8A8A8
 cwColor = accentColor
 dcColor = #800080
 logoFont = 'Charcoal CY', 'Helvetica Neueu', 'Arial', 'Helvetica', san-serif
@@ -43,7 +44,7 @@ a.button,
 	text-shadow 0 -1px darken(accentColor, 5%)
 	color white
 	&:hover
-		background-color lighten(accentColor, 5%)
+		background-color lighten(accentColor, 10%)
 		color white
 
 .top-bar,
@@ -132,6 +133,12 @@ section.event-meta
 					:hover
 						background-color #f5f5f5
 
+						.type-dc span
+							background-color dcColor
+
+						.type-cw span
+							background-color cwColor
+
 					[class*="type-"]
 						position relative
 
@@ -182,7 +189,7 @@ section.event-meta
 			font-size 48px
 
 		li a
-			color accentColor
+			color blandColor
 
 			&:hover
-				color lighten(accentColor, 5%)
+				color lighten(blandColor, 10%)
