@@ -1,20 +1,21 @@
 /* the humans responsible & colophon */
 /* humanstxt.org */
 
-
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
+  Developer: Nickolas Kenyeres
+  Site: http://knicklabs.github.com
+  Twitter: @knicklabs
+  Location: St. Catharines, ON Canada
 
-/* THANKS */
-  Names (& URL):
+  Developer: Michael Mottola
+  Site: http://michaelencode.com
+  Twitter: @michael_mottola
+  Location: Niagara Falls, ON Canada
 
 /* SITE */
   Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software:
+  Components: Zurb Foundation, Modernizr, jQuery
+  Software: WebStorm, Sublime Text 2, Adobe Photoshop
 
 
 
