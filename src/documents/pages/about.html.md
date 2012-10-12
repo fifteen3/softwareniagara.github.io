@@ -1,6 +1,6 @@
 ---
 title: 'About Software Niagara'
-layout: page
+layout: about
 tags: ['intro','page']
 pageOrder: 1
 ---
