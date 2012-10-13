@@ -1,15 +1,15 @@
 ---
-title: 'About Software Niagara'
-layout: about
-tags: ['intro','page']
-pageOrder: 1
+title: 		'About Software Niagara'
+layout: 	about
+tags: 		['intro','page']
+pageOrder: 	1
 ---
 
 Software Niagara is a group of designers, developers, and entrepreneurs with a belief that Niagara is a great place to create. And we have the will to make it better.
 
 It is our goal — our passion — to build a stronger software community. Because through sharing and collaboration, we can make great things.
 
-Our Plans
+###Our Plans
 We plan to accomplish our goal through the following actions:
 
 * Organize Demo Camps and other social events
@@ -17,8 +17,9 @@ We plan to accomplish our goal through the following actions:
 * Promote other technology-related events and groups
 * Support hacking to improve our community
 * Encourage children and adults to learn programming and computer science
-* Our Organization
-* Software Niagara is a grassroots organization. We are in no way affiliated with any institution, company, or government agency. All work is done by volunteers and any sponsorships are used solely to cover event costs.
+
+###Our Organization
+Software Niagara is a grassroots organization. We are in no way affiliated with any institution, company, or government agency. All work is done by volunteers and any sponsorships are used solely to cover event costs.
 
 ### Our History
 Software Niagara was founded in 2012. The idea came from Software Hamilton. Software Hamilton continues to do an amazing job of building a strong software community in Hamilton, ON. We can only hope to achieve a fraction of their success.
