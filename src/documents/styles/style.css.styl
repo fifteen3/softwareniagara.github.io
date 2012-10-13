@@ -1,4 +1,7 @@
+@import 'nib'
+
 brandColor = #00AAC8
+altBrandColor = #414142
 accentColor = #D5219D
 blandColor = #A8A8A8
 cwColor = accentColor
@@ -47,38 +50,65 @@ a.button,
 		background-color lighten(accentColor, 10%)
 		color white
 
+.top-bar
+	background linear-gradient(top, #fff, #F6F6F6)
+	border-bottom 1px solid #DDDDDD
+
 .top-bar,
 .top-bar ul > li.name h1 a,
 .top-bar ul > li.has-dropdown a
 	height 60px
 	line-height 60px
 
+.top-bar ul > li.name:hover
+	background-color transparent
+
 .top-bar ul > li.name h1 a
 		background transparent url('/graphics/symbol.png') 15px center no-repeat
 		font-family logoFont
-		color white
+		color altBrandColor
 		padding-left 105px
-		text-shadow 0 -1px black
 
 		span.location
 			color brandColor
 
+		&:hover
+			background-color transparent
+
+.top-bar ul > li.has-dropdown:hover
+	background #e7e7e7
+
 .top-bar ul > li.has-dropdown a
 		padding-right 15px
+		color altBrandColor
+
+		&:hover
+			background-color #e7e7e7
 
 		&::after
 			display none
 
+.top-bar ul > li.has-dropdown ul.dropdown
+	background transparent
+	box-shadow 0 1px 3px rgba(0, 0, 0, 0.15)
+	height auto
+	border-radius 0 0 7px 7px
+
 .top-bar ul > li.has-dropdown ul.dropdown,
 .top-bar ul > li.has-dropdown ul.dropdown li
-	background #000
+	background #e7e7e7	
 
+.top-bar ul > li.has-dropdown ul.dropdown li:last-child
+	border-radius 0 0 7px 7px
+
+.top-bar ul > li.has-dropdown ul.dropdown li a:hover
+	background linear-gradient(top, #d7d7d7, #c7c7c7)
 
 ul.breadcrumbs
 	padding 15px 25px
 	border none
 	background brandColor
-	border-radius 0
+	border-radius 7px 7px 0 0
 	margin 0 -25px
 	margin-bottom 20px		
 
@@ -107,6 +137,7 @@ ul.breadcrumbs
 	width 960px
 	margin 30px auto
 	box-shadow 0 0 6px rgba(0, 0, 0, 0.15)
+	border-radius 7px
 
 section.event-meta
 	margin-bottom 30px
@@ -172,6 +203,7 @@ section.event-meta
 	padding 20px 0
 	box-shadow 0 0 6px rgba(0, 0, 0, 0.15)
 	border-bottom 10px solid brandColor
+	border-radius 7px
 
 	.logo
 		height 80px
