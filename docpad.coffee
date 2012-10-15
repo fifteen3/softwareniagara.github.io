@@ -82,7 +82,15 @@ docpadConfig = {
 
 		# This one, will fetch in all documents that have the tag "event" specified in their meta data
 		events: (database) ->
-			database.findAllLive({relativeOutDirPath:'events'},[date:-1])
+			database.findAllLive({relativeOutDirPath:'events/internal'},[date:-1])
+
+		# Fetch all events by Software Niagara
+		internal_events: (database) ->
+			database.findAllLive({relativeOutDirPath:'events/internal'},[name:-1])
+
+		# Fetch all events by other groups or communities
+		external_events: (database) ->
+			database.findAllLive({relativeOutDirPath:'events/external'},[name:-1])
 
 		# This one, will fetch in all documents that have the tag "bio" specified in their meta data
 		bios: (database) ->
