@@ -17,6 +17,7 @@ pageOrder: 3
 							<hgroup>
 								<h3><%= document.title %></h3>
 								<h5><%= document.location %></h5>
+                            </hgroup>
 						</div>
 						<div class="three columns">
 							<span class="event-listing-date">
