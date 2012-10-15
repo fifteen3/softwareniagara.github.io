@@ -1,0 +1,68 @@
+--- yaml
+layout: 'default'
+title: 'Home'
+dynamic: true
+---
+
+<!-- Main hero unit for a primary marketing message or call to action -->
+<div class="row" xmlns="http://www.w3.org/1999/html">
+    <div class="twelve columns">
+        <div class="hero-unit">
+            <h1>Welcome to Software Niagara!</h1>
+            <p>
+                Excepteur officia pariatur est labore voluptate cupidatat aliqua do labore laboris qui aliqua laboris. Tempor eiusmod aliquip cupidatat fugiat undefined ad amet ut. Adipisicing ea eiusmod occaecat fugiat.
+            </p>
+            <p>
+                Nisi enim ex ex aliquip aliquip ea dolore esse exercitation quis veniam.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Example row of columns -->
+<div class="row" style="text-align:center;">
+    <div class="eight columns">
+        <section>
+            <% for document in @getCollection('posts').toJSON()[0..2]: %>
+            <article>
+                <div class="row">
+                    <div class="twelve columns">
+                        <hgroup>
+                            <h2><%= document.title %></h2>
+                            <h4><%= document.date.toShortDateString() %></h4>
+                        </hgroup>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <p><%= document.body %></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <p>Posted by: <%= document.author %></p>
+                    </div>
+                </div>
+            </article>
+            <% end %>
+        </section>
+    </div>
+	<div class="four columns">
+
+        <section>
+            <h2>Community Events</h2>
+            <ul class="item-list">
+                <% for document in @getCollection('events').toJSON(): %>
+                <li>
+                    <a href="<%= document.url %>" title="<%= document.title %>">
+                        <h3><%= document.title %></h3>
+                        <p class="date"><%= document.date.toShortDateString() %></p>
+                        <p class="location"><%= document.location %></p>
+                    </a>
+                </li>
+                <% end %>
+            </ul>
+        </section>
+	</div>
+</div>
