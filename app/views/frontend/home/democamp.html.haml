@@ -3,31 +3,32 @@
     .page-header
       %h1 Demo Camp
 .row-fluid
+  .span12
+    .alert.alert-info
+      %p.lead
+        We are currently organizing a DemoCamp event for November. We need people from the community to demo
+        the cool things they have been working on.
+      %p
+        Please get in touch with us if you are interested in presenting your software, web app, or other software-related
+        technology.
+      = link_to 'Request to Demo at DemoCamp', new_applicant_path, class: 'btn btn-large btn-primary'
+
+.row-fluid
   .span8
     %p.lead
-      Software Niagara is hosting Niagara's first DemoCamp on September 19, 2012. Join us for an evening of technology
+      Software Niagara hosted Niagara's first DemoCamp on September 19, 2012. It was a great evening of technology
       demos and networking.
-    
+
     %p.lead
-      Niagara-based designers and developers will be presenting their technology-related products and services to a room full
-      of designers, developers, entrepreneurs, and investors. It is a great opportunity to see technology built in your 
-      own backyard and to get to know the people in Niagara's tech community.
+      Nearly fifty designers, developers, entrepreneurs and investors from Niagara and the surrounding area came out to
+      watch technology demos by Niagara-based designers and developers.
 
     %p
-      DemoCamp has been held all over, including Hamilton, Guelph, Toronto, and Calgary. We are excited to bring this 
-      event to Niagara. DemoCamp Niagara will be hosted at 
       = link_to 'On the Front Cafe & Eatery', 'http://www.onthefrontcafe.com'
-      in Thorold, Ontario. It is conveniently located just a few minutes from Brock University and the Pen Centre shopping
-      mall.
+      in Thorold, Ontario was the host for our event. They provided the crowd with delicious beverages and food. And
+      of course, non of this would have been possible without our sponsors, Venture Niagara and Lakeside Electrical.
 
-    %p
-      We encourage everyone that is interested in technology to come out. Event registration is free and you do not need 
-      to demo to attend. Due to limited seating, we encourage you to register as soon as possible.
-
-    %p
-      Below is a tentative schedule for the evening. We hope to see you there!
-
-    %h3 Tentative Schedule
+    %h3 Schedule
     %table.table.table-bordered
       %tr
         %td Topic
@@ -81,10 +82,12 @@
         %td Closing Remarks
         %td 
         %td 8:55
+
     %p
-      = link_to 'Register Online', 'http://democampniagara.eventbrite.ca/', class: 'btn btn-success btn-large'
-      = ' or '
-      = link_to 'Request to Demo at DemoCamp', new_applicant_path, class: 'btn btn-large'
+      For coverage of the event see the great articles written by
+      = link_to 'Software Hamilton', 'http://www.softwarehamilton.com/2012/09/19/inaugural-software-niagara-democamp-a-success/'
+      and
+      = link_to 'Embrace Niagara', 'http://www.embrace-niagara.com/2012/09/21/software-niagara-october-democamp/'
 
   .span4
     .well
