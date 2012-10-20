@@ -1,7 +1,7 @@
 class Metum
   include Mongoid::Document
 
-  embedded_in :post
+  embedded_in :post, :event
 
   field :title,       type: String
   field :keywords,    type: String

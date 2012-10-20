@@ -1,0 +1,1 @@
+API_PROVIDERS = YAML.load_file(File.join(Rails.root, 'config/api_providers.yml'))[Rails.env]

@@ -26,6 +26,8 @@ db/*.sqlite3
 .rspec
 .redcar/
 .sass-cache
+/config/api_providers.yml
+/config/app_config.yml
 /config/config.yml
 /config/database.yml
 /coverage.data

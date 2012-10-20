@@ -27,3 +27,6 @@ gem 'geocoder', git: 'https://github.com/alexreisner/geocoder.git', branch: 'mas
 gem 'omg_validator', '~> 0.0.8'
 gem 'newrelic_rpm'
 gem 'quiet_assets', :group => :development
+gem 'eventbrite-client'
+gem 'nokogiri'
+gem 'awesome_print', :group => :development
