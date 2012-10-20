@@ -1,28 +1,25 @@
 class Event
   include Mongoid::Document
   include Mongoid::Timestamps
-  include Geocoder::Model::Mongoid
-  include Models::Plugins::Author
   include Models::Plugins::Slug
 
-  before_save       :create_author, :create_slug
-  after_validation  :geocode
+  before_save   :create_slug
 
-  geocoded_by :location
-  belongs_to  :user
-  embeds_one  :meta
+  embeds_one    :meta
+  embeds_one    :venue
+  embeds_one    :organizer
 
-  field :title,       type: String
-  field :slug,        type: String
-  field :author,      type: String
-  field :content,     type: String
-  field :published,   type: Boolean, default: false
-  field :location,    type: String
-  field :coordinates, type: Array
+  field :import_id,       type: String
+  field :import_source,   type: String, default: 'softwareniagara'
+  field :title,           type: String
+  field :description,     type: String
+  field :tags,            type: Array
+  field :categories,      type: Array
+  field :status,          type: String
+  field :capacity,        type: Integer
+  field :sold,            type: Integer
+  field :time,            type: Hash
+  field :slug,            type: String
 
-  accepts_nested_attributes_for :meta
-
-  attr_accessible :title, :slug, :author, :content, :published, :location, :meta_attributes
-
-  validates :slug, alpha_dash: true, uniqueness: { case_sensitive: false }
+  validates :slug, alpha_dash: true, uniqueness: {case_sensitive: false}
 end

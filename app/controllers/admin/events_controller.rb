@@ -6,7 +6,7 @@ class Admin::EventsController < Admin::ApplicationController
     respond_to do |format|
       format.html
       format.json { render json: @events, status: :ok }
-      format.xml { render xml: @events, status: :ok }
+      format.xml { render xml: EventbriteConsumer.new({app_key: API_PROVIDERS['eventbrite']['app_key'],user_key: API_PROVIDERS['eventbrite']['user_key']}).fetch, status: :ok }
     end
   end
 
