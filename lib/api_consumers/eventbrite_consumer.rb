@@ -3,6 +3,8 @@
 require 'eventbrite-client'
 
 class EventbriteConsumer
+  include ActionView::Helpers::SanitizeHelper
+
   def initialize(credentials)
     @client = EventbriteClient.new(credentials)
   end
@@ -33,7 +35,7 @@ class EventbriteConsumer
         import_id:        event['id'],
         import_source:    'eventbrite',
         title:            event['title'],
-        description:      event['description'],
+        description:      sanitize(event['description'], :tags => %w(h1 h2 h3 h4 h5 h6 p br)),
         tags:             event['tags'].split(','),
         categories:       event['category'].split(','),
         status:           event['status'],

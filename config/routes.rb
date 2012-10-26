@@ -5,6 +5,7 @@ Softwareniagara::Application.routes.draw do
   root to: 'frontend/home#index'
   devise_for :users
   resources :users, only: [:show, :index]
+  resources :events, only: [:index]
 
   namespace :admin do
     resources :posts
