@@ -5,6 +5,8 @@ class Event
 
   before_save   :create_slug
 
+  default_scope order_by('time.start' => :desc)
+
   embeds_one    :meta
   embeds_one    :venue
   embeds_one    :organizer
@@ -19,7 +21,24 @@ class Event
   field :capacity,        type: Integer
   field :sold,            type: Integer
   field :time,            type: Hash
+  field :start,           type: DateTime
   field :slug,            type: String
 
   validates :slug, alpha_dash: true, uniqueness: {case_sensitive: false}
+
+  def self.next
+    Event.where(:start.gte => Date.today).last
+  end
+
+  def self.previous
+    Event.where(:start.lt => Date.today).first
+  end
+
+  def self.upcoming
+    Event.where(:start.gte => Date.today)
+  end
+
+  def self.past
+    Event.where(:start.lt => Date.today)
+  end
 end
