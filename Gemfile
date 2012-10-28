@@ -19,7 +19,7 @@ gem "sendgrid"
 gem "devise", ">= 2.1.2"
 gem "cancan", ">= 1.6.8"
 gem "rolify", ">= 3.1.0"
-gem "bootstrap-sass", ">= 2.0.4.0"
+gem "bootstrap-sass", ">= 2.1.0.1"
 gem "font-awesome-rails"
 gem 'gravatar_image_tag'
 gem 'heroku'
