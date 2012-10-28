@@ -19,11 +19,11 @@
     #main{:role => "main"}
       .container
         - if user_signed_in?
-          .breadcrumbs
-            .row
-              .span12
-                %ul.unstyled
-                  = yield(:breadcrumbs)
+          %ul.breadcrumb
+            = yield(:breadcrumbs)
+
+          .page-header
+            = yield(:page_header)
 
         .content
           .row
