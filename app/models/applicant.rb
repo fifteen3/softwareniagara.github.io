@@ -4,6 +4,8 @@ class Applicant
 
   paginates_per 10
 
+  default_scope order_by('created_at' => :desc)
+
   field :name,            type: String
   field :company,         type: String
   field :email,           type: String

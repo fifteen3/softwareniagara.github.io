@@ -4,6 +4,8 @@ class Email
 
   paginates_per 10
 
+  default_scope order_by('created_at' => :desc)
+
   field :name,            type: String
   field :email,           type: String
   field :website,         type: String
