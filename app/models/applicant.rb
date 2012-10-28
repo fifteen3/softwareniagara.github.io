@@ -2,6 +2,8 @@ class Applicant
   include Mongoid::Document
   include Mongoid::Timestamps
 
+  paginates_per 10
+
   field :name,            type: String
   field :company,         type: String
   field :email,           type: String

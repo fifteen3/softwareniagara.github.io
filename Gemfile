@@ -30,3 +30,4 @@ gem 'quiet_assets', :group => :development
 gem 'eventbrite-client'
 gem 'nokogiri'
 gem 'awesome_print', :group => :development
+gem 'kaminari'
