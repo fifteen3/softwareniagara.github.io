@@ -2,7 +2,9 @@
   %h1
     Applicants
 
-    = link_to 'Add applicant', new_admin_applicant_path, class: 'btn btn-primary pull-right'
+    %a{href: new_admin_applicant_path, class: 'btn btn-primary pull-right'}
+      %i.icon-plus.icon-white
+      Add applicant
 
 - content_for :breadcrumbs do
   %li.active

@@ -2,6 +2,8 @@ class Email
   include Mongoid::Document
   include Mongoid::Timestamps
 
+  paginates_per 10
+
   field :name,            type: String
   field :email,           type: String
   field :website,         type: String

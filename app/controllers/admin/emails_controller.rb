@@ -71,7 +71,7 @@ class Admin::EmailsController < Admin::ApplicationController
   private
 
   def get_emails
-    @emails = Email.all || []
+    @emails = Email.page params[:page]
   end
 
   def get_email
