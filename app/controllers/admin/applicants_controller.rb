@@ -46,8 +46,8 @@ class Admin::ApplicantsController < Admin::ApplicationController
 
   def update
     respond_to do |format|
-      if @applicant.update_attributes(params[:applicants])
-        format.html { redirect_to edit_admin_email_path(@applicant), notice: 'Updated applicants.' }
+      if @applicant.update_attributes(params[:applicant])
+        format.html { redirect_to edit_admin_applicant_path(@applicant), notice: 'Updated applicants.' }
         format.json { render json: @applicant, status: :ok }
         format.xml { render xml: @applicant, status: :ok }
       else
@@ -62,7 +62,7 @@ class Admin::ApplicantsController < Admin::ApplicationController
     @applicant.destroy
 
     respond_to do |format|
-      format.html { redirect_to admin_emails_path, notice: 'Applicant deleted.' }
+      format.html { redirect_to admin_applicants_path, notice: 'Applicant deleted.' }
       format.json { render json: @applicant, status: :deleted }
       format.xml { render xml: @applicant, status: :deleted }
     end
@@ -71,7 +71,7 @@ class Admin::ApplicantsController < Admin::ApplicationController
   private
 
   def get_applicants
-    @applicants = Applicant.all || []
+    @applicants = Applicant.page params[:page]
   end
 
   def get_applicant

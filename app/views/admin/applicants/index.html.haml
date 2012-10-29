@@ -1,27 +1,36 @@
+- content_for :page_header do
+  %h1
+    Applicants
+
+    %a{href: new_admin_applicant_path, class: 'btn btn-primary pull-right'}
+      %i.icon-plus.icon-white
+      Add applicant
+
 - content_for :breadcrumbs do
-  %li
+  %li.active
     = link_to 'Applicants', admin_applicants_path
-    .point
 
 - if @applicants.blank?
   %div.alert.alert-box.alert-info
     %a.close{data: {dismiss: 'alert'}, href: '#'} x
-    %h4 No Applicants
+    %h4 There are no applicants
     %p
-      No one has applied to present at Demo Camp Niagara.
+      No one has applied to speak at DemoCamp Niagara.
       = link_to 'Add someone', new_admin_applicant_path
       now.
 
 - else
-  %table.table.table-bordered.table-striped
+  %table.table
     %tr
-      %th Name
-      %th Email
-      %th Created
-      %th Updated
-      %th Actions
+      %th
+        Name
+      %th
+        Email
+      %th
+        Submitted
+      %th
+        Actions
     - @applicants.each do |applicant|
       = render applicant
 
-%p
-  = link_to 'Add Applicant', new_admin_applicant_path, class: 'btn btn-success btn-large pull-right'
+  = paginate @applicants

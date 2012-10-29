@@ -1,7 +1,14 @@
+- content_for :page_header do
+  %h1
+    Email Recipients
+
+    %a{href: new_admin_email_path, class: 'btn btn-primary pull-right'}
+      %i.icon-plus.icon-white
+      Add email recipient
+
 - content_for :breadcrumbs do
   %li
     = link_to 'Email Recipients', admin_emails_path
-    .point
 
 - if @emails.blank?
   %div.alert.alert-box.alert-info
@@ -13,15 +20,13 @@
       now.
 
 - else
-  %table.table.table-bordered.table-striped
+  %table.table
     %tr
       %th Name
       %th Email
-      %th Created
-      %th Updated
+      %th Submitted
       %th Actions
     - @emails.each do |email|
       = render email
 
-%p
-  = link_to 'Add Recipient', new_admin_email_path, class: 'btn btn-success btn-large pull-right'
+= paginate @emails

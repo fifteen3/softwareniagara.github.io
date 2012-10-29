@@ -34,6 +34,10 @@ class Admin::EmailsController < Admin::ApplicationController
         format.html { redirect_to edit_admin_email_path(@email), notice: 'Added email recipient.' }
         format.json { render json: @email, status: :created }
         format.xml { render xml: @email, status: :created }
+      else
+        format.html { render 'new' }
+        format.json { render json: @email.errors, status: :unprocessable_entity }
+        format.xml { render xml: @email.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -53,7 +57,7 @@ class Admin::EmailsController < Admin::ApplicationController
       else
         format.html { render 'edit' }
         format.json { render json: @email.errors, status: :unprocessable_entity }
-        foramt.xml { render xml: @email.errors, status: :unprocessable_entity }
+        format.xml { render xml: @email.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -71,7 +75,7 @@ class Admin::EmailsController < Admin::ApplicationController
   private
 
   def get_emails
-    @emails = Email.all || []
+    @emails = Email.page params[:page]
   end
 
   def get_email

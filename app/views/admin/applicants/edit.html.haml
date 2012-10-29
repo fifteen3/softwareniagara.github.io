@@ -1,9 +1,11 @@
+- content_for :page_header do
+  %h1 Edit Applicant
+
 - content_for :breadcrumbs do
   %li
     = link_to 'Applicants', admin_applicants_path
-    .point
-  %li
-    = link_to 'New', '#'
-    .point
+    %span.divider /
+  %li.active
+    = link_to 'Edit', '#'
 
 = render 'form'
