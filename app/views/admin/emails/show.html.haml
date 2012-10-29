@@ -1,0 +1,72 @@
+- content_for :page_header do
+  %h1
+    = @email.email
+    - if @email.name.present?
+      %small= @email.name
+    .pull-right
+      %a{href: edit_admin_email_path(@email), class: 'btn btn-primary'}
+        %i.icon-pencil.icon-white
+        Edit
+      %a{href: admin_email_path(@email), class: 'btn', data: {confirm: "Are you sure you want to remove #{@email.email}"}}
+        %i.icon-remove
+        Delete
+
+- content_for :breadcrumbs do
+  %li
+    = link_to 'Emails', admin_emails_path
+    %span.divider /
+  %li.active
+    = link_to 'View', '#'
+
+%h3 Personal Information
+
+%table.table.table-bordered.two-col
+  %tr
+    %td
+      %strong Name
+    %td= @email.name
+  %tr
+    %td
+      %strong Location
+    %td= @email.location
+  %tr
+    %td
+      %strong Website
+    %td= link_to @email.website, @email.website if @email.website.present?
+
+%h3 Contact Information
+
+%table.table.table-bordered.two-col
+  %tr
+    %td
+      %strong Email
+    %td= link_to @email.email, "mailto:#{@email.email}" if @email.email.present?
+  %tr
+    %td
+      %strong Twitter
+    %td= link_to "http://www.twitter.com/#{@email.twitter_handle}", "http://www.twitter.com/#{@email.twitter_handle}"
+
+%h3 Subscription
+
+%table.table.table-bordered.two-col
+  %tr
+    %td
+      %strong Email Format
+    %td= @email.format
+  %tr
+    %td
+      %strong Active
+    %td= @email.subscribed ? 'Yes' : 'No'
+
+%h3 Other
+
+%table.table.table-bordered.two-col
+  %tr
+    %td
+      %strong Interests
+    %td= @email.interests
+
+%p
+  %a{href: admin_emails_path}
+    %i.icon-arrow-left
+    Go back

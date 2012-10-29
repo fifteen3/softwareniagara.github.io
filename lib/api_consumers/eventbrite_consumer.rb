@@ -41,6 +41,7 @@ class EventbriteConsumer
         status:           event['status'],
         capacity:         event['capacity'],
         sold:             event['num_attendee_rows'],
+        start:            event['start_date'],
         metum: {
             title:          event['title'],
             description:    event['title'],
