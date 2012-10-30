@@ -68,7 +68,7 @@ class Admin::EventsController < Admin::ApplicationController
   private
 
   def get_events
-    @events = Event.all || []
+    @events = Event.page params[:page]
   end
 
   def get_event
