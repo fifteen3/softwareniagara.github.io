@@ -10,7 +10,7 @@ Softwareniagara::Application.routes.draw do
   namespace :admin do
     resources :posts
     resources :events
-    resources :users, except: [:new, :create]
+    resources :users
     resources :emails
     resources :applicants
   end
