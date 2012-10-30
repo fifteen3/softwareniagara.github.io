@@ -46,7 +46,7 @@ if Rails.env == 'development'
     {name: 'Jack Jackson', email: 'jack.jackson@example.com', pitch: 'Lorem ipsum dolor ipsum.'},
     {name: 'Sue Suzanne', email: 'sue.suzanne@example.com', pitch: 'Lorem ipsum dolor ipsum.'},
     {name: 'Zim McCracken', email: 'zim.mc-cracken@example.com', pitch: 'Lorem ipsum dolor ipsum.'},
-    {name: 'Ginger Snap', email: 'ginger.snap@example.com', pitch: 'Lorem ipsum dolor ipsum.'},
+    {name: 'Ginger Snap', email: 'ginger.snap@example.com', pitch: 'Lorem ipsum dolor ipsum.'}
   ]
-  applicants.each { |applicant| Applicant.create! name: applicant[:name], email: applicant[:email], pitch: applicant[:pitch] }
+  applicants.each { |applicant| Applicant.create!(name: applicant[:name], email: applicant[:email], pitch: applicant[:pitch]) }
 end
