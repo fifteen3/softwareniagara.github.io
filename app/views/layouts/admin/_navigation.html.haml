@@ -2,14 +2,22 @@
 %ul.nav
   - if user_signed_in?
     - if current_user.has_role? :admin
-      %li
-        = link_to 'Applicants', admin_applicants_path
-      %li
-        = link_to 'Email Recipients', admin_emails_path
-      %li
-        = link_to 'Events', admin_events_path
-      %li
-        = link_to 'Posts', admin_posts_path
+      %li.dropdown
+        %a.dropdown-toggle{data: {toggle: 'dropdown'}}
+          People
+          %b.caret
+        %ul.dropdown-menu
+          %li= link_to 'Applicants', admin_applicants_path
+          %li= link_to 'Emails', admin_emails_path
+          %li= link_to 'Users', admin_users_path
+
+      %li.dropdown
+        %a.dropdown-toggle{data: {toggle: 'dropdown'}}
+          Content
+          %b.caret
+        %ul.dropdown-menu
+          %li= link_to 'Events', admin_events_path
+          %li= link_to 'Posts', admin_posts_path
 %ul.nav.pull-right
   - if user_signed_in?
     %li.dropdown
