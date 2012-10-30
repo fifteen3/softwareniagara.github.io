@@ -10,6 +10,14 @@ class Admin::UsersController < Admin::ApplicationController
     end
   end
 
+  def show
+    respond_to do |format|
+      format.html
+      format.json { render json: @user, status: :ok }
+      format.xml { render xml: @user, status: :ok }
+    end
+  end
+
   def new
     respond_to do |format|
       format.html
@@ -17,7 +25,19 @@ class Admin::UsersController < Admin::ApplicationController
   end
 
   def create
+    @user = User.new(params[:user])
 
+    respond_to do |format|
+      if @user.save
+        format.html { redirect_to edit_admin_user_path(@user), notice: 'Created user.' }
+        format.json { render json: @user, status: :created }
+        format.xml { render xml: @user, status: :created }
+      else
+        format.html { render 'new' }
+        format.json { render json: @user, status: :unprocessable_entity }
+        format.xml { render xml: @user, status: :unprocessable_entity }
+      end
+    end
   end
 
   def edit
