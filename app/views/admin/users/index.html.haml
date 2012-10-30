@@ -1,0 +1,22 @@
+- content_for :page_header do
+  %h1
+    Users
+
+  %a{href: new_admin_user_path, class: 'btn btn-primary pull-right'}
+    %i.icon-plus.icon-white
+    Add user
+
+- content_for :breadcrumbs do
+  %li
+    = link_to 'Users', admin_users_path
+
+%table.table
+  %tr
+    %th Name
+    %th Email
+    %th Created
+    %th Actions
+  - @users.each do |user|
+    = render user
+
+= paginate @users
