@@ -10,6 +10,16 @@ class Admin::UsersController < Admin::ApplicationController
     end
   end
 
+  def new
+    respond_to do |format|
+      format.html
+    end
+  end
+
+  def create
+
+  end
+
   def edit
     respond_to do |format|
       format.html
@@ -44,7 +54,7 @@ class Admin::UsersController < Admin::ApplicationController
   private
 
   def get_users
-    @users = User.all || []
+    @users = User.page params[:page]
   end
 
   def get_user
