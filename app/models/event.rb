@@ -6,6 +6,7 @@ class Event
   before_save   :create_slug
 
   default_scope order_by('time.start' => :desc)
+  paginates_per 10
 
   embeds_one    :meta
   embeds_one    :venue
