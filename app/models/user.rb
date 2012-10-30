@@ -5,6 +5,8 @@ class User
   extend Rolify
   rolify
 
+  paginates_per 10
+
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable, :registerable
   # :lockable, :timeoutable and :omniauthable
