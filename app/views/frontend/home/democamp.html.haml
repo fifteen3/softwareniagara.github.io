@@ -1,17 +1,73 @@
 .row-fluid
   .span12
     .page-header
-      %h1 Demo Camp
+      %h1 DemoCamp Niagara 2
+
+.row-fluid
+  .span8
+    %p.lead
+      DemoCamp Niagara is back. Join local designers, developers, entrepreneurs, and investors for an evening of
+      technology demos. You will have a unique opportunity to see tech built right here in Niagara.
+    %p.lead
+      DemoCamp 2 is taking place at the Red Hot Chili Pepper in Downtown St. Catharines on Wednesday November 28, 2012.
+      Doors open at 6PM for refreshments, snacks, and networking. The presentations begin at 7PM.
+    %p
+      = link_to 'Sign up', 'http://democampniagara2.eventbrite.com'
+      for this free event now and make sure you don't miss being the first to see the hottest new software being
+      produced in Niagara. See you there!
+
+    %h3 Schedule
+
+    %table.table.table-bordered
+      %tr
+        %td Topic
+        %td Presenter
+        %td Time
+      %tr
+        %td Doors open - Networking and Refreshments
+        %td N/A
+        %td 6:00
+      %tr
+        %td Keynote: The Future of the Past, or Why Historians Need to Work with Digital Media Developers
+        %td Kevin Kee, Centre for Digital Humanities, Brock University
+        %td 7:00
+      %tr
+        %td Drupal distribution to enable the simple publication and sharing of geographic data
+        %td Trevor Twining, Senior Dev and Team Lead, CGI Group
+        %td 7:30
+      %tr
+        %td Demo of the XAT tool for printer security
+        %td Glen Herdy, CEO, CSO and Co-Founder, Protecht
+        %td 7:50
+      %tr
+        %td Break
+        %td N/A
+        %td 8:10
+      %tr
+        %td Rollers of the Realm pinball and fantasy role-playing game for iPad, PC, and XBLIG
+        %td Ericka Evans, Head of Production, Phantom Compass
+        %td 8:25
+      %tr
+        %td Demo of a voting app produced at a weekend hackathon this November
+        %td Software Niagara
+        %td 8:
+  .span4
+    %h3 Sponsors
+
+    %ul
+      %li
+        Furi Enterprises Inc
+        %br
+        = link_to '@thefuri', 'http://twitter.com/thefuri'
+      %li
+        Kate Nash of Remax 2000 Realty lbc
+        %br
+        = link_to '@RenterKate', 'http://twitter.com/renterkate'
+
 .row-fluid
   .span12
-    .alert.alert-info
-      %p.lead
-        We are currently organizing a DemoCamp event for November. We need people from the community to demo
-        the cool things they have been working on.
-      %p
-        Please get in touch with us if you are interested in presenting your software, web app, or other software-related
-        technology.
-      = link_to 'Request to Demo at DemoCamp', new_applicant_path, class: 'btn btn-large btn-primary'
+    .page-header
+      %h1 DemoCamp Niagara 1
 
 .row-fluid
   .span8
@@ -93,26 +149,8 @@
       = link_to 'Embrace Niagara', 'http://www.embrace-niagara.com/2012/09/21/software-niagara-october-democamp/'
 
   .span4
-    .well
-      %h3 Contact Information
-
-      %dl
-        %dt Nickolas Kenyeres, Founding Member
-        %dd
-          %ul
-            %li= link_to 'nickolas@softwareniagara.com', 'mailto:nickolas@softwareniagara.com'
-            %li= link_to '@knicklabs', 'http://twitter.com/knicklabs'
-            %li= link_to 'http://knicklabs.github.com', 'http://knicklabs.github.com'
-
-        %dt Michael Mottola, Founding Member
-        %dd
-          %ul
-            %li= link_to 'michael@softwareniagara.com', 'mailto:michael@softwareniagara.com'
-            %li= link_to '@michael_mottola', 'http://twitter.com/michael_mottola'
-            %li= link_to 'http://michaelencode.com', 'http://michaelencode.com'
-
     .sponsored-by
-      %h3 DemoCamp Sponsored By:
+      %h3 Sponsors
 
       %div
         %img(src="/assets/frontend/venture-niagara-logo.jpg" alt="Venture Niagara")
