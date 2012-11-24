@@ -1,0 +1,82 @@
+.row-fluid
+  .span12
+    .page-header
+      %h1 Request to Speak or Present
+.row-fluid
+  .span12
+    %p.lead
+      Are you interested in speaking or presenting at an event? Just tell us about yourself and what you want to demo
+      or speak about, and we'll do our best to slot you in at our next event.
+
+      .row-fluid
+        .span8
+          = form_for @applicant, url: applicants_path, method: :post, html: {class: 'form-horizontal'} do |f|
+            - if @applicant.errors.any?
+              .alert.alert-box.alert-error
+                %h3= "#{pluralize(@applicant.errors.count, 'error')} prevented this form from being submitted:"
+                %ul
+                  - @applicant.errors.full_messages.each do |msg|
+                    %li= msg
+            %fieldset
+              .control-group
+                = f.label :name, 'Name (required)', class: 'control-label'
+                .controls
+                  = f.text_field :name, class: 'span8'
+
+              .control-group
+                = f.label :company, class: 'control-label'
+                .controls
+                  = f.text_field :company, class: 'span8'
+
+              .control-group
+                = f.label :email, 'Email (required)', class: 'control-label'
+                .controls
+                  = f.email_field :email, class: 'span8'
+
+              .control-group
+                = f.label :twitter_handle, class: 'control-label'
+                .controls
+                  = f.text_field :twitter_handle, class: 'span8'
+
+              .control-group
+                = f.label :website, class: 'control-label'
+                .controls
+                  = f.url_field :website, class: 'span8'
+
+              .control-group
+                = f.label :location, class: 'control-label'
+                .controls
+                  = f.select :location, niagara_cities
+
+              .control-group
+                = f.label :type, 'Event Type', class: 'control-label'
+                .controls
+                  = f.select :type, application_types
+
+            %fieldset
+              .control-group
+                = f.label :pitch, 'Pitch (required)', class: 'control-label'
+                .controls
+                  = f.text_area :pitch, class: 'span12'
+                  %p.help-block
+                    Tell us why you want to speak or present at our event and provide details on your topic. Including
+                    links is helpful.
+
+            .form-actions
+              = f.submit 'Send Request', class: 'btn btn-success btn-large'
+
+        .span4
+          .well
+            %h5 Why should I fill this out?
+            %p
+              It helps us find people to present and speak at upcoming events. It also helps us gather all the
+              information we need to promote your presentation or demo. So in that case, please be thorough when
+              completing the form.
+
+            %h5 Will I get to demo or present?
+            %p
+              Most likely. If you built something in Niagara, we want to see it or hear about it. We also want to hear about
+              most things related to software or technology that would be of interest to people in Niagara.
+            %p
+              Keep in mind that events are limited in time and space. If we can't fit you in at the next event, we may
+              contact you about presenting at another event in the future.

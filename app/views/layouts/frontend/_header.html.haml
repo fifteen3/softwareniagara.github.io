@@ -1,0 +1,21 @@
+%header.navbar.navbar-fixed-top
+  %nav.navbar-inner
+    .container
+      %button{type: 'button', class: 'btn btn-navbar', data: {toggle: 'collapse', target: '.nav-collapse'}}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to "Software Niagara", root_path, class: 'brand'
+      .nav-collapse.collapse
+        %ul.nav.pull-right
+          %li= link_to 'About', about_path
+          %li= link_to 'DemoCamp', democamp_path
+          %li.divider-vertical
+          - if user_signed_in?
+            %li
+              = link_to 'Admin', admin_posts_path
+            %li
+              = link_to 'Logout', destroy_user_session_path, method: :delete
+          - else
+            %li
+              = link_to 'Login', new_user_session_path

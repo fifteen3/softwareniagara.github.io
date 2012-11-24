@@ -1,0 +1,9 @@
+%tr
+  %td= event.title
+  %td= event.organizer.name
+  %td= Time.parse(event.time['start']).strftime('%b %d, %Y - %I:%M %p') unless event.time['start'].blank?
+  %td= Time.parse(event.time['end']).strftime('%b %d, %Y - %I:%M %p') unless event.time['end'].blank?
+  %td
+    %a{href: admin_event_path(event), class: 'btn btn-mini'}
+      %i.icon-eye-open
+      View

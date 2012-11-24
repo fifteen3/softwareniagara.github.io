@@ -1,0 +1,44 @@
+- content_for :banner do
+  #banner
+    .container
+      .row
+        .span8
+          .well
+            %h2
+              DemoCamp is Back!
+            %p.lead
+              Software Niagara is proud to announce that we are holding our second DemoCamp on November 28th at the
+              Red Hot Chili Pepper in Downtown St. Catharines from 6:00PM - 9:00PM.
+            %p.lead
+              Join local designers, developers, entrepreneurs, and investors for an evening of technology demos.
+              You will have a unique opportunity to see tech built right here in Niagara.
+            %p
+              = link_to 'Register Online', 'http://democampniagara2.eventbrite.com', class: 'btn btn-success btn-large'
+              or
+              = link_to 'Learn More', democamp_path
+
+#promotions
+  .row-fluid
+    .span4
+      %h3
+        Mailing List
+      %p.lead
+        Sign up for our mailing list to stay up to date on what Software Niagara
+        is doing.
+      %p
+        = link_to 'Sign up', new_newsletter_path, class: 'btn btn-large btn-inverse'
+    .span4
+      %h3
+        Coming Up
+      %p.lead
+        Software Niagara's DemoCamp
+        on Nov 28 @ Red Hot Chili Pepper.
+      %p
+        = link_to 'Register', 'http://democampniagara2.eventbrite.com', class: 'btn btn-large btn-inverse'
+    .span4
+      %h3
+        Coworking
+      %p.lead
+        Join us for Software Coworking every Wednesday night at Mahtay Cafe.
+      %p
+        = link_to 'Register', 'http://softwarecoworkingniagara.eventbrite.com', class: 'btn btn-large btn-inverse'

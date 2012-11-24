@@ -1,0 +1,26 @@
+@import 'bootstrap/mixins';
+
+footer {
+    background-color: rgba(221, 221, 222, 0.5);
+    padding: 20px;
+    margin: 0 -20px;
+    @include border-radius(3px);
+    @include box-shadow(0 0 3px rgba(0, 0, 0, 0.25));
+    margin-bottom: 60px;
+
+    color: #000000;
+
+    img {
+        max-height: 75px;
+    }
+}
+
+@media (max-width: 767px) {
+    footer {
+        padding: {
+            left: 20px;
+            right: 20px;
+        }
+        margin-bottom: 0;
+    }
+}
