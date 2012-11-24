@@ -1,0 +1,11 @@
+- content_for :page_header do
+  %h1 New Email Recipient
+
+- content_for :breadcrumbs do
+  %li
+    = link_to 'Email Recipients', admin_emails_path
+    %span.divider /
+  %li.active
+    = link_to 'Edit', '#'
+
+= render 'form'

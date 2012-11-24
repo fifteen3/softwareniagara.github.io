@@ -1,0 +1,22 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: white url('../../img/niagara_bg.png') top left repeat;
+}
+
+.slides section {
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

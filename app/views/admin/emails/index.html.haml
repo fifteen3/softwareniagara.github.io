@@ -1,0 +1,32 @@
+- content_for :page_header do
+  %h1
+    Email Recipients
+
+    %a{href: new_admin_email_path, class: 'btn btn-primary pull-right'}
+      %i.icon-plus.icon-white
+      Add email recipient
+
+- content_for :breadcrumbs do
+  %li
+    = link_to 'Email Recipients', admin_emails_path
+
+- if @emails.blank?
+  %div.alert.alert-box.alert-info
+    %a.close{data: {dismiss: 'alert'}, href: '#'} x
+    %h4 No Email Recipients
+    %p
+      No one has signed up to receive email from Software Niagara.
+      = link_to 'Add one', new_admin_email_path
+      now.
+
+- else
+  %table.table
+    %tr
+      %th Name
+      %th Email
+      %th Submitted
+      %th Actions
+    - @emails.each do |email|
+      = render email
+
+= paginate @emails
