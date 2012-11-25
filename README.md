@@ -10,18 +10,13 @@ CURRENTLY UNDER ACTIVE DEVELOPMENT.
 
 More information on Software Niagara can be had at [http://softwareniagara.com](http://softwareniagara.com).
 
-### Required Gems
-
-This application requires this gem:
-
-* "rails":http://rubygems.org/gems/rails
-
 ### Dependencies
 
 To use this application, you will need:
 
-* The Ruby language (1.9.3)
-* Rails (version 3.0.4 or newer)
+* [Ruby programming language](http://www.ruby-lang.org/) (1.9.3)
+* [Rails](http://rubygems.org/gems/rails), aka "Ruby on Rails" (version 3.0.4 or newer)
+  * Requires the [RubyGems](http://rubygems.org/pages/download) package manager
 
 ### Installing the Application
 
