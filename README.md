@@ -1,13 +1,10 @@
 # Software Niagara
 
 Software Niagara is an organization dedicated to fostering a stronger software community in the Niagara Region of
-Ontario, Canada.
+Ontario, Canada. More information can be found on our website,
+[softwareniagara.com](http://softwareniagara.com).
 
-This project contains the software used to power the Software Niagara website.
-
-### More Information
-
-More information on Software Niagara can be had at [http://softwareniagara.com](http://softwareniagara.com).
+This project contains the code used to create the Software Niagara website.
 
 ### Dependencies
 
