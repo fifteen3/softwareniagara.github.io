@@ -1,4 +1,5 @@
-# Software Niagara
+# Software Niagara [<img alt="Software Niagara" src="https://github.com/dideler/software-niagara/blob/master/app/assets/images/frontend/sn-logo.png?raw=true" height="80">]()
+---
 
 Software Niagara is an organization dedicated to fostering a stronger software community in the Niagara Region of
 Ontario, Canada. More information can be found on our website,
