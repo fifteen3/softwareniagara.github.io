@@ -38,8 +38,8 @@ THIS PROJECT IS A WORK IN PROGRESS AND IS CURRENTLY UNDER ACTIVE DEVELOPMENT. Th
 
 ### Contributing
 
-You may contribute to the Software Niagara platform or your may fork this project to build a similar website for
-another group.
+You may contribute to the Software Niagara platform or you may fork this project
+to build a similar website for another group.
 
 If you do make improvements to this application, please share with others.
 
