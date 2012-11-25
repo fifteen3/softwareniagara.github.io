@@ -34,7 +34,10 @@ This is the only documentation.
 
 ##### Issues
 
-THIS PROJECT IS A WORK IN PROGRESS AND IS CURRENTLY UNDER ACTIVE DEVELOPMENT. There are probably many issues.
+THIS PROJECT IS A WORK IN PROGRESS AND IS CURRENTLY UNDER ACTIVE DEVELOPMENT.
+There are probably many issues. Create a
+[ticket](https://github.com/softwareniagara/software-niagara/issues) if you
+find any.
 
 ### Contributing
 
