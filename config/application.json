@@ -62,5 +62,25 @@
 			"email": "dennis@softwareniagara.com",
 			"avatar": "/images/organizers/dennis.gif"
 		}
+	],
+	"events": [
+		{
+			"name": "DemoCamp Niagara 2",
+			"date": "November 28, 2012 6:00PM - 9:00PM",
+			"organizer": "Software Niagara",
+			"organizer_url": "http://www.softwareniagara.com",
+			"venue": "Red Hot Chili Pepper",
+			"address": "One St. Paul Street St. Catharines, L2R 7L2",
+			"registration": "http://democampniagara2.eventbrite.com"
+		},
+		{
+			"name": "DemoCamp Niagara 1",
+			"date": "September 19, 2012 6:30PM - 9:30PM",
+			"organizer": "Software Niagara",
+			"organizer_url": "http://www.softwareniagara.com",
+			"venue": "On the Front Cafe & Eatery",
+			"address": "30 Front Street South Thorold, L2V 1W9",
+			"registration": "http://democampniagara.eventbrite.com"
+		}
 	]
 }
