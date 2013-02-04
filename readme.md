@@ -3,7 +3,8 @@ softwareniagara-www
 
 This is the web application that powers the official Software 
 Niagara website. The app is written in Express.js and deployed 
-on Heroku.
+on Heroku. It uses Mandrill for transactional email, MailChimp
+for subscriptions, and OAuth via GitHub for authentication. 
 
 ## Setup
 
