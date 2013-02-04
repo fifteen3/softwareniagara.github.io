@@ -50,6 +50,7 @@ app.set('domain', settings.domain);
 app.set('name', settings.name);
 app.set('networks', settings.networks);
 app.set('organizers', settings.organizers);
+app.set('events', settings.events);
 app.set('description', settings.description);
 app.set('keywords', settings.keywords);
 app.set('menu', mh.generate('./views/pages'));
