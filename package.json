@@ -35,6 +35,10 @@
     "geocoder": "~0.1.0",
     "node-markdown": "~0.1.1"
   },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
   "licenses": [
     {
       "name": "MIT",
