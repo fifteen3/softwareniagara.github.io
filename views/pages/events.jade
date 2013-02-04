@@ -16,15 +16,33 @@ block content
         | Please 
         a(href='/contact', title='Contact us') contact us 
         | if you would like your events listed here.
+      h3 Upcoming Events
+      p
+        | Software Niagara has no scheduled upcoming events. We are planning another DemoCamp event 
+        | for March 2013. Stay tuned.
+      h3 Past Events 
+      ul.events
+        - each event, i in settings.events 
+          li 
+            article.event.panel 
+              hgroup
+                h3= event.name 
+                h5
+                  a(href=event.organizer.url, title=event.organizer)= event.organizer
+                p 
+                  | #{event.date} at #{event.venue}, #{event.address}
+                p 
+                  a(href=event.registration, title='More details', class='button') More details
     .four.columns
-      h3 Software Co-working
+      h3 Weekly Events
+      h5 Software Co-working
       p 
         | Join Software Niagara and Friends for co-working every Monday night at 7:00PM at 
         a(href='http://mahtay.ca', title='Mahtay Cafe') Mahtay Cafe. 
       p
         a(href='http://softwarecoworkingniagara.eventbrite.com', title='Register', class='button secondary') Register
 
-      h3 Co-working Niagara 
+      h5 Co-working Niagara 
       p 
         | Join Coworking Niagara to get stuff done with fellow creatives 
         | every Wednesday at 1:00PM at 
