@@ -1,0 +1,22 @@
+section(id='navigation', class='fixed contain-to-grid')
+  nav(class='top-bar', role='navigation')
+    ul
+      li.name
+        a(href='/', title=settings.name)= settings.name
+      li.toggle-topbar
+        a(href='#')
+    section
+      ul.right(id='permanent-menu')
+        li(class='show-for-small toggle-visibility')
+          a(href='/about/', title='About') About
+        li(class='show-for-small toggle-visibility')
+          a(href='#', title='Events') Events
+        li(class='show-for-small toggle-visibility')
+          a(href='#', title='Contact') Contact
+        li
+          a(href='#', title='Subscribe', data-reveal-id='modal-subscribe') Subscribe
+        li
+          - if (user)
+            a(href='/logout', title='Sign Out') Sign Out
+          - else
+            a(href='#', title='Sign In', data-reveal-id='modal-sign-in') Sign In

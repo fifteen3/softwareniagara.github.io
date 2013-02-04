@@ -1,0 +1,13 @@
+header(id='header', role="banner")
+  .row
+    .twelve.columns
+      nav
+        ul
+          li.name
+            h1
+              a(href='/', title=settings.name)= settings.name
+        section(class='hide-for-small')
+          ul.right(id='temporary-menu')
+            - each item, i in settings.menu 
+              li
+                a(href=item.link, title=item.title)= item.title
