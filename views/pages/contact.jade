@@ -1,0 +1,23 @@
+//- title : Contact Us
+//- description: Contact Software Niagara
+//- menu : Contact
+//- order : 10
+
+extends ./../layout 
+
+block content 
+  .row
+    .eight.columns
+      p.lead
+        | Software Niagara is a group of designers, developers, entrepreneurs, and 
+        | technology enthusiasts. The easiest way to communicate with us by filling 
+        | out the form on this page.
+      include ./../_contact
+    .four.columns
+      ul.social-networks.enclosed
+        - each network, i in settings.networks 
+          li 
+            - iconClass = (network.name == 'googleplus') ? 'google-plus' : network.name
+            a(href=network.url, title=network.slogan)
+              i(class="social foundicon-#{iconClass}")
+              = network.slogan

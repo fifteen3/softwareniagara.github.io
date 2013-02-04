@@ -1,0 +1,29 @@
+doctype 5
+html
+  head
+    title= settings.getTitle(title)
+    meta(name='description', content=settings.description)
+    meta(nmae='keywords', content=settings.keywords)
+    meta(name='viewport', content='width=device-width')
+    link(rel='stylesheet', href='/stylesheets/foundation.min.css')
+    link(rel='stylesheet', href='/stylesheets/fc-webicons.css')
+    link(rel='stylesheet', href='/stylesheets/fc-icons.css')
+    link(rel='stylesheet', href='/stylesheets/app.css')
+    script(src='/javascripts/foundation.min.js')
+    script(src='/javascripts/parsley.min.js')
+    script(src='/javascripts/waypoints.min.js')
+    script(src='/javascripts/app.js')
+  body
+    .wrapper
+      include _navigation
+      include _header
+      .row
+        .twelve.columns
+          div(id='main', role='main')
+            .row
+              .twelve.columns
+                h1.page-title= title
+            include _messages
+            block content
+    include _footer
+    include _modals
