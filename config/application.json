@@ -1,0 +1,86 @@
+{
+	"domain": "softwareniagara.com",
+	"name": "Software Niagara",
+	"description": "Software Niagara is a grassroots initiative to build a software community in Niagara, Ontario Canada",
+	"keywords": "software, apps, games, web, niagara, st catharines, thorold, welland, ontario, canada",
+	"about": "Software Niagara is a grassroots intitiative to build a software community in the Niagara Region. We believe that sharing and collaboration will lead to the creation of great software and technology in Niagara.",
+	"networks": [
+		{
+			"name": "facebook",
+			"url": "https://www.facebook.com/softwareniagara",
+			"slogan": "Like us on Facebook"
+		},
+		{
+			"name": "twitter",
+			"url": "https://www.twitter.com/softwareniagara",
+			"slogan": "Follow us on Twitter"
+		},
+		{
+			"name": "googleplus",
+			"url": "https://plus.google.com/100835796280756308699",
+			"slogan": "Follow us on Google+"
+		},
+		{
+			"name": "github",
+			"url": "https://github.com/softwareniagara",
+			"slogan": "Fork us on GitHub"
+		}
+	],
+	"organizers": [
+		{
+			"name": "Nickolas Kenyeres",
+			"handle": "knicklabs",
+			"url": "http://knicklabs.github.com",
+			"email": "nickolas@softwareniagara.com",
+			"avatar": "/images/organizers/nick.gif"
+		},
+		{
+			"name": "Michael Mottola",
+			"handle": "michael_mottola",
+			"url": "http://michaelencode.com",
+			"email": "michael@softwareniagara.com",
+			"avatar": "/images/organizers/michael.gif"
+		},
+		{
+			"name": "JF Amprimoz",
+			"handle": "SmallWebStrat",
+			"url": "http://www.smallwebstrategies.com",
+			"email": "jf@softwareniagara.com",
+			"avatar": "/images/organizers/jf.gif"
+		},
+		{
+			"name": "Thomas Madej",
+			"handle": "thefuri",
+			"url": "http://www.furi.ca",
+			"email": "tom@softwareniagara.com",
+			"avatar": "/images/organizers/tom.gif"
+		},
+		{
+			"name": "Dennis Ideler",
+			"handle": "dideler",
+			"url": "http://www.dennisideler.com",
+			"email": "dennis@softwareniagara.com",
+			"avatar": "/images/organizers/dennis.gif"
+		}
+	],
+	"events": [
+		{
+			"name": "DemoCamp Niagara 2",
+			"date": "November 28, 2012 6:00PM - 9:00PM",
+			"organizer": "Software Niagara",
+			"organizer_url": "http://www.softwareniagara.com",
+			"venue": "Red Hot Chili Pepper",
+			"address": "One St. Paul Street St. Catharines, L2R 7L2",
+			"registration": "http://democampniagara2.eventbrite.com"
+		},
+		{
+			"name": "DemoCamp Niagara 1",
+			"date": "September 19, 2012 6:30PM - 9:30PM",
+			"organizer": "Software Niagara",
+			"organizer_url": "http://www.softwareniagara.com",
+			"venue": "On the Front Cafe & Eatery",
+			"address": "30 Front Street South Thorold, L2V 1W9",
+			"registration": "http://democampniagara.eventbrite.com"
+		}
+	]
+}
