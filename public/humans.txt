@@ -1,0 +1,16 @@
+/* TEAM */
+	Developer: Nickolas Kenyeres
+	Contact: nkenyeres [at] gmail.com
+	Twitter: @knicklabs
+	From: St. Catharines, ON Canada
+
+/* THANKS */
+	Inspiration: Softare Hamilton
+	Twitter: @hamiltonsw
+	From: Hamilton, ON Canada
+
+/* SITE */
+	Standards: HTML5, CSS3
+	Components: jQuery, Orbit, Reveal
+	Software: SublimeText, Git
+

@@ -1,0 +1,52 @@
+//- title : Welcome
+//- description : Software Niagara is a grassroots organization working to build a software community in Niagara
+//- menu : Home
+//- order: -5
+
+extends ./../layout_home
+
+block content
+  .row
+    .twelve.columns  
+      .panel.promo
+          h2 We are back
+          p.lead 
+            | Softare Niagara is getting ready for a new season. We're planning the next 
+            | DemoCamp for March 2013. In the meantime, join us for Software Co-working. 
+            | We meet at Mahtay Cafe in St. Catharines every Monday night from 7PM 
+            | until late.
+          p
+            a(href='https://softwarecoworkingniagara.eventbrite.com', class='button') Join us for co-working
+  include ./../_messages
+  .row
+    .twelve.columns
+      p.lead
+        | Software Niagara is a group of developers, creatives, and entrepreneurs 
+        | with a belief that Niagara is a great place to create. Through outreach,
+        | advocacy, and education, we are working to build a vibrant software 
+        | community and strong innovation culture.
+  .row
+    .four.columns
+      .accent.newsletter
+        i.general.foundicon-inbox
+      h3 Monthly Newsletter
+      p
+        | Join our monthly newsletter to keep up to date with tech in Niagara.
+      p
+        a(href='#', class='button secondary', data-reveal-id='modal-subscribe') Subscribe
+    .four.columns
+      .accent.events
+        i.general.foundicon-flag
+      h3 Upcoming Events
+      p 
+        | Check back soon. There are no upcoming events at this time.
+      p
+        a(href='/events', class='button secondary') View Events
+    .four.columns
+      .accent.coworking
+        i.general.foundicon-smiley
+      h3 Co-working 
+      p 
+        | Join us for Software Co-working every Monday night at Mahtay Cafe.
+      p 
+        a(href='https://softwarecoworkingniagara.eventbrite.com', class='button secondary') Join Us

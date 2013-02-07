@@ -1,0 +1,16 @@
+- if (typeof messages !== 'undefined')
+  section(id='messages')
+    .row
+      .twelve.columns
+        - if (messages.info)
+          .alert-box
+            != messages.info 
+        - if (messages.success)
+          .alert-box.success
+            != messages.success
+        - if (messages.alert)
+          .alert-box.secondary
+            != messages.alert
+        - if (messages.error)
+          .alert-box.alert
+            != messages.error

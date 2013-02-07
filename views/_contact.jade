@@ -1,0 +1,28 @@
+form(action='/contact', method='post', class='custom', data-validate='parsley', data-focus='none')
+  label(for='contact-name') Name 
+  input(id='contact-name', name='name', type='text')
+
+  label(for='contact-email') Email 
+  input(id='contact-email', name='email', type='email', data-required='true', data-type='email')
+
+  label(for='contact-subject') Subject 
+  select(style='display: none;', id='contact-subject', name='subject', data-required='true')
+    option(selected='selected', value='I just want to say hello') I just want to say hello
+    option(value='I want to demo at DemoCamp') I want to demo at DemoCamp
+    option(value='I want to speak at an event') I want to speak at an event
+    option(value='I want to sponsor an event') I want to sponsor an event 
+    option(value='I want to help Software Niagara') I want to help Software Niagara
+  .custom.dropdown
+    a(href='#', class='current') I just want to say hello 
+    a(href='#', class='selector')
+    ul
+      li I just want to say hello 
+      li I want to demo at DemoCamp
+      li I want to speak at an event 
+      li I want to sponsor an event 
+      li I want to help Software Niagara
+
+  label(for='contact-message') Message
+  textarea(id='contact-message', name='message', data-required='true')
+
+  input(type='submit', value='Send Message', class='button')

@@ -1,0 +1,17 @@
+footer(id='footer', role='complimentary')
+  .row
+    div.eight.columns
+      h3 About #{settings.name}
+      p= settings.about
+    .four.columns
+      .social-networks
+        ul
+          - each network, i in settings.networks
+            li
+              a(href=network.url, class="fc-webicon #{network.name}", title=network.slogan)
+                = network.slogan
+section(id='contentinfo', role='contentinfo')
+  .row
+    .twelve.columns
+      small
+        != "&copy; 2013 Software Niagara. All rights reserved."
