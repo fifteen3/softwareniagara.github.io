@@ -65,6 +65,15 @@
 	],
 	"events": [
 		{
+			"name": "Open Data Day 2013 Hackathon",
+			"date": "February 23, 2013 9:00AM - 5:00PM",
+			"organizer": "Software Niagara",
+			"organizer_url": "http://www.softwareniagara.com",
+			"venue": "Furi Enterprises",
+			"address": "One St. Paul Street Unit 10, St. Catharines",
+			"registration": "http://opendatahackathon2013niagara.eventbrite.com"
+		},
+		{
 			"name": "DemoCamp Niagara 2",
 			"date": "November 28, 2012 6:00PM - 9:00PM",
 			"organizer": "Software Niagara",
