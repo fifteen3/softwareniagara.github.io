@@ -43,10 +43,7 @@ form .parsley-error-list{list-style:none;color:#c60f14}
 .social-networks.enclosed li{margin-bottom:1em}
 .social-networks.enclosed i{background:#01abc5;color:#e6edf2;font-size:1em;padding:.5em;-webkit-border-radius:1em;border-radius:1em;vertical-align:top;margin-right:.5em}
 .social-networks.enclosed a:hover i{background:#01a2bb}
-<<<<<<< HEAD
 .lt-ie9 #header .name a{width:250px;height:145px;-webkit-background-size:auto;-moz-background-size:auto;background-size:auto}
-=======
->>>>>>> f9c6f0e9f088192cb7a3a12f40a3cfd3a6f7f1b0
 @media only screen and (max-width: 767px){#header{text-align:center;}
 #header .name{width:100%;text-align:center;}
 #header .name a{background-image:url("../images/logo-inverse.png");margin-left:auto;margin-right:auto}
