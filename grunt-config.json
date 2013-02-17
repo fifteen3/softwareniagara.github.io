@@ -1,20 +1,24 @@
 {
   "min": {
     "js": {
-      "src": ["out/vendor/jquery.js", "out/vendor/log.js", "out/vendor/modernizr.js", "out/scripts/script.js"],
-      "dest": "out/scripts/all.min.js"
+      "src": ["out/vendor/scripts/foundation.min.js", "out/vendor/scripts/parsley.min.js", "out/vendor/scripts/waypoints.min.js", "out/scripts/script.js"],
+      "dest": "out/scripts/app.min.js"
     }
   },
   "concat": {
     "css": {
-      "src": ["out/vendor/normalize.css","out/styles/style.css"],
-      "dest": "out/styles/all.css"
+      "src": [
+        "out/vendor/styles/foundation.min.css",
+        "out/vendor/styles/fc-icons.css",
+        "out/vendor/styles/fc-web-icons.css"
+      ],
+      "dest": "out/styles/app.css"
     }
   },
   "cssmin": {
     "all": {
-      "src": ["out/styles/all.css"],
-      "dest": "out/styles/all.min.css"
+      "src": ["out/styles/app.css"],
+      "dest": "out/styles/app.min.css"
     }
   }
 }

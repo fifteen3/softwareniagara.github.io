@@ -1,0 +1,12 @@
+<ul class="right">
+  <% for page in @getCollection('html').findAll({isPage: true}).toJSON(): %>
+    <li class="<%= if page.id is @document.id then 'active' else 'inactive' %> toggle-visibility <%= @visibilityClass %>">
+      <a href="<%= page.url %>">
+        <%= page.title %>
+      </a>
+    </li>
+  <% end %>
+  <li>
+    <a href="#" title="Subscribe" data-reveal-id="modal-subscribe">Subscribe</a>
+  </li>
+</ul>

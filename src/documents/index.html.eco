@@ -1,0 +1,66 @@
+---
+layout: 'default'
+title: 'Welcome'
+description: Software Niagara is a grassroots organization working to build a software community in Niagara.
+isPage: false
+isHome: true
+---
+
+<div class="hero-unit">
+  <h2>Celebrate Open Data Day with Us</h2>
+  <p class="lead">
+    Software Niagara is proud to announce that we are hosting an International Open Data Day Hackathon on February
+    23, 2013. This event is for all citizens that are interested in public open data. Lets find some creative and
+    useful uses for open data in Niagara.
+  </p>
+  <p class="lead">
+    This event is open to everyone regardless of their skill level. There will be opportunities to teach, learn and
+    participate.
+  </p>
+  <p>
+    <a href="http://opendata2013.softwareniagara.com" class="button">More details</a>
+  </p>
+</div>
+<p class="lead">
+  Software Niagara is a group of developers, creatives, and entrpreneurs with a belief that Niagara is a great place
+  to create. Through outreach, advocacy, and education, we are working to build a vibrant software community and
+  a strong innovation culture.
+</p>
+<div class="row">
+  <div class="four columns">
+    <div class="accent newsletter">
+      <i class="general foundicon-inbox"></i>
+    </div>
+    <h3>Monthly Newsletter</h3>
+    <p>
+      Join our monthly newsletter to keep up to date with tech in Niagara.
+    </p>
+    <p>
+      <a href="#" class="button secondary" data-reveal-id="modal-subscribe">Subscribe</a>
+    </p>
+  </div>
+  <div class="four columns">
+    <div class="accent events">
+      <i class="general foundicon-flag"></i>
+    </div>
+    <h3>Upcoming Events</h3>
+    <p>
+      Check back soon. There are no upcoming events at this time.
+    </p>
+    <p>
+      <a href="/events" class="secondary button">View events</a>
+    </p>
+  </div>
+  <div class="four columns">
+    <div class="accent coworking">
+      <i class="general foundicon-smiley"></i>
+    </div>
+    <h3>Co-working</h3>
+    <p>
+      Join us for Software Co-working every Monday night at Mahtay Cafe.
+    </p>
+    <p>
+      <a href="https://softwarecoworkingniagara.eventbrite.com" class="button secondary">Join us</a>
+    </p>
+  </div>
+</div>

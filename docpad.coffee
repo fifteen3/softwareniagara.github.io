@@ -11,28 +11,54 @@ docpadConfig = {
 
 		# Specify some site properties
 		site:
-			# The production url of our website
-			url: "http://website.com"
+      # The organization name
+      organization: "Software Niagara"
 
-			# Here are some old site urls that you would like to redirect from
-			oldUrls: [
-				'www.website.com',
-				'website.herokuapp.com'
-			]
+      # A blurb describing the organization
+      blurb: "Software Niagara is a grassroots initiative to build a software community in the Niagara Region. We believe that sharing and collaboration will lead to the creation of great software and technology in Niagara."
+      
+      # Social networks
+      networks: [
+      	{
+      		name: "facebook",
+      		url: "htts://www.facebook.com/softwareniagara",
+      		slogan: "Like us on Facebook"
+      	},{
+      		name: "twitter",
+      		url: "http://twitter.com/softwareniagara",
+      		slogan: "Follow us on Twitter"
+      	},{
+      		name: "googleplus",
+      		url: "https://plus.google.com/100835796280756308699",
+      		slogan: "Follow us on Goolge+"
+      	},{
+      		name: "github",
+      		url: "https://github.com/softwareniagara",
+      		slogan: "Fork us on Github"
+      	}
+      ]
 
-			# The default title of our website
-			title: "Your Website"
+		# The production url of our website
+		url: "http://website.com"
 
-			# The website description (for SEO)
-			description: """
-				When your website appears in search results in say Google, the text here will be shown underneath your website's title.
-				"""
+		# Here are some old site urls that you would like to redirect from
+		oldUrls: [
+			'www.website.com',
+			'website.herokuapp.com'
+		]
 
-			# The website keywords (for SEO) separated by commas
-			keywords: """
-				place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
-				"""
+		# The default title of our website
+		title: "Your Website"
 
+		# The website description (for SEO)
+		description: """
+			When your website appears in search results in say Google, the text here will be shown underneath your website's title.
+			"""
+
+		# The website keywords (for SEO) separated by commas
+		keywords: """
+     place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
+     """
 
 		# -----------------------------
 		# Helper Functions
@@ -80,6 +106,15 @@ docpadConfig = {
 			_.map scripts, (value) ->
 				return value.replace 'out', ''
 
+
+  # =================================
+  # DocPad Collections
+  collections:
+    pages: ->
+      @getCollection('html').findAllLive({isPage:true})
+    
+    organizers: (database)->
+      database.findAllLive({relativeOutDirPath:'organizers'}, [title: 1])
 
 	# =================================
 	# DocPad Events

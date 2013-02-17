@@ -1,0 +1,55 @@
+---
+layout: 'default'
+title: 'Events'
+isPage: true
+---
+<div class="row">
+  <div class="eight columns">
+    <p class="lead">
+      Software Niagara hosts technology events in the Niagara Region to showcase local talent and help form relationships
+      between people in Niagara with an interest in technology.
+    </p>
+
+    <p>
+      We are also interested in promoting events from other groups that have similar goals. Please
+      <a href="/contact" title="Contact Software Niagara">contact us</a> if you would like your events listed here.
+    </p>
+
+    <ul class="events">
+      <% for event in @getCollection('html').findAll({relativeOutDirPath:'events', type: 'single'}).sortArray({date: -1, title: 1}): %>
+      <li>
+        <article class="event">
+          <hgroup>
+            <h3><%= event.title %></h3>
+            <h5><a href="<%= event.organizerUrl %>"><%= event.organizer %></a></h5>
+          </hgroup>
+          <p>
+            <strong><%= event.time %></strong><br>
+            <%= event.venue %><br>
+            <%= event.address %>
+          </p>
+          <p>
+            <a href="<%= event.registration %>" class="button">Register</a>
+          </p>
+        </article>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="four columns">
+    <h3>Weekly Events</h3>
+    <ul class="weekly-events">
+      <% for event in @getCollection('html').findAll({relativeOutDirPath:'events', type: 'weekly'}).sortArray({day: 1, hour: 1, title: 1}): %>
+        <li>
+          <aricle class="weekly-event">
+            <h5><%= event.title %></h5>
+            <p><%= event.description %></p>
+            <p>
+              <a href="<%= event.registration %>" class="button secondary">Register</a>
+            </p>
+          </aricle>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
