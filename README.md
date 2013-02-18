@@ -1,55 +1,70 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com/) skeleton for [DocPad](https://github.com/bevry/docpad)
-Bare essentials for building a modern website with best practices
+softwareniagara.com
+===================
 
-## Why the fork?
-This fork adds [Grunt](http://gruntjs.com/) to show an example of taking the HTMLBP and minifying and concatenating all the JS and CSS assets into single files and including those in the layout.
+This is the web application that powers softwareniagara.com.
+The app is built with DocPad which is a static site generator.
+It uses Express.js-based routes for clean urls and some server-side
+functionality, such as contact form processing. As such, even
+though it is a 'static' site, it must be run in a dynamic
+environment.
 
-## What is different?
+## About Software Niagara
 
-### `grunt-config.json`
-- This file is contains the object passed to `grunt.initConfig` in `grunt.js`. It has been put into its own file since it is used in `docpad.coffee` to build file lists for inclusion in the layout and deleting unused files.
-
-### `grunt.js`
-- This is the Grunt file. It runs `initConfig` with the `grunt-config.json` object. It also registers a `default` task with all the keys from the config file.
-
-### `docpad.coffee`
-- I added the helper functions [`getGruntedStyles`]() and [`getGruntedScripts`](). These functions will return all the compiled assets that contain `.min.(css|js)` with the correct base path.
-- A [`writeAfter`]() DocPad event. It is based on [this gist](https://gist.github.com/3898915), with some additional functionality. It will run the `default` grunt command. Then it will use your `grunt-config.json` to delete the `src` files since they are no longer needed. It will also delete any empty directories in the 'out/' directory.
-
-### `layouts/default.html.eco`
-- The script and style blocks have been replaced with calls to the helper functions described above.
-
+Software Niagara is an organization dedicated to fostering a
+stronger software community in the Niagara Region of Ontario,
+Canada. More information can be found on our website at
+[http://softwareniagara.com](http://softwareniagara.com).
 
 ## Getting Started
 
-1. [Install DocPad](https://github.com/bevry/docpad)
+You will need a Node.js enviornment to run Express. This is a
+Procfile-based application so you may use Foreman to run the
+app.
 
-1. Clone the project and run the server
+1. Change to the project directory and run `npm install` to
+   install the dependencies.
+2. Run `foreman start` to start the server.
+3. Visit [http://localhost:5000](http://localhost:5000).
 
-	``` bash
-	git clone git://github.com/lukekarrys/html5-boilerplate.docpad.git
-	cd html5-boilerplate.docpad
-	npm install
-	docpad run
-	```
+If you want to take advantage of Live Reload, run the app with
+the `docpad run` command instead.
 
-1. [Open http://localhost:9778/](http://localhost:9778/)
+## Contributing
 
-1. Start hacking away by modifying the `src` directory
+You may contribute to softwareniagara.com or you may fork this
+project and do what you wish with it.
 
+If you make improvements to this application, please share with
+others.
+
+* Fork the project on GitHub.
+* Make your feature addition or bug fix.
+* Commit with Git.
+* Send the author a pull request.
+
+If you add functionality to this application, create an alternative
+implementation, or build an application that is similar, please
+contact us and we will make a note to the README so that others can
+find your work.
 
 ## License
 
-This skeleton is made ["public domain"](http://en.wikipedia.org/wiki/Public_domain) using the [Creative Commons Zero](http://creativecommons.org/publicdomain/zero/1.0/), as such before you publish your website you should place your desired license here and within the `LICENSE.md` file.
+Copyright (c) 2012 Software Niagara.
 
-If you are wanting to open-source your website, we suggest using the [Creative Commons Attribution License](http://creativecommons.org/licenses/by/3.0/) for content and the [MIT License](http://creativecommons.org/licenses/MIT/) for code. In which case you'd probably want to use the following as your license:
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the "Software"),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:
 
-	Unless stated otherwise, all content is licensed under the [Creative Commons Attribution License](http://creativecommons.org/licenses/by/3.0/) and code licensed under the [MIT License](http://creativecommons.org/licenses/MIT/), © [Your Name](http://your.website)
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
 
-If you are wanting to close-source your website, we'd suggest using the following:
-
-	Copyright [Your Name](http://your.website). All rights reserved.
-
-Other included things such as themes and libraries are likely already licensed by their own invidual licenses, so be sure to respect their licenses too.
-
-Thanks, the DocPad team loves you.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
