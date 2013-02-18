@@ -1,7 +1,12 @@
 ---
 layout: 'default'
-title: 'Events'
+label: 'Events'
+order: 1
+title: 'Tech Events in Niagara'
+description: 'Software, app, game, web, and tech events and networking in Niagara, Ontario Canada'
+keywords: 'software, app, game, web, tech, events, niagara, st. catharines, thorold, welland, niagara falls, fort erie'
 isPage: true
+inMenu: true
 ---
 <div class="row">
   <div class="eight columns">

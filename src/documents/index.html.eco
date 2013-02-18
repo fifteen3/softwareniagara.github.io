@@ -1,8 +1,11 @@
 ---
 layout: 'default'
+label: 'Home'
+order: 0
 title: 'Welcome'
-description: Software Niagara is a grassroots organization working to build a software community in Niagara.
-isPage: false
+description: 'Software Niagara is a grassroots organization working to build a software community in Niagara.'
+isPage: true
+inMenu: false
 isHome: true
 ---
 
@@ -45,7 +48,7 @@ isHome: true
     </div>
     <h3>Upcoming Events</h3>
     <p>
-      Check back soon. There are no upcoming events at this time.
+      Software Niagara regularly hosts tech events in Niagara. Come join us.
     </p>
     <p>
       <a href="/events" class="secondary button">View events</a>

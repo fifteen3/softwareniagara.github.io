@@ -1,18 +1,6 @@
-/* -------------------------------------------------- 
-   Table of Contents
------------------------------------------------------
-:: Variable Declarations
-:: Font Icons
-:: Shared Styles
-:: Home Page
-:: About Page
-:: Contact Page
-:: IE Hacks
-*/
-
-/* -----------------------------------------
-   Variable Declarations
--------------------------------------------*/
+/**
+ * Variables
+ */
 secondaryColor = #e9e9e9;
 highlightColor = #FFF995;
 primaryColor = #01ABC5;
@@ -30,7 +18,7 @@ textColor = #333;
 
 body {
   background-color: white;
-  padding: 0 0 2em 0;
+  padding: 0 0 2em 0 !important;
 }
 
 .panel {
@@ -89,7 +77,7 @@ hgroup {
 .sub-title {
   padding-bottom: 20px;
   border-bottom: 1px solid secondaryColor;
-  color: #DF361E;
+  color: #5B9147;
 }
 
 .sub-title {
@@ -105,11 +93,11 @@ form textarea {
   height: 400px;
 }
 
-.parsley-error {
+form .parsley-error {
   border-color: errorColor;
 }
 
-.parsley-error-list {
+form .parsley-error-list {
   list-style: none;
   color: errorColor;
 }
@@ -248,23 +236,13 @@ form textarea {
   }
 }
 
-// CONTENTINFO
-#contentinfo {
-  padding: 1.5em 0;
-  text-align: center;
-
-  small {
-    font-size: .9em;
-  }
-}
-
 .reveal-modal {
   z-index: 999999;
 }
 
-/* -----------------------------------------
-   Home Page
------------------------------------------ */
+/**
+ * Home page
+ */
 .hero-unit {
   margin-top: -2.1em;
   margin-left: -2em;
@@ -288,9 +266,9 @@ form textarea {
   color: #9EB9D2;
 }
 
-/* -----------------------------------------
-   About Page
------------------------------------------ */
+/**
+ * About page
+ */
 .organizers {
   list-style: none;
 
@@ -314,9 +292,9 @@ form textarea {
   }
 }
 
-/* -----------------------------------------
-   Contact Page
------------------------------------------ */
+/**
+ * Contact page
+ */
 .social-networks.enclosed {
   li {
     margin-bottom: 1em;
@@ -337,18 +315,43 @@ form textarea {
   }
 }
 
-/* -----------------------------------------
-   IE Hacks
------------------------------------------ */
+/**
+ * IE Hacks
+ */
 .lt-ie9 #header .name a {
   width: 250px;
   height: 145px;
   background-size: auto;
 }
 
-/* -----------------------------------------
-   Responsive
------------------------------------------ */
+.lt-ie9 {
+  .top-bar ul > li {
+    a {
+      color: textColor;
+    }
+
+    &:hover,
+    a:hover,
+    a:focus,
+    a.active {
+      background-color: darken(white, 5%) !important;
+      color: primaryColor;
+    }
+
+    &.active a {
+      background-color: darken(white, 5%);
+      color: textColor;
+    }
+  }
+
+  .top-bar ul > li.name {
+    color: primaryColor;
+  }
+}
+
+/**
+ * Responsive layout
+ */
 @media only screen and (max-width: 767px) {
 // HEADER
   #header {
@@ -370,20 +373,17 @@ form textarea {
     background-image: url('../images/logo-inverse.svg');
   }
 
-// WRAPPER
   .wrapper {
     background-color: white;
     background-image: none;
   }
 
-// MAIN
   #main {
     border-radius: 0;
     box-shadow: none;
     padding: 0;
   }
 
-// HOME PAGE
   .promo {
     margin-top: 0;
     margin-left: 0;

@@ -1,8 +1,11 @@
 ---
 layout: 'default'
-title: 'Contact'
-dynamic: true
+label: 'Contact'
+order: 50
+title: 'Contact Software Niagara'
 isPage: true
+inMenu: true
+dynamic: true
 ---
 
 <div class="row">

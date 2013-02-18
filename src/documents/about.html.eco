@@ -1,7 +1,10 @@
 ---
 layout: 'default'
-title: 'About'
+label: 'About'
+order: 2
+title: 'About Softare Niagara'
 isPage: true
+inMenu: true
 ---
 
 <p class="lead">
