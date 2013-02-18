@@ -10,25 +10,33 @@ isHome: true
 ---
 
 <div class="hero-unit">
-  <h2>Celebrate Open Data Day with Us</h2>
-  <p class="lead">
-    Software Niagara is proud to announce that we are hosting an International Open Data Day Hackathon on February
-    23, 2013. This event is for all citizens that are interested in public open data. Lets find some creative and
-    useful uses for open data in Niagara.
-  </p>
-  <p class="lead">
-    This event is open to everyone regardless of their skill level. There will be opportunities to teach, learn and
-    participate.
-  </p>
-  <p>
-    <a href="http://opendata2013.softwareniagara.com" class="button">More details</a>
-  </p>
+  <div class="row">
+      <div class="twelve columns">
+          <h2>Celebrate Open Data Day with Us</h2>
+          <p class="lead">
+              Software Niagara is proud to announce that we are hosting an International Open Data Day Hackathon on February
+              23, 2013. This event is for all citizens that are interested in public open data. Lets find some creative and
+              useful uses for open data in Niagara.
+          </p>
+          <p class="lead">
+              This event is open to everyone regardless of their skill level. There will be opportunities to teach, learn and
+              participate.
+          </p>
+          <p>
+              <a href="http://opendata2013.softwareniagara.com" class="button">More details</a>
+          </p>
+      </div>
+  </div>
 </div>
-<p class="lead">
-  Software Niagara is a group of developers, creatives, and entrepreneurs with a belief that Niagara is a great place
-  to create. Through outreach, advocacy, and education, we are working to build a vibrant software community and
-  a strong innovation culture.
-</p>
+<div class="row">
+    <div class="twelve columns">
+        <p class="lead">
+            Software Niagara is a group of developers, creatives, and entrepreneurs with a belief that Niagara is a great place
+            to create. Through outreach, advocacy, and education, we are working to build a vibrant software community and
+            a strong innovation culture.
+        </p>
+    </div>
+</div>
 <div class="row">
   <div class="four columns">
     <div class="accent newsletter">
