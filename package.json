@@ -1,9 +1,9 @@
 {
-  "name": "html5-boilerplate-frontend.docpad",
-  "version": "0.1.0",
+  "name": "softwareniagara.com",
+  "version": "2.1.0",
   "private": true,
-  "description": "HTML5 Boilerplate skeleton for DocPad. Bare essentials for building a modern website with best practices. Adds frontend plugins asset compilation.",
-  "homepage": "https://github.com/lukekarrys/html5-boilerplate.docpad",
+  "description": "The official website of Software Niagara",
+  "homepage": "https://github.com/softwareniagara/softwareniagara.com",
   "keywords": [
     "docpad-skeleton",
     "docpad",
@@ -13,20 +13,19 @@
     "h5bp",
     "grunt"
   ],
-  "author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
+  "author": "Nickolas Kenyeres <nkenyeres@gmail.com> (http://knicklabs.github.com)",
   "maintainers": [
-    "Luke Karrys (http://lukekarrys.com)"
+    "Nickolas Kenyeres <nkenyeres@gmail.com> (http://knicklabs.github.com)"
   ],
   "contributors": [
-    "Benjamin Lupton <b@lupton.cc> (http://balupton.com)",
-    "Luke Karrys (http://lukekarrys.com)"
+    "Nickolas Kenyeres <nkenyeres@gmail.com> (http://knicklabs.github.com)"
   ],
   "bugs": {
-    "url": "https://github.com/lukekarrys/html5-boilerplate.docpad/issues"
+    "url": "https://github.com/softwareniagara/softwareniagara.com/issues"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/lukekarrys/html5-boilerplate.docpad.git"
+    "url": "http://github.com/softwareniagara/softwareniagara.com.git"
   },
   "engines": {
     "node": "0.8.x",
@@ -47,7 +46,8 @@
     "grunt-stylus": "~0.2.0",
     "mongoose": "~3.5.6",
     "mongoose-validate": "0.0.4",
-    "node-mandrill": "~1.0.1"
+    "node-mandrill": "~1.0.1",
+    "docpad-plugin-cleanurls": "~2.4.0"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "2.x"
