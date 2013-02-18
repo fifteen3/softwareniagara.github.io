@@ -10,16 +10,6 @@ inMenu: true
 ---
 <div class="row">
   <div class="eight columns">
-    <p class="lead">
-      Software Niagara hosts technology events in the Niagara Region to showcase local talent and help form relationships
-      between people in Niagara with an interest in technology.
-    </p>
-
-    <p>
-      We are also interested in promoting events from other groups that have similar goals. Please
-      <a href="/contact" title="Contact Software Niagara">contact us</a> if you would like your events listed here.
-    </p>
-
     <ul class="events">
       <% for event in @getCollection('html').findAll({relativeOutDirPath:'events', type: 'single'}).sortArray({date: -1, title: 1}): %>
       <li>
@@ -40,6 +30,10 @@ inMenu: true
       </li>
       <% end %>
     </ul>
+    <p>
+      <a href="/contact" title="Contact Software Niagara">Contact us</a> if you know of a local tech event that should
+      be listed here.
+    </p>
   </div>
   <div class="four columns">
     <h3>Weekly Events</h3>
