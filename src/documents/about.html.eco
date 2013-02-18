@@ -2,7 +2,7 @@
 layout: 'default'
 label: 'About'
 order: 2
-title: 'About Softare Niagara'
+title: 'About Software Niagara'
 isPage: true
 inMenu: true
 ---
