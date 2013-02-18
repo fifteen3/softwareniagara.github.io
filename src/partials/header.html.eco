@@ -7,7 +7,7 @@
         </a>
       </li>
       <li class="toggle-topbar">
-        <a href="#" title="Toggle menu">Toggle menu</a>
+        <a href="#" title="Toggle menu"></a>
       </li>
     </ul>
     <section id="toolbar-menu">
