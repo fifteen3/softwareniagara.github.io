@@ -45,20 +45,24 @@ docpadConfig = {
       networks: [
         {
           name: "facebook",
-          url: "htts://www.facebook.com/softwareniagara",
-          slogan: "Like us on Facebook"
+          url: "https://www.facebook.com/softwareniagara",
+          slogan: "Like us on Facebook",
+          icon: "facebook"
         },{
           name: "twitter",
-          url: "http://twitter.com/softwareniagara",
-          slogan: "Follow us on Twitter"
+          url: "https://twitter.com/softwareniagara",
+          slogan: "Follow us on Twitter",
+          icon: "twitter"
         },{
           name: "googleplus",
           url: "https://plus.google.com/100835796280756308699",
-          slogan: "Follow us on Goolge+"
+          slogan: "Follow us on Goolge+",
+          icon: "google-plus"
         },{
           name: "github",
           url: "https://github.com/softwareniagara",
-          slogan: "Fork us on Github"
+          slogan: "Fork us on Github",
+          icon: "github"
         }
       ]
 

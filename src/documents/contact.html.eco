@@ -59,6 +59,15 @@ dynamic: true
 		</form>
 	</div>
 	<div class="four columns">
-
+        <ul class="social-networks enclosed">
+            <% for network in @site.networks: %>
+                <li>
+                    <a href="<%= network.url %>" title="<%= network.slogan %>">
+                        <i class="social foundicon-<%= network.icon %>"></i>
+                        <%= network.slogan %>
+                    </a>
+                </li>
+            <% end %>
+        </ul>
 	</div>
 </div>
