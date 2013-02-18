@@ -73,7 +73,7 @@ docpadConfig = {
         'softwareniagara.herokuapp.com'
       ]
 
-      title: "Your Website"
+      title: "Software Niagara"
 
       description: """
         When your website appears in search results in say Google, the text here will be shown underneath your website's title.
