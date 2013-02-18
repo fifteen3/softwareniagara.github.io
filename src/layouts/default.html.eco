@@ -26,7 +26,6 @@
         document.createElement('hgroup');
     </script>
     <![endif]-->
-    <%- @getBlock('scripts').add(@getGruntedScripts()).toHTML() %>
 
 	<%- @getBlock('styles').add(@getGruntedStyles()).toHTML() %>
     <link rel="stylesheet" href="styles/style.css">
@@ -41,17 +40,18 @@
   <div class="wrapper">
     <%- @partial('header.html.eco', @) %>
     <div class="row">
-      <div class="twelve columns">
+      <article class="twelve columns">
         <div id="main" class="page" role="main">
           <% unless @document.isHome: %>
             <h1 class="page-title"><%- @document.title %></h1>
           <% end %>
           <%- @content %>
         </div>
-      </div>
+      </article>
     </div>
   </div>
   <%- @partial('footer.html.eco', @) %>
   <%- @partial('modals.html.eco', @) %>
+  <%- @getBlock('scripts').add(@getGruntedScripts()).toHTML() %>
 </body>
 </html>
