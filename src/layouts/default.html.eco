@@ -14,8 +14,21 @@
 	<meta name="keywords" content="<%= @getPreparedKeywords() %>" />
 
 	<%- @getBlock('meta').toHTML() %>
+
+    <!--[if lt IE 9]>
+    <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+        document.createElement('hgroup');
+    </script>
+    <![endif]-->
+
 	<%- @getBlock('styles').add(@getGruntedStyles()).toHTML() %>
-  <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 
 	<link rel="shortcut icon" href="/icons/favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" href="icons/apple-touch-icon-57x57-precomposed.png" />
@@ -28,17 +41,17 @@
     <%- @partial('header.html.eco', @) %>
     <div class="row">
       <div class="twelve columns">
-        <article id="main" class="page" role="main">
+        <div id="main" class="page" role="main">
           <% unless @document.isHome: %>
             <h1 class="page-title"><%- @document.title %></h1>
           <% end %>
           <%- @content %>
-        </article>
+        </div>
       </div>
     </div>
   </div>
   <%- @partial('footer.html.eco', @) %>
   <%- @partial('modals.html.eco', @) %>
-	<%- @getBlock('scripts').add(@getGruntedScripts()).toHTML() %>
+  <%- @getBlock('scripts').add(@getGruntedScripts()).toHTML() %>
 </body>
 </html>
