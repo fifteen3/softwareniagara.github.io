@@ -70,7 +70,7 @@ docpadConfig = {
 
       oldUrls: [
         'www.softwareniagara.com',
-        'softwareniagara.herokuapp.com'
+        'softwareniagara-com.herokuapp.com'
       ]
 
       title: "Software Niagara"
