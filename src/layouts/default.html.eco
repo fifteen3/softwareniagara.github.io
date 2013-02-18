@@ -26,6 +26,7 @@
         document.createElement('hgroup');
     </script>
     <![endif]-->
+    <%- @getBlock('scripts').add(@getGruntedScripts()).toHTML() %>
 
 	<%- @getBlock('styles').add(@getGruntedStyles()).toHTML() %>
     <link rel="stylesheet" href="styles/style.css">
@@ -52,6 +53,5 @@
   </div>
   <%- @partial('footer.html.eco', @) %>
   <%- @partial('modals.html.eco', @) %>
-  <%- @getBlock('scripts').add(@getGruntedScripts()).toHTML() %>
 </body>
 </html>
