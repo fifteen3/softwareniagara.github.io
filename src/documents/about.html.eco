@@ -1,7 +1,7 @@
 ---
 layout: 'default'
 label: 'About'
-order: 2
+order: 3
 title: 'About Software Niagara'
 isPage: true
 inMenu: true
