@@ -5,7 +5,7 @@
     surrounding area.
   </p>
   <form action="http://softwareniagara.us5.list-manage.com/subscribe/post?u=05691c73c71b8b4c0331ca2d9&amp;id=c8cb8ab954" method="post" id="mc-embedded-subscribe-form" class="mc-embedded-subscribe-form" data-validate="parsley" data-focus="first" target="_blank">
-    <label for="mce-Email">Email</label>
+    <label for="mce-EMAIL">Email</label>
     <input type="email" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" data-required="true" data-type="email">
     <input type="submit" value="Subscribe" name="subscribe" id="mce-embedded-subscribe" class="button">
   </form>
