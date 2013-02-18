@@ -31,6 +31,11 @@ inMenu: true
 * [Port Colborne/Wainfleet](http://www.pcwchamber.com/)
 * [Welland/Pelham](http://www.wellandpelhamchamber.com/)
 
+### Open Data
+
+* [Niagara Falls Open Data](http://www.niagarafalls.ca/services/open/default.aspx)
+* [Niagara Region Open Data Catalogue](http://www.niagararegion.ca/government/opendata/default.aspx)
+
 ### Start-up and Business Resources
 
 * [Innovate Niagara](https://innovateniagara.com/)
