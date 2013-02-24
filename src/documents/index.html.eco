@@ -12,18 +12,26 @@ isHome: true
 <div class="hero-unit">
   <div class="row">
       <div class="twelve columns">
-          <h2>Celebrate Open Data Day with Us</h2>
+          <h2>Open Data Hackathon: Success</h2>
           <p class="lead">
-              Software Niagara is proud to announce that we are hosting an International Open Data Day Hackathon on February
-              23, 2013. This event is for all citizens that are interested in public open data. Lets find some creative and
-              useful uses for open data in Niagara.
+            Software Niagara organized the International Open Data Day Hackathon in Niagara on February 23, 2013. We had
+            more than 15 people turn out, including developers, creatives, open data advocates, business owners, and
+            students. These exceptional people worked on the following projects:
           </p>
-          <p class="lead">
-              This event is open to everyone regardless of their skill level. There will be opportunities to teach, learn and
-              participate.
+          <ul class="disc">
+            <li><a href="https://twitter.com/OpenInNiagara">@OpenInNiagara</a></li>
+            <li><a href="http://dennisideler.com/find-god-in-niagara/">Find God in Niagara</a>  </li>
+            <li><a href="https://github.com/controlz/Niagara-Trails">Niagara Trails</a></li>
+            <li><a href="https://github.com/softwareniagara/niagara_clearview">Niagara Clearview</a></li>
+          </ul>
+          <p>
+            The Event was hosted at Furi Enterprises and sponsored by <a href="http://furi.ca">Furi Enterprises</a> and
+            <a href="http://www.smallwebstrategies.com">Small Web Strategies</a>. We'll be posting a more detailed
+            recap soon, including a copy of our community letter to the Niagara Region in support of their open data
+            initiative. In the meantime, check out our Facebook page for event photos.
           </p>
           <p>
-              <a href="http://opendata2013.softwareniagara.com" class="button">More details</a>
+              <a href="http://facebook.com/softwareniagara" class="button">Go to our Facebook page</a>
           </p>
       </div>
   </div>
