@@ -4,7 +4,7 @@ organizer: 'LOSUNG'
 organizerUrl: 'http://www.meetup.com/Linux-and-Open-Source-Users-of-Niagara-Group/'
 registration: 'http://www.meetup.com/Linux-and-Open-Source-Users-of-Niagara-Group/events/105991132/'
 description: 'Open source software - getting your feet wet.'
-date: 2013-03-12
+date: 2013-03-03
 time: 'March 3, 2013 7:00PM'
 venue: 'J.J. Kapps'
 address: '327 Ontario St., St. Catharines, ON'
