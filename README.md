@@ -26,8 +26,8 @@ app.
 2. Run `foreman start` to start the server.
 3. Visit [http://localhost:5000](http://localhost:5000).
 
-If you want to take advantage of Live Reload, run the app with
-the `docpad run` command instead.
+If you want to take advantage of Live Reload, run the app with `docpad run` instead
+and visit [http://localhost:9778](http://localhost:9778/).
 
 ## Contributing
 
