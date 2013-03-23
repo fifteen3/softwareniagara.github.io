@@ -8,6 +8,8 @@ docpadConfig = {
   # These are variables that will be accessible via our application, such as our custom routes.
   # =================================
 
+  port: 3001
+
   appData:
     # The api key for Mandrill
     mandrillKey: process.env.SNWWW_MANDRILL_KEY
