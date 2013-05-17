@@ -15,20 +15,10 @@
 
 	<%- @getBlock('meta').toHTML() %>
 
-    <!--[if lt IE 9]>
-    <script>
-        document.createElement('header');
-        document.createElement('nav');
-        document.createElement('section');
-        document.createElement('article');
-        document.createElement('aside');
-        document.createElement('footer');
-        document.createElement('hgroup');
-    </script>
-    <![endif]-->
+  <script src="vendor/scripts/custom.modernizr.js"></script>
 
 	<%- @getBlock('styles').add(@getGruntedStyles()).toHTML() %>
-    <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/style.css">
 
 	<link rel="shortcut icon" href="/icons/favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" href="icons/apple-touch-icon-57x57-precomposed.png" />
@@ -52,9 +42,16 @@
   </div>
   <%- @partial('footer.html.eco', @) %>
   <%- @partial('modals.html.eco', @) %>
-  <%- @getBlock('scripts').add(@getGruntedScripts()).toHTML() %>
-  <script type="text/javascript">
 
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'vendor/scripts/jquery' : 'vendor/scripts/jquery') +
+  '.js><\/script>')
+  </script>
+
+  <%- @getBlock('scripts').add(@getGruntedScripts()).toHTML() %>
+
+  <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-34081005-1']);
       _gaq.push(['_trackPageview']);
@@ -64,7 +61,6 @@
           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-
   </script>
 </body>
 </html>
