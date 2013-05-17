@@ -105,43 +105,8 @@ form .parsley-error-list {
 /**
  * Toolbar/top-bar
  */
-
-.fixed,
-.top-bar {
-  background-color: white;
-}
-
-.fixed {
-  border-bottom: 1px solid darken(white, 15%);
-  box-shadow: 0 2px 2px rgba(black, .15);
-}
-
-.top-bar ul > li,
-.top-bar ul > li:not(.name) {
-  a {
-    color: textColor;
-  }
-
-  &:hover,
-  a:hover,
-  a:focus,
-  a.active {
-    background-color: transparent;
-    color: primaryColor;
-  }
-
-  &.active a {
-    background-color: darken(white, 5%);
-    color: textColor;
-  }
-}
-
-.top-bar ul > li.name a:not(.button) {
-  color: primaryColor;
-}
-
-.top-bar ul > li.toggle-topbar a {
-  border-color: #e8e8e8;
+.contain-to-grid .top-bar {
+  margin-bottom: 0;
 }
 
 /**
@@ -357,6 +322,14 @@ form .parsley-error-list {
  * Responsive layout
  */
 @media only screen and (max-width: 767px) {
+  body {
+    padding-top: 0;
+  }
+
+  .wrapper {
+    padding-top: 0;
+  }
+
 // HEADER
   #header {
     text-align: center;
