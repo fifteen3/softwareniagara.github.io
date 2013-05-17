@@ -1,16 +1,19 @@
 <div id="toolbar" class="fixed contain-to-grid">
   <nav class="top-bar" role="navigation">
-    <ul>
+    <ul class="title-area">
       <li class="name">
-        <a href="/" title="Software Niagara">
-          Software Niagara
-        </a>
+        <h1>
+          <a href="/" title="Software Niagara">
+            Software Niagara
+          </a>
+        </h1>
       </li>
-      <li class="toggle-topbar">
-        <a href="#" title="Toggle menu"></a>
+      <li class="toggle-topbar menu-icon">
+        <a href="#" title="Toggle menu"><span>Menu</span></a>
       </li>
     </ul>
-    <section id="toolbar-menu">
+
+    <section id="toolbar-menu" class="top-bar-section">
       <%- @partial('menu.html.eco', @, {visibilityClass: 'show-for-small'}) %>
     </section>
   </nav>
