@@ -2,6 +2,7 @@
   "min": {
     "js": {
       "src": [
+        "out/vendor/scripts/jquery.js",
         "out/vendor/scripts/foundation.min.js", 
         "out/vendor/scripts/parsley.min.js", 
         "out/vendor/scripts/waypoints.min.js", 

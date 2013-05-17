@@ -43,12 +43,6 @@
   <%- @partial('footer.html.eco', @) %>
   <%- @partial('modals.html.eco', @) %>
 
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'vendor/scripts/jquery' : 'vendor/scripts/jquery') +
-  '.js><\/script>')
-  </script>
-
   <%- @getBlock('scripts').add(@getGruntedScripts()).toHTML() %>
 
   <script type="text/javascript">
