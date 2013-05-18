@@ -1,14 +1,12 @@
-<ul class="right">
+<ul class="inline-list">
   <% for page in @getCollection('html').findAll({isPage: true, inMenu: true}).sortArray({order: 1}): %>
-    <li class="<%= if page.id is @document.id then 'active' else 'inactive' %> toggle-visibility <%= @visibilityClass %>">
+    <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
       <a href="<%= page.url %>">
         <%= page.label or page.title %>
       </a>
     </li>
   <% end %>
-  <% if @visibilityClass: %>
-    <li>
-        <a href="#" title="Subscribe" data-reveal-id="modal-subscribe">Subscribe</a>
-    </li>
-  <% end %>
+  <li>
+    <a href="#" title="Subscribe" data-reveal-id="modal-subscribe">Subscribe</a>
+  </li>
 </ul>
