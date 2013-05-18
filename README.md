@@ -1,9 +1,8 @@
 softwareniagara.com
 ===================
 
-This is an open source, community supported website that is 
+This is an open source, community supported  website that is
 powered by a (static) website/blog engine called DocPad.
-
 
 ## About softwareniagara.com
 
