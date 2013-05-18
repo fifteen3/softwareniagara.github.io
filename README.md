@@ -1,59 +1,53 @@
-THIS PROJECT IS NO LONGER MAINTAINED. SOFTWARENIAGARA.COM HAS 
-MOVED TO THE WORDPRESS PLATFORM IN AN EFFORT TO MAKE IT EASIER
-FOR PEOPLE TO CONTRIBUTE CONTENT.
-
 softwareniagara.com
 ===================
 
-This is the web application that powers softwareniagara.com.
-The app is built with DocPad which is a static site generator.
-It uses Express.js-based routes for clean urls and some server-side
-functionality, such as contact form processing. As such, even
-though it is a 'static' site, it must be run in a dynamic
-environment.
+This is an open source, community supported website that is 
+powered by a (static) website/blog engine called DocPad.
+
+
+## About softwareniagara.com
+
+softwareniagara.com is an open source, community supported website
+and blog created by the Software Niagara core team. The purpose of
+the website and blog is to promote Software Niagara and provide 
+information and commentary on the software and start-up community 
+in the Niagara Region, Ontario, Canada.
+
+The content and code for this website and blog is stored in a public
+Git repository. Anyone can fork the repository to write an article, 
+update content, or add a new feature. Send your changes or additions
+in a pull request.
 
 ## About Software Niagara
 
-Software Niagara is an organization dedicated to fostering a
-stronger software community in the Niagara Region of Ontario,
-Canada. More information can be found on our website at
-[http://softwareniagara.com](http://softwareniagara.com).
+Software Niagara is an grassroots, volunteer-led organization
+that is working to foster a stronger software and start-up 
+community in the Niagara Region, Ontario, Canada.
 
 ## Getting Started
 
-You will need a Node.js enviornment to run Express. This is a
-Procfile-based application so you may use Foreman to run the
-app.
+To run this website and blog locally, you will need to install 
+DocPad and its dependencies. You will also need to be running 
+a local MongoDB server.
 
-1. Change to the project directory and run `npm install` to
-   install the dependencies.
-2. Run `foreman start` to start the server.
-3. Visit [http://localhost:5000](http://localhost:5000).
-
-If you want to take advantage of Live Reload, run the app with `docpad run` instead
-and visit [http://localhost:9778](http://localhost:9778/).
+Once all dependencies are met, change into the project directory 
+and run 'docpad run'. 
 
 ## Contributing
 
-You may contribute to softwareniagara.com or you may fork this
-project and do what you wish with it.
+The preferred way to contribute to this website and blog is to fork it, 
+make your changes or add your article, and then send a pull request.
 
-If you make improvements to this application, please share with
-others.
+If this is your first time writing for softwareniagara.com, please 
+make an entry for yourself in src/documents/authors.
 
-* Fork the project on GitHub.
-* Make your feature addition or bug fix.
-* Commit with Git.
-* Send the author a pull request.
-
-If you add functionality to this application, create an alternative
-implementation, or build an application that is similar, please
-contact us and we will make a note to the README so that others can
-find your work.
+If this is your first time contributing code for softwareniagara.com, 
+please make an entry for yourself in the contributors section of 
+package.json.
 
 ## License
 
-Copyright (c) 2012 Software Niagara.
+Copyright (c) 2012, 2013 Software Niagara.
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the "Software"),
