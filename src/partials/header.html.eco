@@ -1,39 +1,16 @@
-<div id="toolbar" class="fixed contain-to-grid">
-  <nav class="top-bar" role="navigation">
-    <ul class="title-area">
+<header id="header" class="row" role="banner">
+  <nav>
+    <ul>
       <li class="name">
         <h1>
-          <a href="/" title="Software Niagara">
+          <a href="/" title="Retur to home page">
             Software Niagara
           </a>
         </h1>
       </li>
-      <li class="toggle-topbar menu-icon">
-        <a href="#" title="Toggle menu"><span>Menu</span></a>
-      </li>
     </ul>
-
-    <section id="toolbar-menu" class="top-bar-section">
-      <%- @partial('menu.html.eco', @, {visibilityClass: 'show-for-small'}) %>
+    <section>
+      <%- @partial('menu.html.eco', @) %>
     </section>
   </nav>
-</div>
-
-<header id="header" role="banner">
-  <div class="row">
-    <div class="twelve columns">
-      <nav>
-        <ul>
-          <li class="name">
-            <h1>
-              <a href="/" title="Return to home page">Software Niagara</a>
-            </h1>
-          </li>
-        </ul>
-        <section id="header-menu" class="hide-for-small">
-          <%- @partial('menu.html.eco', @, {visibilityClass: ''}) %>
-        </section>
-      </nav>
-    </div>
-  </div>
 </header>
