@@ -30,7 +30,7 @@
   <div class="wrapper">
     <%- @partial('header.html.eco', @) %>
     <div class="row">
-      <article class="twelve columns">
+      <article class="large-12 small-12 columns">
         <div id="main" class="page" role="main">
           <% unless @document.isHome: %>
             <h1 class="page-title"><%- @document.title %></h1>

@@ -11,7 +11,7 @@ isHome: true
 
 <div class="hero-unit">
   <div class="row">
-      <div class="twelve columns">
+      <div class="large-12 small-12 columns">
           <h2>Open Data Hackathon: Success</h2>
           <p class="lead">
             Software Niagara organized the International Open Data Day Hackathon in Niagara on February 23, 2013. We had
@@ -37,7 +37,7 @@ isHome: true
   </div>
 </div>
 <div class="row">
-    <div class="twelve columns">
+    <div class="large-12 small-12 columns">
         <p class="lead">
             Software Niagara is a group of developers, creatives, and entrepreneurs with a belief that Niagara is a great place
             to create. Through outreach, advocacy, and education, we are working to build a vibrant software community and
@@ -46,7 +46,7 @@ isHome: true
     </div>
 </div>
 <div class="row">
-  <div class="four columns">
+  <div class="large-4 small-12 columns">
     <div class="accent newsletter">
       <i class="general foundicon-inbox"></i>
     </div>
@@ -58,7 +58,7 @@ isHome: true
       <a href="#" class="button secondary" data-reveal-id="modal-subscribe">Subscribe</a>
     </p>
   </div>
-  <div class="four columns">
+  <div class="large-4 small-12 columns">
     <div class="accent events">
       <i class="general foundicon-flag"></i>
     </div>
@@ -70,7 +70,7 @@ isHome: true
       <a href="/events" class="secondary button">View events</a>
     </p>
   </div>
-  <div class="four columns">
+  <div class="large-4 small-12 columns">
     <div class="accent coworking">
       <i class="general foundicon-smiley"></i>
     </div>

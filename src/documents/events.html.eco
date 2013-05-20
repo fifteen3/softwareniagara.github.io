@@ -9,7 +9,7 @@ isPage: true
 inMenu: true
 ---
 <div class="row">
-  <div class="eight columns">
+  <div class="large-8 small-12 columns">
     <ul class="events">
       <% for event in @getCollection('html').findAll({relativeOutDirPath:'events', type: 'single'}).sortArray({date: -1, title: 1}): %>
       <li>
@@ -35,7 +35,7 @@ inMenu: true
       be listed here.
     </p>
   </div>
-  <div class="four columns">
+  <div class="large-4 small-12 columns">
     <h3>Weekly Events</h3>
     <ul class="weekly-events">
       <% for event in @getCollection('html').findAll({relativeOutDirPath:'events', type: 'weekly'}).sortArray({day: 1, hour: 1, title: 1}): %>

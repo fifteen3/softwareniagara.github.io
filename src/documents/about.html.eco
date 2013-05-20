@@ -7,7 +7,7 @@ isPage: true
 inMenu: true
 ---
 <div class="row">
-    <div class="twelve columns">
+    <div class="large-12 small-12 columns">
         <p class="lead">
             Software Niagara is a group of designers, developers, and entrepreneurs with a belief that Niagara is a great place
             to create. And we have the will to make it better.

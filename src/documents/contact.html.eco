@@ -9,7 +9,7 @@ dynamic: true
 ---
 
 <div class="row">
-	<div class="eight columns">
+	<div class="large-8 small-12 columns">
 		<% if @message: %>
 			<div class="alert-box <%= @messageType %>">
 				  <%= @message %>
@@ -58,7 +58,7 @@ dynamic: true
 			<input type="submit" value="Send Message" class="button">
 		</form>
 	</div>
-	<div class="four columns">
+	<div class="large-4 small-12 columns">
         <ul class="social-networks enclosed">
             <% for network in @site.networks: %>
                 <li>
