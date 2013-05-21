@@ -47,7 +47,7 @@ inMenu: true
 
         <h2 class="sub-title">The Organizers</h2>
 
-        <ul class="organizers block-grid two-up mobile">
+        <ul class="organizers large-block-grid-2 small-block-grid-1">
             <% for organizer in @getCollection('html').findAll({relativeOutDirPath:'organizers'}, [title: 1]).toJSON(): %>
             <li>
                 <article class="organizer row">
