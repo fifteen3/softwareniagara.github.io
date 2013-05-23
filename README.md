@@ -34,15 +34,8 @@ and run 'docpad run'.
 
 ## Contributing
 
-The preferred way to contribute to this website and blog is to fork it, 
-make your changes or add your article, and then send a pull request.
-
-If this is your first time writing for softwareniagara.com, please 
-make an entry for yourself in src/documents/authors.
-
-If this is your first time contributing code for softwareniagara.com, 
-please make an entry for yourself in the contributors section of 
-package.json.
+See our [contributing file](CONTRIBUTING.md) for details.
+GitHub also links to this file during creation of pull requests and issues.
 
 ## License
 
