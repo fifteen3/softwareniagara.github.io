@@ -44,14 +44,14 @@
     "mongoose-validate": "0.0.4",
     "node-mandrill": "~1.0.1",
     "docpad-plugin-cleanurls": "~2.4.0",
-    "bal-util": "~2.0.5",
-    "grunt-css": "~0.5.4",
-    "grunt": "~0.4.1",
-    "grunt-stylus": "~0.2.1",
-    "grunt-cli": "~0.1.8"
+    "bal-util": "~2.0.5"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "~2.4.0",
+    "grunt-css": "~0.5.4",
+    "grunt": "~0.4.1",
+    "grunt-stylus": "~0.2.1",
+    "grunt-cli": "~0.1.8",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-cssmin": "~0.6.1",
     "grunt-contrib-uglify": "~0.2.1"
