@@ -100,28 +100,6 @@ docpadConfig = {
     getPreparedKeywords: ->
       @document.keywords or @site.keywords.concat(@document.keywords or []).join(', ')
 
-    getGruntedStyles: ->
-      _ = require 'underscore'
-      styles = []
-      gruntConfig = require('./grunt-config.json')
-      _.each gruntConfig, (value, key) ->
-        styles = styles.concat _.flatten _.pluck value, 'dest'
-      styles = _.filter styles, (value) ->
-        return value.indexOf('.min.css') > -1
-      _.map styles, (value) ->
-        return value.replace 'out', ''
-
-    getGruntedScripts: ->
-      _ = require 'underscore'
-      scripts = []
-      gruntConfig = require('./grunt-config.json')
-      _.each gruntConfig, (value, key) ->
-        scripts = scripts.concat _.flatten _.pluck value, 'dest'
-      scripts = _.filter scripts, (value) ->
-        return value.indexOf('.min.js') > -1
-      _.map scripts, (value) ->
-        return value.replace 'out', ''
-
 
   # =================================
   # DocPad Collections

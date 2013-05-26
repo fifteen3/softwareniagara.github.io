@@ -1,31 +1,40 @@
 {
-  "min": {
-    "js": {
-      "src": [
-        "out/vendor/scripts/jquery.js",
-        "out/vendor/scripts/foundation.min.js", 
-        "out/vendor/scripts/parsley.min.js", 
-        "out/vendor/scripts/waypoints.min.js", 
-        "out/scripts/script.js"
-      ],
-      "dest": "out/scripts/app.min.js"
-    }
-  },
   "concat": {
     "css": {
       "src": [
         "out/vendor/styles/normalize.css",
         "out/vendor/styles/foundation.min.css",
         "out/vendor/styles/fc-icons.css",
-        "out/vendor/styles/fc-web-icons.css"
+        "out/vendor/styles/fc-web-icons.css",
+        "out/styles/style.css"
       ],
       "dest": "out/styles/app.css"
+    },
+    "js": {
+      "src": [
+        "out/vendor/scripts/jquery.js",
+        "out/vendor/scripts/foundation.min.js",
+        "out/vendor/scripts/parsley.min.js",
+        "out/vendor/scripts/waypoints.min.js",
+        "out/scripts/script.js"
+      ],
+      "dest": "out/scripts/app.js"
     }
   },
   "cssmin": {
     "all": {
       "src": ["out/styles/app.css"],
       "dest": "out/styles/app.min.css"
+    }
+  },
+  "uglify": {
+    "options": {
+      "mangle": true
+    },
+    "out": {
+      "files": {
+        "out/scripts/app.min.js": ["out/scripts/app.js"]
+      }
     }
   }
 }
