@@ -7,7 +7,7 @@ $button-color: #0078E7;
 $button-text: #ffffff;
 $logo-text: #414142;
 $logo-accent: #00AAC8;
-$font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 body {
   background-color: white;
@@ -82,7 +82,7 @@ body {
  */
 #header {
   @include clearfix;
-  background: #fff;
+  background-color: rgba(white, 0.9);
   border-bottom: 1px solid #ccc;
   padding:  10px 0;
   position: fixed;
@@ -98,6 +98,7 @@ body {
     @extend .pure-menu;
     @extend .pure-menu-open;
     @extend .pure-menu-horizontal;
+    background-color: transparent;
     float: right;
     font-weight: bold;
     margin-top: 29px;
@@ -109,6 +110,37 @@ body {
       &:hover {
         color: $logo-text;
       }
+    }
+  }
+}
+
+/**
+ * Banner
+ */
+#banner {
+  @include background-size(cover);
+  background: transparent url('../images/banner.jpg')  top center no-repeat;
+  margin-top: -115px;
+  padding: 215px 0 180px 0;
+  text-align: center;
+
+  .introduction {
+    color: white;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 60%;
+
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 4em;
+      font-weight: normal;
+      line-height: 1.2em;
+      margin-bottom: 20px;
+      text-shadow: 0 -1px 0 rgba(black, .5);
+    }
+
+    p {
+      font-size: 1.2em;
+      text-shadow: 0 -1px 0 rgba(black, .5);
     }
   }
 }
