@@ -3,6 +3,14 @@
 @import '_pure-min';
 @import '_syntax';
 
+$blue: #008FD4;
+$purple: #8156A7;
+$green: #5AB65E;
+$red: #DF5048;
+$orange: #DB6E00;
+$yellow: #FCD40A;
+$dark-gray: #363636;
+
 $button-color: #0078E7;
 $button-text: #ffffff;
 $logo-text: #414142;
@@ -64,6 +72,10 @@ body {
   background-color: transparent;
 }
 
+.pure-g-r {
+  margin-bottom: 30px;
+}
+
 /**
  * Common
  */
@@ -122,6 +134,7 @@ body {
   @include background-size(cover);
   background: transparent url('../images/banner.jpg')  top center no-repeat;
   margin-top: -115px;
+  margin-bottom: 30px;
   padding: 215px 0 180px 0;
   text-align: center;
 
@@ -142,6 +155,63 @@ body {
     p {
       font-size: 1.2em;
       text-shadow: 0 -1px 0 rgba(black, .5);
+
+      &.large {
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+/**
+ * Community Event
+ */
+.community-events {
+  .community-event {
+    padding: 0 15px;
+
+    header {
+      background: $logo-text;
+      color: white;
+      padding: 60px 15px 30px 15px;
+
+      &:hover {
+        color: $dark-gray;
+      }
+    }
+
+    &.community-event-coworking {
+      header:hover {
+        background-color: $yellow;
+      }
+    }
+    &.community-event-democamp {
+      header:hover {
+        background-color: $purple;
+      }
+    }
+    &.community-event-devtricks {
+      header:hover {
+        background-color: $green;
+      }
+    }
+    &.community-event-hackathons {
+      header:hover {
+        background-color: $red;
+      }
+    }
+    &.community-event-startup-drinks {
+      header:hover {
+        background-color: $orange;
+      }
+    }
+    &.community-event-more {
+      header {
+        background-color: $blue;
+        &:hover {
+          background-color: darken($blue, 2%);
+        }
+      }
     }
   }
 }
