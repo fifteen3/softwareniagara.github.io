@@ -1,0 +1,68 @@
+/**
+ * Clearfix
+ * For clearing floats like a boss h5bp.com/q
+ */
+@mixin clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+/**
+ * Large Desktop
+ * Scope of for large desktop.
+ */
+@mixin large-desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+/**
+ * Desktop (default)
+ * Scope for standard desktop.
+ */
+@mixin desktop {
+  @media (min-width: 980px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+/**
+ * Tablet
+ * Scope for portrait tablet to landscape and desktop.
+ */
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 979px) {
+    @content;
+  }
+}
+
+/**
+ * Phone
+ * Scope for landscape phone to portrait tablet.
+ */
+@mixin phone {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+/**
+ * Small phone
+ * Scope for landscape phones and down.
+ */
+@mixin small-phone {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
