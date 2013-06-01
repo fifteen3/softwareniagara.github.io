@@ -1,2 +1,5 @@
 # Jekyll puts its HTML output in this directory.
 _site/
+
+# Sass
+.sass-cache
