@@ -1,7 +1,7 @@
 @import 'compass/css3';
-@import 'mixins';
-@import 'syntax';
-@import 'foundation_framework';
+@import '_mixins';
+@import '_syntax';
+@import '_foundation_framework';
 
 $blue: #15AFCA;
 $purple: #8156A7;
@@ -37,6 +37,11 @@ body {
   width: 165px;
 }
 
+.button {
+  @include border-radius(3px);
+  @include box-shadow(none);
+}
+
 /**
  * Header
  */
@@ -62,11 +67,17 @@ body {
     width: auto;
 
     a:not(.button) {
+      color: #414142;
       padding-top: 10px;
       padding-bottom: 12px;
+
+      &:hover {
+        color: darken(#414142, 10%);
+      }
     }
 
     .button {
+      font-weight: normal;
       margin-bottom: 0;
     }
   }
