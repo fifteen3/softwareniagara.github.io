@@ -1,4 +1,5 @@
 # Require any additional compass plugins here.
+require 'zurb-foundation'
 
 http_path       = '/'
 css_dir         = 'assets/css'

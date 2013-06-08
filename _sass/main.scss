@@ -1,9 +1,9 @@
 @import 'compass/css3';
-@import '_mixins';
-@import '_pure-min';
-@import '_syntax';
+@import 'mixins';
+@import 'syntax';
+@import 'foundation_framework';
 
-$blue: #008FD4;
+$blue: #15AFCA;
 $purple: #8156A7;
 $green: #5AB65E;
 $red: #DF5048;
@@ -23,58 +23,6 @@ body {
   padding-top: 115px;
 }
 
-/**
- * Helpers
- */
-.clearfix {
-  @include clearfix;
-}
-
-/**
- * Grid
- */
-
-.container {
-  margin: 0 auto;
-  width: 940px;
-}
-
-@include large-desktop {
-  .container {
-    width: 1170px;
-  }
-}
-
-@include tablet {
-  width: 724px;
-}
-
-@include phone {
-  width: 100%;
-}
-
-/**
- * Pure overides
- */
-.pure-menu .pure-button,
-.pure-button {
-  &.pure-button-primary {
-    background-color: $button-color;
-    color: white;
-
-    &:hover {
-      background-color: darken($button-color, 2%);
-    }
-  }
-}
-
-.pure-menu li a:hover {
-  background-color: transparent;
-}
-
-.pure-g-r {
-  margin-bottom: 30px;
-}
 
 /**
  * Common
@@ -158,59 +106,6 @@ body {
 
       &.large {
         font-size: 2em;
-      }
-    }
-  }
-}
-
-/**
- * Community Event
- */
-.community-events {
-  .community-event {
-    padding: 0 15px;
-
-    header {
-      background: $logo-text;
-      color: white;
-      padding: 60px 15px 30px 15px;
-
-      &:hover {
-        color: $dark-gray;
-      }
-    }
-
-    &.community-event-coworking {
-      header:hover {
-        background-color: $yellow;
-      }
-    }
-    &.community-event-democamp {
-      header:hover {
-        background-color: $purple;
-      }
-    }
-    &.community-event-devtricks {
-      header:hover {
-        background-color: $green;
-      }
-    }
-    &.community-event-hackathons {
-      header:hover {
-        background-color: $red;
-      }
-    }
-    &.community-event-startup-drinks {
-      header:hover {
-        background-color: $orange;
-      }
-    }
-    &.community-event-more {
-      header {
-        background-color: $blue;
-        &:hover {
-          background-color: darken($blue, 2%);
-        }
       }
     }
   }
