@@ -45,7 +45,7 @@ body {
   @include box-shadow(0 1px 3px rgba(black, 0.35));
   background-color: rgba(white, 0.9);
   border-bottom: 1px solid #ccc;
-  padding:  10px 0;
+  padding:  5px 0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -56,21 +56,18 @@ body {
   }
 
   nav {
-    @extend .pure-menu;
-    @extend .pure-menu-open;
-    @extend .pure-menu-horizontal;
     background-color: transparent;
     float: right;
-    font-weight: bold;
-    margin-top: 29px;
+    margin-top: 24px;
     width: auto;
 
-    a {
-      color: lighten($logo-text, 5%);
+    a:not(.button) {
+      padding-top: 10px;
+      padding-bottom: 12px;
+    }
 
-      &:hover {
-        color: $logo-text;
-      }
+    .button {
+      margin-bottom: 0;
     }
   }
 }
