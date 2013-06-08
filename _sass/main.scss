@@ -20,7 +20,7 @@ $font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 body {
   background-color: white;
   font-family: $font-family;
-  padding-top: 115px;
+  padding-top: 105px;
 }
 
 
@@ -48,12 +48,13 @@ body {
 #header {
   @include clearfix;
   @include box-shadow(0 1px 3px rgba(black, 0.35));
-  background-color: rgba(white, 0.9);
+  background-color: white;
   border-bottom: 1px solid #ccc;
   padding:  5px 0;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 
   h1 {
     float: left;
@@ -88,33 +89,28 @@ body {
  */
 #banner {
   @include background-size(cover);
-  background: transparent url('../images/banner.jpg')  top center no-repeat;
-  margin-top: -115px;
+  background: transparent url('../images/banner.jpg') bottom left no-repeat fixed;
   margin-bottom: 30px;
-  padding: 215px 0 180px 0;
+  padding: 130px 0 180px 0;
   text-align: center;
+  color: white;
 
-  .introduction {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 4em;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    text-shadow: 0 -1px 0px rgba(black, .75);
     color: white;
-    margin: 0 auto;
-    max-width: 600px;
-    width: 60%;
+  }
 
-    h1, h2, h3, h4, h5, h6 {
-      font-size: 4em;
-      font-weight: normal;
-      line-height: 1.2em;
-      margin-bottom: 20px;
-      text-shadow: 0 -1px 0 rgba(black, .5);
-    }
+  p {
+    color: white;
+    font-size: 1.4em;
+    text-shadow: 0 0px 1px rgba(black, .75);
+  }
 
-    p {
-      font-size: 1.2em;
-      text-shadow: 0 -1px 0 rgba(black, .5);
-
-      &.large {
-        font-size: 2em;
-      }
-    }
+  .button {
+    text-shadow: 0 -1px 0 rgba(black, .5);
   }
 }
