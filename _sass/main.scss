@@ -2,6 +2,7 @@
 @import '_mixins';
 @import '_syntax';
 @import '_foundation_framework';
+@import '_foundation_icons';
 
 $blue: #15AFCA;
 $purple: #8156A7;
@@ -27,6 +28,11 @@ body {
 /**
  * Common
  */
+.hidden {
+  text-indent: -9999em;
+  height: 0;
+}
+
 .logo {
   @include background-size(100%);
   background: transparent url('../images/logo-inverse.png') center center no-repeat;
@@ -168,11 +174,40 @@ body {
  */
 #footer {
   background-color: #F2F2F2;
-  border-top: 1px solid #D9D9D9;
   border-bottom: 1px solid #D9D9D9;
-  padding-top: 20px;
   padding-bottom: 10px;
   margin-top: 30px;
+
+  .social-media {
+    background-color: #333;
+    border-bottom: 1px solid #222;
+    border-top: 1px solid #222;
+    text-align: center;
+    padding: 5px 0;
+    margin-bottom: 20px;
+
+    ul {
+      margin: 0 auto;
+      width: 11em;
+    }
+
+    li {
+      font-size: 3em;
+
+      &.first {
+        margin-left: 0;
+      }
+    }
+
+    a {
+      color: #121212;
+      text-shadow: 0 1px 0 #464646;
+
+      &:hover {
+        color: #000000;
+      }
+    }
+  }
 }
 
 /**

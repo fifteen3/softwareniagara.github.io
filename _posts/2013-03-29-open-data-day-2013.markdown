@@ -1,0 +1,19 @@
+---
+layout:     post
+title:      "Open Data Day 2013"
+author:     "Nickolas Kenyeres"
+date:       2013-03-29 22:00:00
+categories: events hackathons
+---
+
+Software Niagara organized the International Open Data Day Hackathon in Niagara on February 23, 2013. We had more than
+15 people turn out, including developers, designers, open data advocates, businsess owners, and students. These
+exceptional people worked on the following projects:
+
+[@OpenInNiagara](https://twitter.com/OpenInNiagara)
+[Find God in Niagara](http://dennisideler.com/find-god-in-niagara/)
+[Niagara Trails](https://github.com/controlz/Niagara-Trails)
+[Niagara Clearview](https://github.com/softwareniagara/niagara_clearview)
+
+The event was hosted at Furi Enterprises] in Downtown St. Catharines and sponsored by
+[Furi Enterprises](http://furi.ca/) and [Small Web Strategies](http://www.smallwebstrategies.com/).
