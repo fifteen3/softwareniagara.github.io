@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }} - {{ site.name }}</title>
-        <meta name="viewport" content="width=device-width">
-
-        <link rel="stylesheet" href="/assets/css/main.css">
-    </head>
+    {% include head.html %}
     <body>
         {% include header.html %}
         {{ content }}
         {% include footer.html %}
         {% include credits.html %}
+        {% include foot.html %}
     </body>
 </html>
