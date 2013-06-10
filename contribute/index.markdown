@@ -11,12 +11,27 @@ title: Contribute
     This means you can see what we are doing and jump in at any time if you have a question or want to contribute.
 </p>
 
+### Contribute to this website
+
+We want the blog on this website to be written by the community for the community. Please consider forking
+the [website repository](https://github.com/softwareniagara/softwareniagara.github.io) and submitting your
+blog posts in a pull request.
+
+Feel free to use our blog to:
+
+* Announce new apps, games, or services you have built
+* Talk about interesting projects you are involved with
+* Share stories about starting your own business
+* Share tips and tricks of interest to designers, developers, and entrepreneurs
+* Announce tech- or startup-oriented events you have organized
+* Introduce your user group or meetup
 
 ### Ask a question, start a discussion, or contribute
 
-Ask a question or start a discussion by [creating an issue](https://github.com/softwareniagara/feedback/issues/new).
-Watch our [feedback repository](https://github.com/softwareniagara/feedback) to follow our activities. We use issues
-and milestones to plan events and initiatives. Please contribute if you can help us close an issue or hit a milestone.
+Ask a question or start a discussion by [creating an issue](https://github.com/softwareniagara/feedback/issues/new on
+GitHub. Watch our [feedback repository](https://github.com/softwareniagara/feedback) to follow our activities. We use
+issues and milestones to plan events and initiatives. Please contribute if you can help us close an issue or hit a
+milestone.
 
 ### Read past discussions
 
