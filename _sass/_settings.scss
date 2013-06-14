@@ -136,10 +136,10 @@ $default-float: left;
 
 // Heading font styles
 
-$header-font-family: Tahoma, 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
-$header-font-weight: normal;
+$header-font-family: 'Roboto', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+$header-font-weight: 300;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: #ed174f;
 // $header-line-height: 1.4;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
@@ -169,7 +169,7 @@ $header-font-weight: normal;
 
 // Paragraphs
 
-// $paragraph-font-family: inherit;
+$paragraph-font-family: 'Roboto', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;;
 // $paragraph-font-weight: normal;
 // $paragraph-font-size: 1em;
 // $paragraph-line-height: 1.6;
