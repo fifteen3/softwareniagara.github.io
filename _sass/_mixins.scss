@@ -18,6 +18,29 @@
 }
 
 /**
+ * Image replacement
+ * Typical image replace technique.
+ */
+@mixin image-replacement($background, $width, $height) {
+  background: transparent url($background) center center no-repeat;
+  display: block;
+  height: $height;
+  overflow: hidden;
+  text-indent: -9999em;
+  width: $width;
+}
+
+/**
+ * Headings
+ * Apply same style to all headings
+ */
+@mixin headings {
+  h1, h2, h3, h4, h5, h6 {
+    @content;
+  }
+}
+
+/**
  * Large Desktop
  * Scope of for large desktop.
  */
