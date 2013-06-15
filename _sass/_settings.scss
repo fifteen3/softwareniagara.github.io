@@ -1202,7 +1202,7 @@ $paragraph-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
 
 // Background color for the top bar
 
-// $topbar-bg:                            #111 !default;
+$topbar-bg:                            #414142;
 
 // Height and margin
 
@@ -1220,7 +1220,7 @@ $paragraph-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
 
 // Style the top bar dropdown elements
 
-// $topbar-dropdown-bg:                   #222;
+   $topbar-dropdown-bg:                   lighten(#414142, 5%);
 // $topbar-dropdown-link-color:           #fff;
 // $topbar-dropdown-link-bg:              lighten($topbar-bg, 5%);
 // $topbar-dropdown-toggle-size:          5px;
@@ -1230,11 +1230,12 @@ $paragraph-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
 // Set the link colors and styles for top-level nav
 
 // $topbar-link-color:                    #fff;
-// $topbar-link-color-hover:              #fff;
-// $topbar-link-color-active:             #fff;
-// $topbar-link-weight:                   bold;
-// $topbar-link-font-size:                emCalc(13px);
-// $topbar-link-hover-lightness:          -30%; // Darken by 30%
+   $topbar-link-color-hover:              #fff;
+   $topbar-link-color-active:             #fff;
+   $topbar-link-weight:                   normal;
+   $topbar-link-font-size:                emCalc(15px);
+   $topbar-link-hover-lightness:          0%;
+   $topbar-link-hover-lightness:          0%;
 // $topbar-link-bg-hover:                 darken($topbar-bg, 3%);
 // $topbar-link-bg-active:                darken($topbar-bg, 3%);
 
@@ -1250,8 +1251,8 @@ $paragraph-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
 // $topbar-menu-link-weight:              bold;
 // $topbar-menu-link-color:               #fff;
 // $topbar-menu-icon-color:               #fff;
-// $topbar-menu-link-color-toggled:       #888;
-// $topbar-menu-icon-color-toggled:       #888;
+// $topbar-menu-link-color-toggled:       #fff;
+// $topbar-menu-icon-color-toggled:       #fff;
 
 // Transitions and breakpoint styles
 

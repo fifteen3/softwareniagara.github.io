@@ -1,8 +1,8 @@
 @import 'compass/css3';
-@import '_mixins';
-@import '_syntax';
-@import '_foundation_framework';
-@import '_foundation_icons';
+@import 'mixins';
+@import 'syntax';
+@import 'foundation_framework';
+@import 'foundation_icons';
 
 $blue: #15AFCA;
 $purple: #8156A7;
@@ -22,6 +22,12 @@ body {
   background-color: white;
   font-family: $font-family;
   padding-top: 105px;
+}
+
+@include phone {
+  body {
+    padding-top: 0;
+  }
 }
 
 
@@ -156,6 +162,25 @@ body {
   }
 }
 
+@include phone {
+  .top-bar {
+    margin-bottom: 0;
+  }
+
+  #header {
+    border-top: none;
+    padding: 20px 0;
+    position: static;
+    text-align: center;
+
+    h1 {
+      float: none;
+      margin: 0 auto;
+      width: 165px;
+    }
+  }
+}
+
 /**
  * Banner
  */
@@ -204,6 +229,29 @@ body {
   }
 }
 
+@include phone {
+  #banner {
+    background-position: bottom right;
+    padding: 90px 0 120px 0;
+
+    .panel {
+      background-color: rgba(black, 0.5);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-size: emCalc(24px);
+    }
+
+    p {
+      font-size: emCalc(18px);
+    }
+
+    .button {
+      font-weight: normal;
+    }
+  }
+}
+
 .page-banner {
   @include background-size(cover);
   background-color: #E85053;
@@ -216,6 +264,17 @@ body {
   h1, h2, h3, h4, h5, h6 {
     color: white;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+@include phone {
+  .page-banner {
+    margin-bottom: 0;
+    padding: 30px 0 30px 0;
+
+    h1 {
+      font-size: emCalc(24px);
+    }
   }
 }
 
