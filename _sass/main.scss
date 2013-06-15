@@ -250,13 +250,13 @@ body {
     }
 
     a, i.has-tip {
-      color: $logo-accent;
+      color: #9B9B9B;
       text-shadow: 0 -1px 0 #fff;
       border-bottom: none;
       cursor: pointer;
 
       &:hover {
-        color: darken($logo-accent, 5%);
+        color: darken(#9B9B9B, 5%);
       }
     }
   }
