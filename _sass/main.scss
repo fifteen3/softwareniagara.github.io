@@ -30,7 +30,6 @@ body {
   }
 }
 
-
 /**
  * Common
  */
@@ -47,6 +46,11 @@ body {
   overflow: hidden;
   text-indent: -9999em;
   width: 165px;
+}
+
+.svg .logo {
+  @include background-size(165px 95px);
+  background-image: url('../images/logo-inverse.svg');
 }
 
 .button {
@@ -247,7 +251,12 @@ body {
     }
 
     .button {
+      @include border-radius(3px);
+      font-size: emCalc(18px);
       font-weight: normal;
+      line-height: 1em;
+      height: auto;
+      width: 100%;
     }
   }
 }
