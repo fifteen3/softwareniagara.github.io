@@ -7,7 +7,16 @@
             <ul class="inline-list">
                 <li><a href="/about">About</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="/events">Events</a></li>
+                <li class="has-dropdown">
+                    <a href="/events" data-dropdown="dropdown">Events</a>
+                    <ul id="dropdown" class="f-dropdown dropdown" data-dropdown-content>
+                        <li><a href="/events/coworking">Coworking</a></li>
+                        <li><a href="/events/democamp">DemoCamp</a></li>
+                        <li><a href="/events/devtricks">DevTricks</a></li>
+                        <li><a href="/events/hackathons">Hackathons</a></li>
+                        <li><a href="/events/startup-drinks">Startup Drinks</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Resources</a></li>
                 <li><a href="/contribute" class="button">Contribute</a></li>
             </ul>

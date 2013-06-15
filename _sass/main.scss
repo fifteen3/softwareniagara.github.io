@@ -122,13 +122,36 @@ body {
       padding-bottom: 12px;
 
       &:hover {
-        color: darken(#414142, 10%);
+        color: $button-color;
       }
     }
 
     .button {
       font-weight: normal;
       margin-bottom: 0;
+    }
+
+    > ul {
+      overflow: visible;
+    }
+
+    .has-dropdown {
+      > ul.f-dropdown {
+        @include box-shadow(0 3px 6px rgba(black, 0.25));
+        background-color: white;
+        margin-left: 0;
+
+        li {
+          a {
+            display: block;
+            padding: 10px 10px;
+          }
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
     }
   }
 }
