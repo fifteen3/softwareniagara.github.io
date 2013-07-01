@@ -1,17 +1,17 @@
 @import 'compass/css3';
 @import 'mixins';
 @import 'syntax';
-@import 'foundation_framework';
-@import 'foundation_icons';
+@import 'foundation-framework';
+@import 'font-awesome-icons';
+@import 'font-awesome-ie7-icons';
+@import 'variables';
 
-$green: #5AB65E;
-$red: #E85053;
-$dark-gray: #414142;
-$light-gray: #DFDFDF;
-$lighter-gray: #EFEFEF;
-$button-color: #0078E7;
-$button-text: #fff;
-$logo-accent: #00AAC8;
+// ==================================================
+// Common
+// ==================================================
+
+// Base styles
+// --------------------------------------------------
 
 body {
   padding-top: 105px;
@@ -23,13 +23,39 @@ body {
   }
 }
 
-/**
- * Common
- */
+// Typography
+// --------------------------------------------------
+@include headings {
+  line-height: 1em;
+}
+
+// Links and buttons
+// --------------------------------------------------
+.button {
+  @include border-radius(3px);
+  @include box-shadow(none);
+
+  &.black {
+    background-color: $darker-gray;
+    &:hover {
+      background-color: darken($darker-gray, 5%);
+    }
+  }
+}
+
+// Visibility
+// --------------------------------------------------
 .hidden {
   text-indent: -9999em;
   height: 0;
 }
+
+// ==================================================
+// Logos
+// ==================================================
+
+// Software Niagara logo
+// --------------------------------------------------
 
 .logo {
   @include background-size(100%);
@@ -41,57 +67,14 @@ body {
   background-image: url('../images/logo-inverse.svg');
 }
 
-.button {
-  @include border-radius(3px);
-  @include box-shadow(none);
-}
-
-
-.panel.callout {
-  @include box-shadow(none);
-  background-color: #333;
-  border-color: #222;
-}
-
-.panel {
-  @include headings {
-    @include box-shadow(0 1px 0 #fff);
-    border-bottom: 1px solid #D9D9D9;
-    margin-bottom: .375em;
-    padding-bottom: .375em;
-    color: $header-font-color;
-  }
-
-  &.callout {
-    @include box-shadow(none);
-    background-color: #333;
-    border-color: #222;
-
-    @include headings {
-      @include box-shadow(0 1px 0 #444);
-      border-bottom-color: #222222;
-      margin-bottom: .375em;
-      padding-bottom: .375em;
-      color: $header-font-color;
-    }
-
-    .button {
-      background-color: $green;
-
-      &:hover {
-        background-color: darken($green, 10%);
-      }
-    }
-  }
-}
-
 .page {
   padding-top: 30px;
 }
 
-/**
- * Header
- */
+// ==================================================
+// Header
+// ==================================================
+
 #header {
   @include clearfix;
   @include box-shadow(0 1px 3px rgba(black, 0.35));
@@ -103,10 +86,16 @@ body {
   width: 100%;
   z-index: 100;
 
+  // Header typography
+  // --------------------------------------------------
+
   @include headings {
     float: left;
     margin: 0;
   }
+
+  // Header menu
+  // --------------------------------------------------
 
   nav {
     background-color: transparent;
@@ -133,6 +122,9 @@ body {
       overflow: visible;
     }
 
+    // Header dropdown menu
+    // --------------------------------------------------
+
     .has-dropdown {
       > ul.f-dropdown {
         @include box-shadow(0 3px 6px rgba(black, 0.25));
@@ -154,6 +146,10 @@ body {
   }
 }
 
+// ==================================================
+// Mobile header
+// ==================================================
+
 @include phone {
   .top-bar {
     margin-bottom: 0;
@@ -165,6 +161,9 @@ body {
     position: static;
     text-align: center;
 
+    // Mobile header headings
+    // --------------------------------------------------
+
     @include headings {
       float: none;
       margin: 0 auto;
@@ -173,21 +172,23 @@ body {
   }
 }
 
-/**
- * Banner
- */
+// ==================================================
+// Banner
+// ==================================================
+
 #banner {
   background: transparent url('../images/banner.jpg') center center no-repeat fixed;
   @include background-size(cover);
-  margin-bottom: 50px;
+  color: white;
   padding: 90px 0 180px 0;
   text-align: center;
-  color: white;
 
   .panel {
     background-color: rgba(0, 0, 0, .35);
     border: none;
 
+    // Banner typography
+    // --------------------------------------------------
     @include headings {
       @include box-shadow(none);
       border-bottom: none;
@@ -205,6 +206,9 @@ body {
       font-size: 1.4em;
       text-shadow: 0 -1px 0 rgba(black, .75);
     }
+
+    // Banner links and buttons
+    // --------------------------------------------------
 
     .button {
       @include border-radius(7px);
@@ -224,6 +228,10 @@ body {
   }
 }
 
+// ==================================================
+// Mobile banner
+// ==================================================
+
 @include phone {
   #banner {
     background-position: bottom right;
@@ -233,13 +241,18 @@ body {
       background-color: rgba(black, 0.5);
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    // Mobile banner typography
+    // --------------------------------------------------
+    @include headings {
       font-size: emCalc(24px);
     }
 
     p {
       font-size: emCalc(18px);
     }
+
+    // Mobile banner links and buttons
+    // --------------------------------------------------
 
     .button {
       @include border-radius(3px);
@@ -252,28 +265,70 @@ body {
   }
 }
 
-.page-banner {
-  @include background-size(cover);
-  background-color: $red;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin-bottom: 30px;
-  padding: 120px 0 90px 0;
+// ==================================================
+// Slides
+// ==================================================
 
-  h1, h2, h3, h4, h5, h6 {
-    color: white;
-    text-shadow: 0 -1px 0 rgba(black, 0.25);
+.slide {
+  background-color: $lighter-gray;
+  color: $dark-gray;
+  padding-bottom: 60px;
+
+  // Slide typography
+  // --------------------------------------------------
+
+  h3, h4, h5, h6 {
+    color: $darker-gray;
   }
-}
 
-@include phone {
-  .page-banner {
-    margin-bottom: 0;
-    padding: 30px 0 30px 0;
+  // Slide header
+  // --------------------------------------------------
 
-    h1 {
-      font-size: emCalc(24px);
+  header {
+    background-color: darken($lighter-gray, 5%);
+    margin-bottom: 50px;
+    padding: 30px 0;
+    text-align: center;
+
+    i {
+      font-size: 96px;
+    }
+  }
+
+  // Slide variations
+  // --------------------------------------------------
+  &.inverse,
+  &.accent {
+    background-color: $darker-gray;
+    color: $light-gray;
+
+    h3, h4, h5, h6 {
+      color: $lighter-gray;
+    }
+
+    header {
+      background-color: darken($darker-gray, 5%);
+    }
+  }
+
+  &.accent,
+  &.accent.red {
+    background-color: $button-color;
+
+    h2, a {
+      color: #fff;
+    }
+
+    header {
+      background-color: darken($button-color, 7%);
+    }
+  }
+
+  &.accent.red {
+    background-color: $red;
+
+    header {
+      background-color: darken($red, 5%);
     }
   }
 }
