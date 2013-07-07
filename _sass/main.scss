@@ -41,6 +41,14 @@ body {
       background-color: darken($darker-gray, 5%);
     }
   }
+
+  &.white {
+    color: #000 !important;
+    background-color: $lighter-gray;
+    &:hover {
+      background-color: darken($lighter-gray, 5%);
+    }
+  }
 }
 
 // Visibility
@@ -274,6 +282,19 @@ body {
   color: $dark-gray;
   padding-bottom: 60px;
 
+  // Fix for scroll-spy links not aligning properly
+  // http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/#method-D
+  border-top:106px solid transparent;
+  margin-top:-106px;
+  -webkit-background-clip:padding-box;
+  -moz-background-clip:padding;
+  background-clip:padding-box;
+
+  // Give some indentation to lists
+  ul, ol {
+    margin-left: 45px;
+  }
+
   // Slide typography
   // --------------------------------------------------
 
@@ -331,6 +352,28 @@ body {
       background-color: darken($red, 5%);
     }
   }
+
+  &.accent.green {
+    background-color: $green;
+    color: #000;
+
+    ul.format-list {
+      a {
+        color: #fff;
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+
+    .lead {
+      color: #fff;
+    }
+
+    header {
+      background-color: darken($green, 20%);
+    }
+  }
 }
 
 /**
@@ -371,6 +414,22 @@ body {
 
       &:hover {
         color: darken($light-gray, 15%);
+      }
+    }
+  }
+}
+
+/**
+ * Events
+ */
+#events {
+  ul {
+    list-style-type: none;
+
+    &.tag-list {
+      li {
+        display: inline-block;
+        margin-right: 10px;
       }
     }
   }
