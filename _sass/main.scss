@@ -374,6 +374,14 @@ body {
       background-color: darken($green, 20%);
     }
   }
+
+  &.accent.orange {
+    background-color: $orange;
+
+    header {
+      background-color: darken($orange, 5%);
+    }
+  }
 }
 
 /**
