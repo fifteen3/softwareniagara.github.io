@@ -377,9 +377,18 @@ body {
 
   &.accent.orange {
     background-color: $orange;
+    color: #000;
 
     header {
       background-color: darken($orange, 5%);
+      color: #fff;
+    }
+
+    a {
+      color: #fff;
+      &:hover {
+        color: darken(#fff, 10%);
+      }
     }
   }
 }
