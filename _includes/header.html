@@ -3,12 +3,21 @@
         <h1>
             <a href="/" title="Home" class="logo">{{ site.name }}</a>
         </h1>
-        <nav class="hide-for-small">
+        <nav class="hide-for-small" id="events-nav">
+            <ul class="inline-list">
+                <li><a href="#coworking" class="button small white" data-scroll><i class="icon-group"></i> Coworking</a></li>
+                <li><a href="#democamp" class="button small white" data-scroll><i class="icon-fire"></i> DemoCamp</a></li>
+                <li><a href="#devtricks" class="button small white" data-scroll><i class="icon-magic"></i> DevTricks</a></li>
+                <li><a href="#startup-drinks" class="button small white" data-scroll><i class="icon-beer"></i> Startup Drinks</a></li>
+            </ul>
+          </nav>
+          <nav class="hide-for-small">
             <ul class="inline-list">
                 <li><a href="#mission" data-scroll>Mission</a></li>
                 <li><a href="#events" data-scroll>Events</a></li>
                 <li><a href="#about" data-scroll>About</a></li>
-                <li><a href="#contribute" class="button">Contribute</a></li>
+                <li><a href="#contribute" data-scroll>Contribute</a></li>
+                <li><a href="#" id="posts-action-call" class="button"><i class="icon-chevron-down"></i> Recent &amp; Upcoming</a></li>
             </ul>
         </nav>
     </div>

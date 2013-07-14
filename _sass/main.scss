@@ -151,6 +151,12 @@ body {
         }
       }
     }
+
+    &#events-nav {
+      margin-top: 0px;
+      position: relative;
+      top: 10px;
+    }
   }
 }
 
@@ -332,8 +338,7 @@ body {
     }
   }
 
-  &.accent,
-  &.accent.red {
+  &.accent {
     background-color: $button-color;
 
     h2, a {
@@ -345,51 +350,52 @@ body {
     }
   }
 
-  &.accent.red {
-    background-color: $red;
+  &.accent.purple {
+    background-color: $purple;
 
     header {
-      background-color: darken($red, 5%);
-    }
+      background-color: darken($purple, 10%);
+    } 
   }
 
-  &.accent.green {
-    background-color: $green;
-    color: #000;
-
-    ul.format-list {
-      a {
-        color: #fff;
-        &:hover {
-          color: #000;
-        }
-      }
-    }
-
-    .lead {
-      color: #fff;
-    }
+  &.accent.brown {
+    background-color: $brown;
 
     header {
-      background-color: darken($green, 20%);
-    }
+      background-color: darken($brown, 10%);
+    } 
   }
 
-  &.accent.orange {
+  &.accent.orange, &.accent.brown {
     background-color: $orange;
     color: #000;
 
+    i {
+      color: #ffffff;
+    }
+
+    h3 {
+      color: $button-color;
+    }
+
     header {
       background-color: darken($orange, 5%);
-      color: #fff;
+      color: #000;
     }
 
     a {
-      color: #fff;
+      color: $button-color;
       &:hover {
-        color: darken(#fff, 10%);
+        color: darken($button-color, 10%);
       }
     }
+  }
+  &.accent.brown {
+    background-color: $brown;
+
+    header {
+      background-color: darken($brown, 10%);
+    } 
   }
 }
 
