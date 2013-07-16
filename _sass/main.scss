@@ -298,7 +298,7 @@ body {
 
   // Give some indentation to lists
   ul, ol {
-    margin-left: 45px;
+    margin-left: 2em;
   }
 
   // Slide typography
@@ -312,9 +312,8 @@ body {
   // --------------------------------------------------
 
   header {
-    background-color: darken($lighter-gray, 5%);
     margin-bottom: 50px;
-    padding: 30px 0;
+    padding: 60px 0 30px 0;
     text-align: center;
 
     i {
@@ -327,43 +326,28 @@ body {
   &.inverse,
   &.accent {
     background-color: $darker-gray;
-    color: $light-gray;
+    color: white;
 
     h3, h4, h5, h6 {
-      color: $lighter-gray;
-    }
-
-    header {
-      background-color: darken($darker-gray, 5%);
+      color: white;
     }
   }
 
   &.accent {
-    background-color: $button-color;
+    background-color: #00AAC8;
+
 
     h2, a {
       color: #fff;
-    }
-
-    header {
-      background-color: darken($button-color, 7%);
     }
   }
 
   &.accent.purple {
     background-color: $purple;
-
-    header {
-      background-color: darken($purple, 10%);
-    } 
   }
 
   &.accent.brown {
     background-color: $brown;
-
-    header {
-      background-color: darken($brown, 10%);
-    } 
   }
 
   &.accent.orange, &.accent.brown {
@@ -378,11 +362,6 @@ body {
       color: $button-color;
     }
 
-    header {
-      background-color: darken($orange, 5%);
-      color: #000;
-    }
-
     a {
       color: $button-color;
       &:hover {
@@ -392,10 +371,6 @@ body {
   }
   &.accent.brown {
     background-color: $brown;
-
-    header {
-      background-color: darken($brown, 10%);
-    } 
   }
 }
 
