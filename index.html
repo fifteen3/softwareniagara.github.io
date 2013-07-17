@@ -23,7 +23,7 @@ title: Home
 </div>
 
 {% for post in site.categories.slides %}
-    <article id="#{{ post.id }}" class="{{ post.class }}">
+    <article id="{{ post.ident }}" class="{{ post.class }}" data-scroll-index="{{ post.index }}">
         <header>
             <i class="icon-{{ post.icon }}"></i>
             <h2>{{ post.title }}</h2>

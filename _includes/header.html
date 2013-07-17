@@ -5,41 +5,50 @@
         </h1>
           <nav class="hide-for-small">
             <ul class="inline-list">
-                <li><a href="#events">Events</a></li>
-                <li><a href="#coworking">Coworking</a></li>
-                <li><a href="#democamp">DemoCamp</a></li>
-                <li><a href="#devtricks">DevTricks</a></li>
-                <li><a href="#startup-drinks">Startup Drinks</a></li>
-                <li><a href="#hackathons">Hackathons</a></li>
+                <li>
+                    <a href="#events" data-dropdown="dropdown">Events</a>
+                    <ul id="dropdown" class="f-dropdown" data-dropdown-content>
+                        <li><a href="#events">Community Events</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#coworking">Coworking</a></li>
+                        <li><a href="#democamp">DemoCamp</a></li>
+                        <li><a href="#devtricks">DevTricks</a></li>
+                        <li><a href="#startup-drinks">Startup Drinks</a></li>
+                        <li><a href="#hackathons">Hackathons</a></li>
+                    </ul>
+                </li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
 </header>
+
 <nav class="top-bar show-for-small">
     <ul class="title-area">
         <li class="name">
             <h1><a href="#"></a></h1>
         </li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        <li class="toggle-topbar menu-icon">
+            <a href="#"><span>Menu</span></a>
+        </li>
     </ul>
 
     <section class="top-bar-section">
         <ul class="left">
-            <li><a href="/about">About</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li class="has-dropdown"><a href="#">Events</a>
+            <li class="has-dropdown">
+                <a href="#">Events</a>
                 <ul class="dropdown">
-                    <li><a href="/events/coworking">Coworking</a></li>
-                    <li><a href="/events/democamp">DemoCamp</a></li>
-                    <li><a href="/events/devtricks">DevTricks</a></li>
-                    <li><a href="/events/hackathons">Hackathons</a></li>
-                    <li><a href="/events/startup-drinks">Startup Drinks</a></li>
+                    <li><a href="#events">Community Events</a></li>
+                    <li><a href="#coworking">Coworking</a></li>
+                    <li><a href="#democamp">DemoCamp</a></li>
+                    <li><a href="#devtricks">DevTricks</a></li>
+                    <li><a href="#hackathons">Hackathons</a></li>
+                    <li><a href="#startup-drinks">Startup Drinks</a></li>
                 </ul>
             </li>
-            <li><a href="/resources">Resources</a></li>
-            <li><a href="/connect">Connect with us</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </section>
 </nav>
