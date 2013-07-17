@@ -200,7 +200,7 @@ a {
 // ==================================================
 
 #banner {
-  background: transparent url('../images/banner-bw.jpg') center center no-repeat fixed;
+  background: transparent url('../images/banner-low.jpg') center center no-repeat fixed;
   @include background-size(cover);
   color: white;
   padding: 90px 0 180px 0;
@@ -344,7 +344,7 @@ article {
   &.fork {
     @include background-size(cover);
 
-    background-image: url('../images/fork-bw.jpg');
+    background-image: url('../images/fork.jpg');
 
     .body {
       background-color: rgba(#fff, .25);
