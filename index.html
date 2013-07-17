@@ -3,15 +3,15 @@ layout: default
 title: Home
 ---
 
-<div class="slide" id="banner">
+<div class="slide" id="banner" data-scroll-index="0">
     <div class="row">
         <div class="large-9 large-centered columns">
             <div class="panel">
                 <h2>We're building a community</h2>
 
                 <p>
-                    Software Niagara is a grassroots initiative to build a stronger software community and startup
-                    culture in Niagara.
+                    Software Niagara is a grassroots initiative to build a stronger
+                    software community and startup culture in Niagara.
                 </p>
 
                 <p>
@@ -22,132 +22,85 @@ title: Home
     </div>
 </div>
 
-<article class="slide accent blue" id="events">
+<article id="events" class="inverse" data-scroll-index="1">
     <header>
-        <div class="row">
-            <i class="icon-calendar"></i>
-            <h2>
-                Community Events
-            </h2>
-        </div>
+        <i class="icon-calendar"></i><h2>Community Events</h2>
     </header>
-    <div class="row">
-        <div class="large-8 columns">
-            <p class="lead">
-                Software Niagara organizes and promotes community events in Niagara. Our events are free and inclusive. We encourage
-                everyone with an interest in software, technology, and startups to attend our events. This includes professionals,
-                students, entrepreneurs, hobbyists, and more.
-            </p>
 
+    <section>
+        <div class="body has-sidebar">
+            <h3>Software, Technology, and Startup Events</h3>
+            <p>
+                Software Niagara organizes and promotes community events in Niagara. Our events are free and inclusive.
+                We encourage everyone with an interest in software, technology, and startups to attend. This includes
+                professionals, students, entrepreneurs, hobbyists, and more.
+            </p>
             <p>
                 We organize the following software, technology, and startup events in Niagara:
             </p>
-
-            <ul>
-                <li><a href="#coworking" data-scroll><i class="icon-group"></i> Coworking</a></li>
-                <li><a href="#democamp" data-scroll><i class="icon-fire"></i> DemoCamp</a></li>
-                <li><a href="#devtricks" data-scroll><i class="icon-magic"></i> DevTricks</a></li>
-                <li><a href="#hackathons" data-scroll><i class="icon-code"></i> Hackathons</a></li>
-                <li><a href="#startup-drinks" data-scroll><i class="icon-beer"></i> Startup Drinks</a></li>
+            <ul class="unstyled">
+                <li><a href="#coworking"><i class="icon-group"></i> Coworking</a></li>
+                <li><a href="#democamp"><i class="icon-fire"></i> DemoCamp</a></li>
+                <li><a href="#devtricks"><i class="icon-magic"></i> DevTricks</a></li>
+                <li><a href="#startup-drinks"><i class="icon-beer"></i> Startup Drinks</a></li>
+                <li><a href="#hackathons"><i class="icon-code"></i> Hackathons</a></li>
             </ul>
 
-
-            <h3>Public Events Calendar</h3>
+            <h5>Public Events Calendar</h5>
 
             <p>
-                We've created a public Google Calendar for related Tech and Startup events in Niagara.
-                It is maintained by the Software Niagara core team, however, any one is able to create events to this calendar.
+                We manage a public Google Calendar for our events, as well related software, technology, and startup
+                events in Niagara. While the calendar is managed by our core team, everyone is free to create and edit
+                events on the calendar.
             </p>
 
-            <h4>Add it to your own calendar or feed reader</h4>
+            <p>
+                Add our event calendar to your own calendar or feed reader:
+            </p>
 
-            <ul>
-                <li><a href="http://www.google.com/calendar/feeds/softwareniagara.com_22de4g20s269491k128h37cvug%40group.calendar.google.com/public/basic">
-                    <i class="icon-rss-sign"></i> XML Format</a> &ndash; subscribe to feed</li>
-                <li><a href="http://www.google.com/calendar/ical/softwareniagara.com_22de4g20s269491k128h37cvug%40group.calendar.google.com/public/basic.ics">
-                    <i class="icon-calendar"></i> ICAL Format</a> &ndash; import into your calendar program (Outlook, Thunderbird, etc.)</li>
-                <li><a href="https://www.google.com/calendar/embed?src=softwareniagara.com_22de4g20s269491k128h37cvug@group.calendar.google.com">
-                    <i class="icon-globe"></i> HTML Version</a> &ndash; view online</li>
+            <ul class="unstyled">
+                <li>
+                    <a href="http://www.google.com/calendar/feeds/softwareniagara.com_22de4g20s269491k128h37cvug%40group.calendar.google.com/public/basic">
+                        <i class="icon-rss-sign"></i> XML Format
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.google.com/calendar/ical/softwareniagara.com_22de4g20s269491k128h37cvug%40group.calendar.google.com/public/basic.ics">
+                        <i class="icon-calendar"></i> ICAL Format
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/calendar/embed?src=softwareniagara.com_22de4g20s269491k128h37cvug@group.calendar.google.com">
+                        <i class="icon-globe"></i> HTML Version
+                    </a>
+                </li>
             </ul>
-
-
-            <p>There are plenty of great meet-ups happening in Niagara.
-                Find the right interest groups for you and join your community.
+            <p>
+                There are plenty of great meet-ups happening in Niagara. Find the right interest
+                group for you and join your community.
             </p>
-
         </div>
-        <div class="large-4 columns">
-            <h3>Upcoming Events</h3>
-            <iframe scrolling="no" frameborder="0" class="vertical-google-events-calender" src="https://www.google.com/calendar/embed?showTitle=0&showNav=0&showDate=0&showPrint=0&showTabs=1&showCalendars=0&mode=AGENDA&height=800&wkst=1&bgcolor=%230900ea&src=softwareniagara.com_22de4g20s269491k128h37cvug%40group.calendar.google.com&color=%23333333&ctz=America%2FToronto"></iframe>
+        <aside>
+            <h3>Happening Regularly</h3>
+            <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=softwareniagara.com_22de4g20s269491k128h37cvug%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FToronto" style=" border:solid 1px #777 " width="100%" height="400" frameborder="0" scrolling="no"></iframe>
             <p>
-                <a class="button white" href="https://www.google.com/calendar/embed?src=softwareniagara.com_22de4g20s269491k128h37cvug@group.calendar.google.com&ctz=America/Toronto">
-                    <i class="icon-calendar-empty"></i>
-                    See Full Events Calendar
+                <a class="button expand" href="https://www.google.com/calendar/embed?src=softwareniagara.com_22de4g20s269491k128h37cvug@group.calendar.google.com&ctz=America/Toronto">
+                    Full Events Calendar
                 </a>
             </p>
-        </div>
-    </div>
+        </aside>
+    </section>
 </article>
 
-<article class="slide accent blue" id="mission">
+<article id="coworking" data-scroll-index="2">
     <header>
-        <div class="row">
-            <i class="icon-bullseye"></i>
-            <h2>
-                Our Mission
-            </h2>
-        </div>
+        <i class="icon-group"></i>
+        <h2>
+            Coworking
+        </h2>
     </header>
-    <div class="row">
-        <div class="large-8 columns">
-            <p class="lead">
-                Our mission is to make Niagara a great place to live and work for designers, developers, and
-                entrepreneurs.
-            </p>
-
-            <p>
-                We believe that each one of us has the power to make this mission a reality. Here's what we are doing
-                to make it happen:
-            </p>
-
-            <ul>
-                <li>Organizing DemoCamp Niagara to showcase "Made in Niagara" technology</li>
-                <li>Organizing hackathons with a focus on open data and civic engagement</li>
-                <li>Operating #softwareniagara on IRC</li>
-                <li>Promoting Coworking and Startup Drinks</li>
-                <li>Promoting local startup and technology groups and events</li>
-                <li>Encouraging children and adults to develop computer literacy and programming skills</li>
-            </ul>
-        </div>
-        <div class="large-4 columns">
-            <h3>Want to help?</h3>
-            <p>
-                Everyone is welcome to participate in planning and organizing Software Niagara events. Connect with us
-                on our issue tracker on GitHub. This is where we plan everything.
-            </p>
-            <p>
-                <a href="https://github.com/softwareniagara/feedback/issues?state=open" class="button white">
-                    <i class="icon-github-alt"></i>
-                    Contribute
-                </a>
-            </p>
-        </div>
-    </div>
-</article>
-
-<article class="slide inverse" id="coworking">
-    <header>
-        <div class="row">
-            <div class="large-12 columns">
-                <i class="icon-group"></i>
-                <h2>
-                    Coworking
-                </h2>
-            </div>
-        </div>
-    </header>
-    <div class="row">
-        <div class="large-6 columns">
+    <section>
+        <div class="body has-sidebar">
             <h3>Work independently in a social environment</h3>
 
             <p>
@@ -161,7 +114,7 @@ title: Home
                 your need for human companionship.
             </p>
         </div>
-        <div class="large-6 columns">
+        <aside>
             <h3>On Monday evenings</h3>
 
             <p>
@@ -171,23 +124,19 @@ title: Home
             <p>
                 <a href="#" class="button">RSVP</a>
             </p>
-        </div>
-    </div>
+        </aside>
+    </section>
 </article>
 
-<article class="slide" id="democamp">
+<article id="democamp" class="inverse" data-scroll-index="3">
     <header>
-        <div class="row">
-            <div class="large-12 columns">
-                <i class="icon-fire"></i>
-                <h2>
-                    DemoCamp
-                </h2>
-            </div>
-        </div>
+        <i class="icon-fire"></i>
+        <h2>
+            DemoCamp
+        </h2>
     </header>
-    <div class="row">
-        <div class="large-6 columns">
+    <section>
+        <div class="body has-sidebar">
             <h3>Made-in-Niagara technology</h3>
 
             <p>
@@ -207,7 +156,7 @@ title: Home
                 attend.
             </p>
         </div>
-        <div class="large-6 columns">
+        <aside>
             <h3>Returning in September</h3>
 
             <p>
@@ -219,23 +168,19 @@ title: Home
                 <li><a href="#">DemoCamp 1</a></li>
                 <li><a href="#">DemoCamp 2</a></li>
             </ul>
-        </div>
-    </div>
+        </aside>
+    </section>
 </article>
 
-<article class="slide inverse" id="devtricks">
+<article id="devtricks" data-scroll-index="4">
     <header>
-        <div class="row">
-            <div class="large-12 columns">
-                <i class="icon-magic"></i>
-                <h2>
-                    DevTricks
-                </h2>
-            </div>
-        </div>
+        <i class="icon-magic"></i>
+        <h2>
+            DevTricks
+        </h2>
     </header>
-    <div class="row">
-        <div class="large-6 columns">
+    <section>
+        <div class="body has-sidebar">
             <h3>Share &amp; learn with your peers</h3>
             <p>
                 Software Niagara hosts DevTricks on the third Monday of every month. DevTricks is a casual
@@ -249,7 +194,7 @@ title: Home
                 we would like to see at future DevTricks and to find volunteers to speak at the next event.
             </p>
         </div>
-        <div class="large-6 columns">
+        <aside>
 
             <h3>On the third Monday of the month</h3>
 
@@ -261,21 +206,17 @@ title: Home
             <p>
                 <a href="#" class="button">RSVP</a>
             </p>
-        </div>
-    </div>
+        </aside>
+    </section>
 </article>
 
-<article class="slide" id="startup-drinks">
+<article id="startup-drinks" class="inverse" data-scroll-index="5">
     <header>
-        <div class="row">
-            <div class="large-12 columns">
-                <i class="icon-beer"></i>
-                <h2>Startup Drinks</h2>
-            </div>
-        </div>
+        <i class="icon-beer"></i>
+        <h2>Startup Drinks</h2>
     </header>
-    <div class="row">
-        <div class="large-6 columns">
+    <section>
+        <div class="body has-sidebar">
             <h3>Talk shop &amp; have fun</h3>
             <p>
                 Startup Drinks is an evening for sharing drinks (alcoholic and non-alcoholic) with your peers in the
@@ -291,7 +232,7 @@ title: Home
                 sponsors.
             </p>
         </div>
-        <div class="large-6 columns">
+        <aside>
             <h3>On the last Wednesday of the month</h3>
             <p>
                 Startup drinks is held at 7PM on the last Wednesday of the month at Mahtay Cafe.
@@ -299,32 +240,57 @@ title: Home
             <p>
                 <a href="#" class="button">RSVP</a>
             </p>
-        </div>
-    </div>
+        </aside>
+    </section>
 </article>
 
-<article class="slide accent brown" id="about">
+<article id="hackathons" class="fork" data-scroll-index="6">
     <header>
-        <div class="row">
-            <i class="icon-info-sign"></i>
-            <h2>
-                About Software Niagara
-            </h2>
-        </div>
+        <i class="icon-code"></i>
+        <h2>Hackathons</h2>
     </header>
-    <div class="row">
-        <div class="large-8 columns">
-            <p class="lead">
-                Software Niagara is a grassroots initiative to build a stronger software community and startup culture
-                in the Niagara Region.
+    <section>
+        <div class="body has-sidebar">
+            <h3>Team up and build the next big thing</h3>
+            <p>
+                Software Niagara regularly holds hackathons. Pair up with a group, choose a problem to tackle, and develop
+                the next big thing over a weekend.
             </p>
             <p>
-                We are a group of local designers, developers, entrepreneurs, and students who believe that Niagara is
-                a great place to create new technology and grow businesses. We believe that sharing, collaboration, and
-                community spirit are vital to building a strong technology sector in Niagara.
+                Hackathons are a great opportunity to meet new people, to work with people you have not worked with
+                before, to learn from those more experienced than you, and to teach those less experienced than you.
+                Generally, our hackathons focus on open data and civic engagement. But the real focus is on skill building
+                and knowledge sharing.
             </p>
+        </div>
+        <aside>
+            <h3>Returning in September</h3>
             <p>
-                We are trying to make Niagara a great place to live and work for designers, developers, and entrepreneurs by:
+                We will be hosting our next hackathon in September to coincide with the
+                <a href="http://nodeknockout.com/">Node Knockout</a> competition.
+            </p>
+        </aside>
+    </section>
+</article>
+
+<article id="about" data-scroll-index="7">
+    <header>
+        <i class="icon-info-sign"></i>
+        <h2>
+            About Software Niagara
+        </h2>
+    </header>
+    <section>
+        <div class="body has-sidebar">
+            <h3>Our mission</h3>
+            <p>
+                Our mission is to make Niagara a great place to live and work for designers, developers, and
+                entrepreneurs.
+            </p>
+
+            <p>
+                We believe that each one of us has the power to make this mission a reality. Here's what we are doing
+                to make it happen:
             </p>
 
             <ul>
@@ -335,101 +301,68 @@ title: Home
                 <li>Promoting local startup and technology groups and events</li>
                 <li>Encouraging children and adults to develop computer literacy and programming skills</li>
             </ul>
-        </div>
-        <div class="large-4 columns">
-            <h3>History</h3>
+
+            <h3>Our history</h3>
 
             <p>
                 We started in 2012 with the goal of organizing technology and startup events to build a community that
                 fostered innovation and excellence in Niagara. The inspiration for our grassroots effort came from
-                <a href="http://www.softwarehamilton.com">Software Hamilton</a> and <a href="http://www.startupnorth.ca">Startup North</a>.
+                <a href="http://www.softwarehamilton.com">Software Hamilton</a> and
+                <a href="http://www.startupnorth.ca">Startup North</a>.
             </p>
-
-            <h3>Structure</h3>
-
             <p>
-                Software Niagara is a grassroots group. All work is done by volunteers.
+                Since being founded, we have hosted three DemoCamps, two hackathons, and many nights of coworking. We
+                have also began hosting regular DevTricks events. Incredibly, all of our work is done by a group of
+                volunteers.
             </p>
         </div>
-    </div>
+        <aside>
+            <h3>You can help</h3>
+
+            <p>
+                Everyone is welcome to participate in planning and organizing Software Niagara events. Connect with us
+                on our issue tracker on GitHub. This is where we plan all the things.
+            </p>
+
+            <p>
+                <a href="https://github.com/softwareniagara/feedback/issues?state=open" class="button">
+                    <i class="icon-github-alt"></i>
+                    Contribute
+                </a>
+            </p>
+        </aside>
+    </section>
 </article>
 
-<article class="slide accent orange" id="contribute">
+<article id="contact" class="inverse" data-scroll-index="8">
     <header>
-        <div class="row">
-            <i class="icon-heart"></i>
-            <h2>
-                Contribute to Software Niagara
-            </h2>
-        </div>
+        <i class="icon-comments"></i>
+        <h2>Contact Software Niagara</h2>
     </header>
-    <div class="row">
-        <div class="large-12 columns">
-            <h3>Ask a question, start a discussion, or contribute</h3>
-
+    <section>
+        <div class="body has-sidebar">
+            <h3>Reach out on GitHub, IRC or by email</h3>
             <p>
-                Ask a question or start a discussion by <a href="https://github.com/softwareniagara/feedback/issues/new">creating an issue</a>
-                on GitHub. Watch our <a href="https://github.com/softwareniagara/feedback">feedback repository</a> to follow our
-                activities. We use issues and milestones to plan events and activities. Please contribute if you can help us close
-                an issue or hit a milestone.
+                We do most of our communication and planning on GitHub and IRC.
             </p>
-
-            <h3>Read past discussions</h3>
-
-            <p>
-                Check out <a href="https://github.com/softwareniagara/feedback/issues?sort=created&direction=desc&state=closed&page=1">closed issues</a>
-                to browse previous discussions. This is a great way to get a feel for our community.
-            </p>
-
-            <h3>Connect with us on Twitter</h3>
-
-            <p>
-                If you have a question or want to tell us something, ping us on Twitter at <a href="https://twitter.com/softwareniagara">@softwareniagara</a>.
-                140 character limits make everyone more efficient.
-            </p>
-
-            <h3>Join us on IRC</h3>
-
-            <p>
-                You can find local developers hanging out on our IRC channel. We are #softwareniagara on Freenode.
-                <a href="http://webchat.freenode.net/?channels=#softwareniagara">Chat with us</a>.
-            </p>
-
-            <h3>Email us</h3>
-
-            <p>
-                We're sorry it had to come to this, but if you cannot connect with us via any of the above channels,
-                please do send an email to <a href="info@softwareniagara.com">info@softwareniagara.com</a>. Please remember,
-                the quickest and most effective way to communicate with us is to connect with us on
-                <a href="https://github.com/softwareniagara">GitHub</a> or <a href="https://twitter.com/softwareniagara">Twitter</a>.
-                In other words, we may be slow to respond by email.
-            </p>
-
-            <h3>Contribute to this website</h3>
-
-            <p>
-                This website and its content are open source which means everyone is welcome to help us make it better.
-                Furthermore, our blog is written by the community for the community. Please consider forking the
-                <a href="htts://github.com/softwareniagara/softwareniagara.github.io">website repository</a>
-                and submitting your blog posts in a pull request.
-            </p>
-
-            <p>
-                Please feel free to use our blog to:
-            </p>
-
             <ul>
-                <li>Announce new apps, games, or services that you have built</li>
-                <li>Talk about interesting projects you are involved with</li>
-                <li>Share stories about starting your own business</li>
-                <li>Share tips and tricks of interest to designers, developers, and entrepreneurs</li>
-                <li>Announce tech- or startup-oriented events in or near Niagara</li>
-                <li>Introduce local user groups and meetups</li>
+                <li><a href="#">Software Niagara on GitHub</a></li>
+                <li><a href="#">Software Niagara on IRC</a></li>
             </ul>
-
             <p>
-                <a href="https://github.com/softwareniagara/softwareniagara.github.io/fork" class="button white">Fork this site</a>
+                These are the best channels to communicate with us. However, if you are unfamiliar with
+                using these tools, please feel free to email us at
+                <a href="mailto:info@softwareniagara.com">info@softwareniagara.com</a>.
             </p>
         </div>
-    </div>
+        <aside>
+            <h3>Sign up for our newsletter</h3>
+
+            <form action="http://softwareniagara.us5.list-manage.com/subscribe/post?u=05691c73c71b8b4c0331ca2d9&amp;id=c8cb8ab954" method="post" id="mc-embedded-subscribe-form" class="mc-embedded-subscribe-form" data-validate="parsley" data-focus="first" target="_blank">
+                <label for="mce-EMAIL" class="hidden">Email</label>
+                <input type="email" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" data-required="true" data-type="email">
+                <input type="submit" value="Subscribe" name="subscribe" id="mce-embedded-subscribe" class="button">
+            </form>
+        </aside>
+    </section>
 </article>

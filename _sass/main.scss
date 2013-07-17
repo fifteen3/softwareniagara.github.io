@@ -14,13 +14,17 @@
 // --------------------------------------------------
 
 body {
-  padding-top: 105px;
+  padding-top: 75px;
 }
 
 @include phone {
   body {
     padding-top: 0;
   }
+}
+
+.unstyled {
+  list-style: none;
 }
 
 // Typography
@@ -51,6 +55,12 @@ body {
   }
 }
 
+a {
+  i {
+    color: $body-font-color;
+  }
+}
+
 // Visibility
 // --------------------------------------------------
 .hidden {
@@ -67,11 +77,11 @@ body {
 
 .logo {
   @include background-size(100%);
-  @include image-replacement('../images/logo-inverse.png', 165px, 95px);
+  @include image-replacement('../images/logo-inverse.png', 112px, 65px);
 }
 
 .svg .logo {
-  @include background-size(165px 95px);
+  @include background-size(112px 65px);
   background-image: url('../images/logo-inverse.svg');
 }
 
@@ -108,13 +118,12 @@ body {
   nav {
     background-color: transparent;
     float: right;
-    margin-top: 24px;
+    margin-top: 12px;
     width: auto;
 
     a:not(.button) {
       color: $dark-gray;
       padding-top: 10px;
-      padding-bottom: 12px;
 
       &:hover {
         color: $button-color;
@@ -279,100 +288,73 @@ body {
   }
 }
 
-// ==================================================
-// Slides
-// ==================================================
+article {
+  background-color: #efefef;
 
-.slide {
-  background-color: $lighter-gray;
-  color: $dark-gray;
-  padding-bottom: 60px;
+  > header {
+    @include grid-row();
 
-  // Fix for scroll-spy links not aligning properly
-  // http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/#method-D
-  border-top:106px solid transparent;
-  margin-top:-106px;
-  -webkit-background-clip:padding-box;
-  -moz-background-clip:padding;
-  background-clip:padding-box;
-
-  // Give some indentation to lists
-  ul, ol {
-    margin-left: 2em;
-  }
-
-  // Slide typography
-  // --------------------------------------------------
-
-  h3, h4, h5, h6 {
-    color: $darker-gray;
-  }
-
-  // Slide header
-  // --------------------------------------------------
-
-  header {
-    margin-bottom: 50px;
-    padding: 60px 0 30px 0;
+    padding: 4em 0 2em 0;
     text-align: center;
 
     i {
-      font-size: 96px;
+      font-size: 8em;
     }
   }
 
-  // Slide variations
-  // --------------------------------------------------
-  &.inverse,
-  &.accent {
-    background-color: $darker-gray;
-    color: white;
+  > section {
+    @include grid-row();
 
-    h3, h4, h5, h6 {
-      color: white;
+    padding-bottom: 4em;
+
+    .body {
+      @include grid-column(12);
+
+      &.has-sidebar {
+        @include grid-column(8);
+      }
+    }
+
+    aside {
+      @include grid-column(4);
     }
   }
 
-  &.accent {
-    background-color: #00AAC8;
+  &.inverse {
+    background-color: $dark-gray;
+    color: #dedede;
 
-
-    h2, a {
-      color: #fff;
+    > header {
+      i {
+        color: #ffffff;
+      }
     }
-  }
 
-  &.accent.purple {
-    background-color: $purple;
-  }
-
-  &.accent.brown {
-    background-color: $brown;
-  }
-
-  &.accent.orange, &.accent.brown {
-    background-color: $orange;
-    color: #000;
-
-    i {
+    h1, h2, h3, h4, h5, h6 {
       color: #ffffff;
     }
 
-    h3 {
-      color: $button-color;
-    }
-
     a {
-      color: $button-color;
-      &:hover {
-        color: darken($button-color, 10%);
+      i {
+        color: $darker-gray;
       }
     }
   }
-  &.accent.brown {
-    background-color: $brown;
+
+  &.fork {
+    @include background-size(cover);
+
+    background-image: url('../images/fork.jpg');
+
+    .body {
+      background-color: rgba(#fff, .25);
+    }
   }
 }
+
+
+
+
 
 /**
  * Footer
@@ -415,29 +397,6 @@ body {
       }
     }
   }
-}
-
-/**
- * Events
- */
-#events {
-  ul {
-    list-style-type: none;
-
-    &.tag-list {
-      li {
-        display: inline-block;
-        margin-right: 10px;
-      }
-    }
-  }
-}
-
-.vertical-google-events-calender {
-  width: 100%;
-  height: inherit;
-  min-height: 400px;
-  margin-bottom: 20px;
 }
 
 /**
