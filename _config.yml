@@ -1,7 +1,7 @@
-name: Software Niagara
-pygments: true
-permalink: /blog/:title
-markdown: redcarpet
+name: "Software Niagara"
+pygments: "true"
+permalink: "/blog/:title"
+markdown: "redcarpet"
 prose:
   rooturl: "_posts"
   metadata:
