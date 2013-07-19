@@ -4,8 +4,8 @@ permalink: /blog/:title
 markdown: redcarpet
 prose:
   metadata:
-    slides:
-      _posts:
+    posts:
+      _slides:
         - name: "layout"
           field:
             element: "hidden"

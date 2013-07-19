@@ -3,7 +3,8 @@ layout:     post
 title:      "Geomatics in Niagara"
 author:     "Nickolas Kenyeres"
 date:       2013-03-30 22:00:00
-categories: groups, meetups
+categories:
+  - blog
 ---
 
 Niagara GoGeomatics is having their monthly meetup tonight, March 30, 2013 at Montana’s Restaurant on Lake Street,

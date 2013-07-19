@@ -3,7 +3,8 @@ layout:     post
 title:      "Open Data Day 2013"
 author:     "Nickolas Kenyeres"
 date:       2013-03-29 22:00:00
-categories: events hackathons
+categories:
+  - blog
 ---
 
 Software Niagara organized the International Open Data Day Hackathon in Niagara on February 23, 2013. We had more than
