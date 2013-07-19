@@ -51,3 +51,8 @@ prose:
           element: "hidden"
           value:
             - "blog"
+      - name: 'icon'
+        field:
+          element: "text"
+          label: "Icon"
+          value: ""
