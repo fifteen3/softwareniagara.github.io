@@ -2,7 +2,6 @@
 layout:     post
 title:      "Geomatics in Niagara"
 author:     "Nickolas Kenyeres"
-date:       2013-03-30 22:00:00
 categories:
   - blog
 ---
