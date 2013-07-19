@@ -3,32 +3,51 @@ pygments: true
 permalink: /blog/:title
 markdown: redcarpet
 prose:
+  rooturl: "_posts"
   metadata:
-    posts:
-      _slides:
-        - name: "layout"
-          field:
-            element: "hidden"
-            value: "default"
-        - name: "ident"
-          field:
-            element: "text"
-            label: "ID"
-        - name: "class"
-          field:
-            element: "select"
-            label: "Class"
-            placeholder: "Select a Class"
-            options:
-              - name: "Default"
-                value: "default"
-              - name: "Inverse"
-                value: "inverse"
-              - name: "Fork"
-                value: "fork"
-            selected: "default"
-        - name: "index"
-          field:
-            element: "number"
-            label: "Index"
-            value: 0
+    _posts/slides:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "default"
+      - name: "ident"
+        field:
+          element: "text"
+          label: "ID"
+      - name: "class"
+        field:
+          element: "select"
+          label: "Class"
+          placeholder: "Select a Class"
+          options:
+            - name: "Default"
+              value: "default"
+            - name: "Inverse"
+              value: "inverse"
+            - name: "Fork"
+              value: "fork"
+          selected: "default"
+      - name: "index"
+        field:
+          element: "number"
+          label: "Index"
+          value: 0
+      - name: "categories"
+        field:
+          element: "hidden"
+          value:
+            - "slides"
+    _posts/blog:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+      - name: "categories"
+        field:
+          element: "hidden"
+          value:
+            - "blog"
