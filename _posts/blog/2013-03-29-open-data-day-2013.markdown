@@ -2,7 +2,6 @@
 layout:     post
 title:      "Open Data Day 2013"
 author:     "Nickolas Kenyeres"
-date:       2013-03-29 22:00:00
 categories:
   - blog
 ---
