@@ -3,6 +3,6 @@
 
 
     $(document).ready(function() {
-        $.scrollIt();
+        $.scrollIt({offset: 76});
     });
 })($);
