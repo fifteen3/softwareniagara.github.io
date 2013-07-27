@@ -203,7 +203,7 @@ a {
 // ==================================================
 
 #banner {
-  background: transparent url('../images/banner-low.jpg') center center no-repeat fixed;
+  background: $dark-gray url('../images/banner-low.jpg') center center no-repeat fixed;
   @include background-size(cover);
   color: white;
   padding: 90px 0 180px 0;
