@@ -7,14 +7,14 @@ module.exports = function(grunt) {
          },
          dist: {
             src: [
-                'assets/js/src/custom.modernizr.js',
-                'assets/js/src/jquery.js',
-                'assets/js/src/foundation.min.js',
-                'assets/js/src/parsley.min.js',
-                'assets/js/src/scrollit.patched.js',
-                'assets/js/src/main.js'
+                'assets/js/_src/custom.modernizr.js',
+                'assets/js/_src/jquery.js',
+                'assets/js/_src/foundation.min.js',
+                'assets/js/_src/parsley.min.js',
+                'assets/js/_src/scrollit.patched.js',
+                'assets/js/_src/main.js'
             ],
-            dest: 'assets/js/<%= pkg.name %>.js'
+            dest: 'assets/js/_<%= pkg.name %>.js'
          }
      },
      uglify: {
