@@ -4,3 +4,6 @@ _site/
 # Sass
 .sass-cache
 /.idea/
+
+# Node/Grunt
+node_modules
