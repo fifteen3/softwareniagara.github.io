@@ -2,6 +2,14 @@ name: "Software Niagara"
 pygments: "true"
 permalink: "/blog/:title"
 markdown: "redcarpet"
+exclude:
+ - ".gitignore"
+ - "config.rb"
+ - "CONTRIBUTING.md"
+ - "Gemfile"
+ - "Gemfile.lock"
+ - "Rakefile"
+ - "README.md"
 prose:
   rooturl: "_posts"
   metadata:
